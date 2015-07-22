@@ -1,0 +1,253 @@
+<html style="overflow: hidden; height: 100%;">
+<head>
+    
+    <meta charset="UTF-8">
+	<title>Document</title>
+    
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+    <link rel="stylesheet" href="../public/styles/topic/jquery.bxslider.css">
+    <link rel="stylesheet" href="../public/styles/topic/jquery.fullPage.css">
+    <link rel="stylesheet" href="../public/styles/topic/open.css">
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+    <style>
+        .ui-footer{
+            position: static;
+        }
+    </style>
+</head>
+<body style="overflow: hidden; height: 100%; font-size: 60.24%;">
+    <div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+                <div class="ui-container">
+                    <span class="fn-left">
+                        <a href="javascript:void(0)" rel="nofollow" target="_blank" ><i class="icon-sp1 sp1-puhui-min"></i>太安全金融</a> 旗下在线投资理财金融服务平台
+                    </span>
+                    <span id="menu-had-login" class="fn-right menu-had-login">
+                        <a class="ml20 icon-nl" href="javascript:void(0)" rel="nofollow" id="top-menu-msgtip" >
+                            <i class="icon-sp1 sp1-msg-normal"></i>消息<span class="msg-count"></span>
+                        </a>
+                        <span class="nav-down">
+                            <a class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" rel="nofollow" >
+                                <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                                <span class="menu-user"></span>
+                                <i class="icon-sp1 sp1-arrow-down"></i>
+                            </a>
+                            <div id="menu-ucenter" class="ui-poptip ui-poptip-white">
+                                <div class="ui-poptip-shadow-dis">
+                                    <div class="ui-poptip-container">
+                                        <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                            <em></em>
+                                            <span></span>
+                                        </div>
+                                        <div class="ui-poptip-content">
+                                            <div class="top fn-clear">
+                                                <a href="javascript:void(0)" class="fn-left">
+                                                    <img id="user-photo" src="javascript:void(0)" alt=""></a>
+                                                    <a class="logout fn-left" href="javascript:void(0)" rel="nofollow" onclick="">退出</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                        <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                        个人中心
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                        <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                        账户充值
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                    <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)" >
+                                                        <i class="icon-sp1 sp1-asets-normal"></i>资产统计
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </span>
+                    <span id="menu-not-login" class="fn-right menu-not-login" style="display: inline;">
+                        <a class="ml20" href="javascript:void(0)" rel="nofollow" >注册</a>
+                        <span class="ml10 mr10 split">|</span>
+                        <a href="javascript:void(0)" rel="nofollow" >登录</a>
+                    </span>
+                    <a class="fn-right ml20 icon-nl kefu"></i>在线客服</a>
+                    <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>400-812-8808(9:00-21:00)</a>
+                </div>
+            </div>
+            <div class="ui-nav">
+                <div class="ui-container fn-clear" style="position: relative">
+                    <a class="top-logo icon-sp1 sp1-logo fn-left" href="javascript:void(0)" >
+                        太安全最专业安全透明的O2O模式互联网投资理财金融服务p2p平台
+                    </a>
+                    <ul id="ui-nav-ul">
+                        <li data-nav="index" class="cur"><a href="javascript:void(0)" rel="nofollow">首页</a></li>
+                        <li data-nav="touzi"><a href="javascript:void(0)" rel="nofollow" >投资项目</a></li>
+                        <li data-nav="security"><a href="javascript:void(0)" rel="nofollow" >安全保障</a></li>
+                        <li data-nav="media"><a href="javascript:void(0)" rel="nofollow" >媒体报道</a></li>
+                        <li data-nav="guide"><a href="javascript:void(0)" rel="nofollow" >新手指南</a></li>
+                        <li data-nav="customer"><a href="javascript:void(0)" >客户服务</a></li>
+                        <li data-nav="about"><a class="last" href="javascript:void(0)" rel="nofollow" >关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="trans-lead">
+        <div class="trans-lead-arrowtop" style="display: none;"></div>
+        <ul class="trans-lead-list" id="menu">
+            <li class="tran-lead-item" data-menuanchor="firstPage"><a class="trans-current" href="#firstPage"></a></li>
+            <li class="tran-lead-item" data-menuanchor="secondPage"><a href="#secondPage"></a></li>
+            <li class="tran-lead-item" data-menuanchor="3rdPage"><a href="#3rdPage"></a></li>
+            <li class="tran-lead-item active" data-menuanchor="4thpage"><a href="#4thpage"></a></li>
+            <li class="tran-lead-item" data-menuanchor="lastPage"><a href="#lastPage"></a></li>
+        </ul>
+        <div class="trans-lead-arrow" style="display: block;"></div>
+        <div class="trans-lead-text">鼠标向下滑动</div>
+    </div>
+    <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative;">
+        <div class="section trans-p1 fp-section" data-anchor="firstPage" style="height: 497px;">
+            
+
+            <div class="trans-p1-bg" id="p1bg" style="left: 3px;">
+            </div>
+            <div class="trans-wrapper trans-p1-con">
+                <div class="trans-p1-con-img">
+                    
+                    <img src="../public/img/topic/p13.png" class="trans-p1-img0" alt="">
+                    <img src="../public/img/topic/p131.png" class="trans-p1-img1" alt="">
+                    <img src="../public/img/topic/p132.png" class="trans-p1-img2" alt="">
+                    <img src="../public/img/topic/p133.png" class="trans-p1-img3" alt="">
+                    <img src="../public/img/topic/p134.png" class="trans-p1-img4" alt="">
+                </div>
+                <div class="trans-p1-ceo fn-clear" style="margin-top: -10px;">
+                    <img src="../public/img/topic/p12.png" class="trans-p1-ceo-left" alt="">
+
+                    <div class="trans-p1-ceo-right">
+                        <p style="text-align: left;">“国家理财规划师，心宇基金会会长，泰安慈善第一人。2014年11月份成立泰安市众诚金融信息服务咨询有限公司，并成功启动太安全互联网金融平台”</p>
+
+                        <p style="text-align: right;">——太安全创始合伙人 李洪涛</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section trans-p2 fp-section" data-anchor="secondPage" style="height: 497px;">
+            <div class="trans-wrapper trans-p2-con">
+                <img class="trans-p2-title" src="../public/img/topic/p2title.png" alt="" style="top: 50px; opacity: 1; left: 217px; display: none;">
+                <img src="../public/img/topic/p27.png" class="trans-p2-pic" alt="" style="opacity: 1; right: 0px; display: none;">
+
+                <img class="trans-p2item trans-p21" src="../public/img/topic/p21.png" alt="" style="top: 80px;">
+                <img class="trans-p2item trans-p22" src="../public/img/topic/p22.png" alt="" style="top: 150px;">
+                <img class="trans-p2item trans-p23" src="../public/img/topic/p23.png" alt="" style="top: 350px;">
+                <img class="trans-p2item trans-p24" src="../public/img/topic/p24.png" alt="" style="top: -160px;">
+                <img class="trans-p2item trans-p25" src="../public/img/topic/p25.png" alt="" style="top: 80px;">
+                <img class="trans-p2item trans-p26" src="../public/img/topic/p26.png" alt="" style="top: 50px;">
+            </div>
+        </div>
+
+        <div class="section trans-p3 fp-section" data-anchor="3rdPage" style="height: 497px;">
+
+            <div class="trans-p3-con">
+                <img class="trans-p3-title" src="../public/img/topic/p3title.png" alt="" style="opacity: 0.9997523901; left: 227px; display: none; top: 30px;">
+
+                <img class="trans-p31" src="../public/img/topic/p35.png" alt="" style="opacity: 0; top: 500px; left: -470px;">
+                <img class="trans-p32" src="../public/img/topic/p36.png" alt="" style="opacity: 0; top: -500px; right: -470px;">
+                <img class="trans-p33" src="../public/img/topic/p37.png" alt="" style="opacity: 0; bottom: -500px; right: -470px;">
+                <img class="trans-p34" src="../public/img/topic/p38.png" alt="" style="opacity: 0; top: -500px; left: -470px;">
+            </div>
+            <div class="trans-wrapper trans-p3-bg">
+            </div>
+        </div>
+
+        <div class="section trans-p4 fp-section active" data-anchor="4thpage" style="height: 497px;">
+            <div class="trans-p4-bg">
+                <div class="trans-wrapper trans-p4-con">
+                    <img class="trans-p4-title" src="../public/img/topic/ptitle.png" alt="" style="opacity: 1; left: 235px; display: block; top: 20px;">
+                    <img class="trans-p4-pic" src="../public/img/topic/p41.png" alt="" style="opacity: 1; right: 0px; display: block;">
+                    <img class="trans-p41" src="../public/img/topic/p42.png" alt="" style="top: -150px;">
+                    <img class="trans-p42" src="../public/img/topic/p43.png" alt="" style="top: 168px;">
+                    <img class="trans-p43" src="../public/img/topic/p44.png" alt="" style="top: 500px;">
+                    <img class="trans-p44" src="../public/img/topic/p45.png" alt="" style="top: 433px;">
+                    <img class="trans-p45" src="../public/img/topic/p46.png" alt="" style="top: 266px;">
+                    <img class="trans-p46" src="../public/img/topic/p47.png" alt="" style="top: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="section trans-p5 fp-section" data-anchor="lastPage" style="height: 497px;">
+            <div class="mousetop5" style="top: 0px;">
+                <div class="trans-p5-bg">
+                    <div class="trans-wrapper trans-p5-con">
+                        <img class="trans-p5-title" src="../public/img/topic/p5title.png" alt="">
+
+                        <div class="trans-p5-list fn-clear">
+                            <div class="trans-p5-item">
+                                <img src="../public/img/topic/p51.png" alt="">
+
+                                <p style="text-align: center; display: none; opacity: 1; margin-top: 25px;">定期披露平台相关运营数据</p>
+                            </div>
+                            <div class="trans-p5-item trans-p5-item-center">
+                                <img src="../public/img/topic/p52.png" alt="">
+
+                                <p style="cursor: pointer; display: none; opacity: 1; margin-top: 25px;">官网披露招商银行出具的风险准备金托管报告</p>
+                            </div>
+                            <div class="trans-p5-item">
+                                <img src="../public/img/topic/p53.png" alt="">
+
+                                <p style="display: none; opacity: 1; margin-top: 25px;">随时更新并公开平台累计达到的交易金额、借款人数</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trans-p5-btn">
+                    <div class="trans-p5-btn-con">
+                        <a href="/user/register" id="iqd-jduge" class="ui-button ui-button-red">立即注册</a>
+                        <a href="/" class="ui-button ui-button-grey">返回首页</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script src="../public/scripts/topicui/jquery.bxslider.min.js"></script>
+    <script src="../public/scripts/topicui/jquery-ui.min.js"></script>
+    <script src="../public/scripts/topicui/jquery.fullPage.js"></script>
+    <script src="../public/scripts/topicui/jquery.mousewheel.js"></script>
+    <script src="../public/scripts/topicui/TweenMax.min.js"></script>
+    <script src="../public/scripts/topicui/trans.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		window.location.href="#firstPage"
+	})
+</script>
+
+
+</body>
+
+</html>

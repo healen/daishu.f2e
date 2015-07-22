@@ -1,0 +1,162 @@
+
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+
+/*
+*2015
+*个人中心
+*zxd
+*/
+
+body{
+    background: @docBgColor;
+}
+.header{
+    box-shadow: 0px 1px 10px #c8c8c8;
+}
+.-my ._layout(my,@documentWidth,214px,911px,20px);
+.la-my{
+    margin-bottom: 40px;
+    .myleft{
+         @listTitleHeight:70px;
+        .index{
+            height: @listTitleHeight;
+            text-align:center;
+            background: @markBgColor;
+            color: #fff;
+            display: block;
+            line-height: @listTitleHeight;
+            border-radius: 3px 0px 0px 0px
+        }
+        .list{
+            border-radius: 0px 0px 0px 3px;
+            border:1px solid @borderColor1;
+            border-top: none;
+            overflow: hidden;
+            .navbtn{
+                background: @boxBgColor;
+                position: relative;
+
+                i{
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    right: 26px;
+                    z-index: 9;
+                    top: 30px;
+                    background-image: url('@{img}/ico.png');
+                    background-repeat: no-repeat;
+                    background-position: -109px -166px; 
+                }
+                a{
+                    display: block;
+                    height: @listTitleHeight;
+                    line-height: @listTitleHeight+-1;
+                    text-align:center;
+                    span{
+                        display: block;
+                        margin: 0px 26px;
+                        border-bottom: 1px solid @borderColor2;
+                        color: @myTextColor;
+                    }
+                }
+                &:last-child{
+                    a{
+                        span{
+                             border-bottom:none;
+                        }
+                    }
+                }
+
+                &.on{
+                    
+                    &>a{
+                        span{
+                            color: @linkColorHover;
+                        }
+                        
+                    }
+                }
+              
+
+            }
+        }
+    }
+    .myright{
+        .mbx{
+            line-height: 67px;
+            border:1px solid  @borderColor1;
+            color: @myTextColor;
+            background: #ffffff;
+            margin-bottom: -1px;
+            border-top: 2px solid @markBgColor;
+            padding: 0px 25px;
+        }
+        .topcontent{
+            background: #fff;
+            margin-bottom: 7px;
+            border:1px solid @borderColor1;
+            .warp{
+                padding: 0px 24px;
+                
+                .mytop{
+                    padding-top:10px;
+                    padding-bottom: 10px;
+                    min-height: 800px;
+                }
+            }
+
+        }
+      
+    }
+}
+
+._pageList(list);
+
+ .tabview{
+
+        .contant{
+           
+            min-height: 200px;
+            background: #fff;
+            min-height: 850px;
+            ._tables();
+            .tabcontent{
+                display: none;
+                .warpper{
+                    color: @auxTextColor;
+                    padding: 8px 15px;
+                    overflow: hidden;
+                    position: relative;
+                    ._clearfix();
+                   
+                    ._myTable();
+
+
+                    .my_list_bottom{
+                        table{
+                            tr{
+                                td{
+                                border-bottom: 1px dotted #efefef;
+                                  padding: 5px 0px;
+                                  font-size: 14px;
+                                }
+                            }
+                        }
+
+                    } 
+
+
+                    
+                }
+            }
+
+            .info{
+                 padding: 20px 40px;
+            }
+           
+        }
+    }

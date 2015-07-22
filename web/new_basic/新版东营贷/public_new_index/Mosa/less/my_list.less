@@ -1,0 +1,193 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+
+/*
+*2015
+*个人中心
+*zxd
+*/
+
+body{
+    background: @huiBackground;
+}
+.header{
+    box-shadow: 0px 1px 10px #c8c8c8;
+}
+.-my ._layout(my,@documentWidth,214px,911px,20px);
+.la-my{
+
+    ._pageList(list);
+    margin-bottom: 40px;
+    .myleft{
+         @listTitleHeight:70px;
+        .index{
+            height: @listTitleHeight;
+            text-align:center;
+            background: @markBgColor;
+            color: #fff;
+            display: block;
+            line-height: @listTitleHeight;
+            border-radius: 3px 0px 0px 0px
+        }
+        .list{
+            border-radius: 0px 0px 0px 3px;
+            border:1px solid @borderColor1;
+            border-top: none;
+            overflow: hidden;
+            .navbtn{
+                background: @boxBgColor;
+                position: relative;
+
+                i{
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    right: 26px;
+                    z-index: 9;
+                    top: 30px;
+                    background-image: url('@{img}/ico.png');
+                    background-repeat: no-repeat;
+                    background-position: -109px -166px; 
+                }
+                a{
+                    display: block;
+                    height: @listTitleHeight;
+                    line-height: @listTitleHeight+-1;
+                    text-align:center;
+                    span{
+                        display: block;
+                        margin: 0px 26px;
+                        border-bottom: 1px solid @borderColor2;
+                        color: @myTextColor;
+                    }
+                }
+                &:last-child{
+                    a{
+                        span{
+                             border-bottom:none;
+                        }
+                    }
+                }
+                .childlist{
+                    display: none;
+                     a{
+                        display: block;
+                        background: @huiBackground;
+                        height: 49px;
+                        line-height: 49px;
+                        text-align:center;
+                        span{
+                            display: block;
+                            margin: 0px 26px;
+                            padding-left: 50px;
+                            height: 48px;
+                            border-bottom: 1px dotted #e4e4e4;
+                            text-align: left;
+                            font-size: @samllFoutSize+-1;
+                            color: @auxTextColor;
+                        }
+                        &:last-child{
+                            span{
+                                border-bottom: none;
+                            }
+                        }
+                        &:hover,&.on{
+                            background: @myselect_left;
+                            span{
+                                color: @myTextColor;
+                            }
+                        }
+                    }
+                }
+                 &.on{
+                    i{
+                        background-position: -109px -180px;
+                    }
+                    &>a{
+                        span{
+                            color: @linkColorHover;
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+    }
+    .myright{
+         .mbx{
+            line-height: 67px;
+            border-bottom:1px solid  @borderColor1;
+            color: @myTextColor;
+            background: #ffffff;
+            margin-bottom: -1px;
+            border-top: 2px solid @markBgColor;
+            padding: 0px 25px;
+        }
+    .tabview{
+        .tab{
+            height: 60px;
+            ._clearfix();
+            background: @boxBgColor;
+            margin-bottom: -1px;
+            border-top:1px solid @borderColor2; 
+            a{
+                display: block;
+                float: left;
+                line-height: 59px;
+                padding: 0px 15px;
+                text-align: center;
+                border-right: 1px solid @borderColor2;
+                background: @boxBgColor;
+                color: @mainColor;
+                &:hover{
+                    color: @myTextColor;
+                }
+                &.on{
+                    background: #fff;
+                    border-bottom: 1px solid #fff;
+                }
+                 &.last{
+                    border-right: none;
+                }
+                
+            }
+
+        }
+        .contant{
+            border-top: 1px solid @borderColor2;
+            min-height: 200px;
+            background: #fff;
+            min-height: 850px;
+            ._tables();
+            .tabcontent{
+                display: none;
+                .warpper{
+                    color: @auxTextColor;
+                    padding: 8px 15px;
+                    overflow: hidden;
+                    position: relative;
+                    ._clearfix();
+                   
+                    ._myTable()
+                    
+                }
+            }
+
+            .info{
+                 padding: 20px 40px;
+            }
+           
+        }
+    }
+ 
+
+      
+    }
+}
+
+
+

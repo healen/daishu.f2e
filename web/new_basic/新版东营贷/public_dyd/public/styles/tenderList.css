@@ -1,0 +1,278 @@
+/*element样式*/
+/*按钮*/
+/*
+*2015
+*招标列表
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.header {
+  box-shadow: 0px 1px 10px #c8c8c8;
+}
+.la-my {
+  width: 1132px;
+  margin: 12px auto;
+}
+.la-my a.banner {
+  display: block;
+  width: 1132px;
+  margin: 0px auto 12px 0px;
+}
+.la-my a.banner img {
+  display: block;
+  width: 1132px;
+  height: auto;
+}
+.la-my .wherebox {
+  margin-bottom: 12px;
+}
+.la-my .wherebox .titlebox {
+  height: 48px;
+  line-height: 48px;
+  padding: 0px 10px;
+  border-top: 2px solid #2ea7e0;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  background: #fff;
+  clear: both;
+  *zoom: 1;
+}
+.la-my .wherebox .titlebox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .titlebox h2 {
+  color: #4c4c4c;
+  padding-left: 22px;
+  font-size: 18px;
+  float: left;
+  *zoom: 1;
+}
+.la-my .wherebox .titlebox h2:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .titlebox h2 i {
+  display: block;
+  width: 40px;
+  height: 48px;
+  background: #ff0000;
+  float: right;
+  background: url('../images/ico.png') no-repeat -145px -157px;
+}
+.la-my .wherebox .titlebox .markbox {
+  clear: both;
+  height: 24px;
+  line-height: 24px;
+  padding-top: 11px;
+  *zoom: 1;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.la-my .wherebox .titlebox .markbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .titlebox .markbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .titlebox .markbox .mark {
+  *zoom: 1;
+  background: #ddd;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  margin-right: 25px;
+  float: left;
+}
+.la-my .wherebox .titlebox .markbox .mark:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .titlebox .markbox .mark .content {
+  float: left;
+  display: block;
+  padding: 0px 10px;
+}
+.la-my .wherebox .titlebox .markbox .mark .close {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url('../images/ico.png') no-repeat -186px -170px;
+  cursor: pointer;
+}
+.la-my .wherebox .titlebox .abox {
+  *zoom: 1;
+  float: right;
+  line-height: 30px;
+  padding-top: 8px;
+}
+.la-my .wherebox .titlebox .abox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .titlebox .abox a {
+  display: inline-block;
+  padding: 0px 25px;
+  border-right: 1px solid #eeeeee;
+}
+.la-my .wherebox .titlebox .abox a.end {
+  border-right: none;
+}
+.la-my .wherebox .contentlist {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  background: #fff;
+  padding: 10px;
+}
+.la-my .wherebox .contentlist .listbox {
+  clear: both;
+  padding: 0px 20px 20px 20px;
+  font-size: 14px;
+}
+.la-my .wherebox .contentlist .listbox .ltr {
+  *zoom: 1;
+  padding-top: 10px;
+}
+.la-my .wherebox .contentlist .listbox .ltr:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltright {
+  float: left;
+  width: 985px;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltd {
+  float: left;
+  margin-right: 28px;
+  color: #666666;
+  line-height: 28px;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltd a {
+  color: #666666;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltd a:hover {
+  background: #eeeeee;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltd.on {
+  color: #2ea7e0;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltd.on a {
+  color: #fff;
+  background: #f39913;
+}
+.la-my .wherebox .contentlist .listbox .ltr .ltd.fast {
+  width: 75px;
+  margin-right: 0px;
+  text-align: right;
+  color: #4c4c4c;
+  padding-right: 5px;
+}
+.la-my .listbox {
+  padding: 10px;
+  background: #fff;
+}
+.la-my .listbox .tr {
+  *zoom: 1;
+  overflow: hidden;
+  padding: 0px 25px;
+  text-align: center;
+  color: #4c4c4c;
+}
+.la-my .listbox .tr:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .listbox .tr .td {
+  float: left;
+  width: 16%;
+  line-height: 60px;
+  height: 60px;
+  border-bottom: 1px solid #eeeeee;
+}
+.la-my .listbox .tr .td.fast {
+  width: 20%;
+}
+.la-my .listbox .tr .td .myspeed {
+  width: 102px;
+  height: 36px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 10%;
+  font-size: 12px;
+}
+.la-my .listbox .tr .td .myspeed .smalls {
+  line-height: 20px;
+  display: block;
+}
+.la-my .listbox .tr .td .myspeed .barbox {
+  width: 100px;
+  height: 10px;
+  display: block;
+  border: 1px solid #f39913;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.la-my .listbox .tr .td .myspeed .barbox span {
+  height: 10px;
+  width: 50px;
+  background: #f39913;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+.la-my .listbox .tr .td a.mytz {
+  display: inline-block;
+  background: #2ea7e0;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.la-my .listbox .tr .td a.mytz:hover {
+  background: #1c8bbf;
+}
+.la-my .listbox .tr:last-child .td {
+  border-bottom: none;
+}
+.la-my .listbox .tr.th {
+  background: #fbfbfb;
+}
+.la-my .listbox .tr.th .td {
+  font-size: 18px;
+  color: #4c4c4c;
+  border-bottom: none;
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}

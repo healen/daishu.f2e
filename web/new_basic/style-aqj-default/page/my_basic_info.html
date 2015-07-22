@@ -1,0 +1,780 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+     <link rel="stylesheet" href="../public/styles/my_basic_info.css" type="text/css">
+     <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+    <!--页眉-->
+        <div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+                <div class="ui-container">
+                    <span class="fn-left">
+                        <a href="javascript:void(0)" rel="nofollow" target="_blank" ><i class="icon-sp1 sp1-puhui-min"></i>贷鼠网金融</a> 旗下在线投资理财金融服务平台
+                    </span>
+                    <span id="menu-had-login" class="fn-right menu-had-login">
+                        <a class="ml20 icon-nl" href="javascript:void(0)" rel="nofollow" id="top-menu-msgtip" >
+                            <i class="icon-sp1 sp1-msg-normal"></i>消息<span class="msg-count"></span>
+                        </a>
+                        <span class="nav-down">
+                            <a class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" rel="nofollow" >
+                                <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                                <span class="menu-user"></span>
+                                <i class="icon-sp1 sp1-arrow-down"></i>
+                            </a>
+                            <div id="menu-ucenter" class="ui-poptip ui-poptip-white">
+                                <div class="ui-poptip-shadow-dis">
+                                    <div class="ui-poptip-container">
+                                        <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                            <em></em>
+                                            <span></span>
+                                        </div>
+                                        <div class="ui-poptip-content">
+                                            <div class="top fn-clear">
+                                                <a href="javascript:void(0)" class="fn-left">
+                                                    <img id="user-photo" src="javascript:void(0)" alt=""></a>
+                                                    <a class="logout fn-left" href="javascript:void(0)" rel="nofollow" onclick="">退出</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                        <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                        个人中心
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                        <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                        账户充值
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                    <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)" >
+                                                        <i class="icon-sp1 sp1-asets-normal"></i>资产统计
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </span>
+                    <span id="menu-not-login" class="fn-right menu-not-login" style="display: inline;">
+                        <a class="ml20" href="javascript:void(0)" rel="nofollow" >注册</a>
+                        <span class="ml10 mr10 split">|</span>
+                        <a href="javascript:void(0)" rel="nofollow" >登录</a>
+                    </span>
+                    <a class="fn-right ml20 icon-nl kefu"></i>在线客服</a>
+                    <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>400-812-8808(9:00-21:00)</a>
+                </div>
+            </div>
+            <div class="ui-nav">
+                <div class="ui-container fn-clear" style="position: relative">
+                    <a class="top-logo icon-sp1 sp1-logo fn-left" href="javascript:void(0)" >
+                        贷鼠网最专业安全透明的O2O模式互联网投资理财金融服务p2p平台
+                    </a>
+                    <ul id="ui-nav-ul">
+                        <li data-nav="index" class="cur"><a href="javascript:void(0)" rel="nofollow">首页</a></li>
+                        <li data-nav="touzi"><a href="javascript:void(0)" rel="nofollow" >投资项目</a></li>
+                        <li data-nav="security"><a href="javascript:void(0)" rel="nofollow" >安全保障</a></li>
+                        <li data-nav="media"><a href="javascript:void(0)" rel="nofollow" >媒体报道</a></li>
+                        <li data-nav="guide"><a href="javascript:void(0)" rel="nofollow" >新手指南</a></li>
+                        <li data-nav="customer"><a href="javascript:void(0)" >客户服务</a></li>
+                        <li data-nav="about"><a class="last" href="javascript:void(0)" rel="nofollow" >关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <div class="myleft">
+
+                    <a href="index.html" class="index">管理首页</a>
+                    <div class="list">
+                        <div class="navbtn on">
+                            <a href="javascript:void(0)" class="sliderview"><span>账户管理</span></a>
+                            <div class="childlist" style="display:block">
+                                 <a href="javascript:void(0)" class="on"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                                 <a href="javascript:void(0)"><span>信用认证</span></a>
+                                 <a href="javascript:void(0)"><span>VIP认证</span></a>
+                                 <a href="javascript:void(0)"><span>已认证专区</span></a>
+                                 <a href="javascript:void(0)"><span>隐私设置</span></a>
+                                 <a href="javascript:void(0)"><span>提醒设置</span></a>
+                                 <a href="javascript:void(0)"><span>登录密码</span></a>
+                                 <a href="javascript:void(0)"><span>交易密码</span></a>
+                                  <a href="javascript:void(0)"><span>安全问题</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>资金管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借出管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借入管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>好友管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="myright">
+                     <div class="mbx">您当前所在的位置&gt;<a href="#">首页</a> &gt; <a href="#">我的贷鼠仓</a></div>
+                     <div class="topcontent">
+
+                            <div class="warp">
+                            <div class="tabview">
+                                    <div class="tab">
+                                        <a href="javascript:void(0)" class="on">基本信息</a>
+                                        <a href="javascript:void(0)" class="">职业信息</a>
+                                        <a href="javascript:void(0)" class="">联系人信息</a>
+                                        <a href="javascript:void(0)" class="">添加联系人</a>
+                                        <a href="javascript:void(0)" class="">教育信息</a>
+                                        <a href="javascript:void(0)">财务状况 </a>
+                                    </div>
+                                    <div class="contant">
+                                        <div class="tabcontent" style="display: block;">
+                                            <div class="warpper">
+
+                                                <div class="msg">
+                                                    <p>1. 详尽填写您的个人资料会提高您的信用等级和借款额度</p>
+                                                    <p>2.任何虚假信息都会将您的信用额度降至最低，并进入永久拒贷名单。</p>
+                                                    <p>3.所有个人信息将用于信用审核，审核通过后，将不能进行修改。</p>
+                                                </div>
+                                                <div class="title">我的基本信息：<span>部分资料公开显示，<span class="xinghao">*</span> 为必填资料，所有资料均会严格保密！</span></div>
+                                                <div class="basicfrome">
+                                                    <div class="label">
+                                                        <div class="subject">真是姓名：</div>
+                                                        <span>dsafsdfdsa</span>
+                                                        <span class="xinghao">*</span>
+                                                    </div>
+
+                                                     <div class="label">
+                                                        <div class="subject">昵称：</div>
+                                                        <input type="text" class="length3" placeholder="请输入昵称" value="healen">
+                                                        <input type="radio" class="radio">
+                                                    </div>
+
+                                                     <div class="label">
+                                                        <div class="subject">性别：</div>
+                                                        <select name="" id="">
+                                                            <option value="">男</option>
+                                                            <option value="">女</option>
+                                                        </select>
+                                                       
+                                                       
+                                                    </div>
+
+                                                     <div class="label">
+                                                        <div class="subject">验证码：</div>
+                                                        <input type="text" class="yzm" placeholder="请输入真实姓名" value="20">
+                                                         <a href="#"><img src="../public/img/yzm.png" height="31" alt=""></a>
+                                                        <span class="xinghao">*</span>
+                                                    </div>
+
+
+
+                                                    <div class="label">
+                                                        <div class="subject">身份证：</div>
+                                                        <input type="text" class="length2" placeholder="请输有效身份证号" value="1560007492698592544">
+                                                        <span class="xinghao">*</span>
+                                                    </div>
+
+
+
+                                                    <div class="label">
+                                                        <div class="subject">充值方式：</div>
+                                                        <label>
+                                                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$PaymentType" class="radio beifu" id="ctl00_ctl00_ContentPlaceHolder1_Content3_RadioButton3" style="margin-top: 2px;" type="radio" checked="checked" value="RadioButton3"><span style="padding-right: 10px; float: left;">贝付支付</span></label>
+                                                           <label>
+                                                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$PaymentType" class="radio zft" id="ctl00_ctl00_ContentPlaceHolder1_Content3_RadioButton4" style="margin-top: 2px;" type="radio" value="RadioButton4"><span style="padding-right: 10px; float: left;">支付通</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="label showbank">
+                                                        <label>
+                                                            <div class="blankico">
+                                                                <a href="javascript:void(0)" class="on">
+                                                                    <img src="../public/img/bank/102.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/103.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/104.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/105.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/301.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/302.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/303.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/304.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/305.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/306.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/307.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/308.jpg" alt="">
+                                                                </a>
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/309.jpg" alt="">
+                                                                </a>
+
+                                                                <a href="javascript:void(0)">
+                                                                    <img src="../public/img/bank/310.jpg" alt="">
+                                                                </a>
+                                                                
+
+
+                                                            </div>
+                                                        </label>
+                                                    </div>
+
+
+
+
+
+                                                     <div class="label">
+                                                        <div class="subject">籍贯：</div>
+                                                        <input type="text" class="length2" placeholder="请输入户籍所在地" value="北平">
+                                                        <span class="xinghao">*</span>
+                                                    </div>
+
+
+                                                     <div class="label">
+                                                        <div class="subject">学历：</div>
+                                                        <select name="" id="">
+                                                            <option value="">本科</option>
+                                                            <option value="">专科</option>
+                                                            <option value="">中专技校</option>
+                                                        </select>
+                                                         <span class="xinghao">*</span>
+                                                       
+                                                       
+                                                    </div>
+
+
+                                                     <div class="label">
+                                                        <div class="subject">月收入：</div>
+                                                        <input type="text" class="length4" placeholder="1500" value="1500">
+                                                        <span class="xinghao">*</span>
+                                                    </div>
+
+
+                                                     <div class="label">
+                                                        <div class="subject">目前身份：</div>
+                                                        <select name="" id="">
+                                                            <option value="">程序员</option>
+                                                            <option value="">前端</option>
+                                                            <option value="">设计师</option>
+                                                        </select>
+                                                         <span class="xinghao">*</span>
+                                                       
+                                                       
+                                                    </div>
+
+
+                                                     <div class="label">
+                                                        <div class="subject">婚姻状况：</div>
+                                                        <select name="" id="">
+                                                            <option value="">已婚</option>
+                                                            <option value="">未婚</option>
+                                                            <option value="">离异</option>
+                                                            <option value="">丧偶</option>
+                                                        </select>
+                                                       
+                                                       
+                                                       
+                                                    </div>
+
+
+                                                      <div class="label">
+                                                        <div class="subject">是否有车：</div>
+                                                        <select name="" id="">
+                                                            <option value="">是</option>
+                                                            <option value="">否</option>
+                                                           
+                                                        </select>
+                                                    
+                                                       
+                                                       
+                                                    </div>
+
+                                                    <div class="label">
+                                                        <div class="subject">是否有房：</div>
+                                                        <select name="" id="">
+                                                            <option value="">是</option>
+                                                            <option value="">否</option>
+                                                           
+                                                        </select>
+                                                
+                                                    </div>
+
+
+                                                     <div class="label">
+                                                        <div class="subject">个人描述：</div>
+                                                        <textarea name="" id=""></textarea>
+                                                
+                                                    </div>
+
+
+
+                                                     <div class="label">
+                                                        <div class="subject"> &nbsp;</div>
+
+
+
+                                                        <input type="button" value="提 交" class="sub">
+                                                        
+
+                                                
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="tabcontent" style="display: none;">
+                                            <div class="warpper">
+                                                <input type="text" class="time">
+                                            </div>
+                                        </div>
+                                        <div class="tabcontent" style="display: none;">
+                                             <div class="warpper">
+
+                                                <!--联系人信息-->
+                                                <div class="basicfrome" id="basiccontent">
+                        <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$abc" type="hidden" id="ctl00_ctl00_ContentPlaceHolder1_Content3_abc" value="Update">
+                        <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$hidId" type="hidden" id="ctl00_ctl00_ContentPlaceHolder1_Content3_hidId" value="223">
+                        <div class="label">
+                            <div class="subject">详细住址：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtAddress" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtAddress" class="length2" placeholder="请输入详细住址" value="北京朝阳区">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">邮编：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtPostal" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtPostal" class="length4" placeholder="请输入邮编" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength="8" value="100010">
+                        </div>
+                        <div class="label">
+                            <div class="subject">固定电话：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtPhone" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtPhone" class="length4" placeholder="请输入固定电话" onkeyup="value=value.replace(/[^\d]/g,'')" value="01098739266">
+                        </div>
+                        <div class="label">
+                            <div class="subject">手机号：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtMobile" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtMobile" class="length4" placeholder="请输有效手机号" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')" value="13987787654">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">QQ：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtQQ" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtQQ" class="length4" placeholder="请输入QQ" onkeyup="value=value.replace(/[^\d]/g,'')" value="9877876">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">MSN：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtMSN" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtMSN" class="length4" placeholder="请输入MSN">
+                        </div>
+                        <div class="label">
+                            <div class="subject">其他联系方式：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtOther" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtOther" class="length4" placeholder="请输入其他联系方式">
+                        </div>
+
+
+
+                        <div class="warpper">
+                                            
+                                            <div class="my_list_bottom">
+                                                
+                                                <table width="100%">
+                                                    <tbody><tr>
+                                                        <th width="10%" class="center">姓名</th>
+                                                        <th width="10%" class="center">关系</th>
+                                                        <th width="" class="center">单位</th>
+                                                        <th class="center">地址</th>
+                                                        <th width="10%" class="center">职位</th>
+                                                        <th width="10%" class="center">月薪</th>
+                                                        <th width="10%" class="center">操作</th>
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td class="center">
+                                                            张晓东
+                                                        </td>
+                                                        <td class="center">朋友</td>
+                                                        <td class="center">贷鼠网</td>
+                                                        <td class=" center">北京市朝阳区</td>
+                                                        <td class="center">前端工程师</td>
+                                                        <td class="center">5000</td>
+                                                        <td class=" center">
+                                                            <a href="javascript:void(0)">编辑</a> 
+                                                            | 
+                                                            <a href="javascript:void(0)">删除</a>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody></table>
+                                            </div>
+                                            </div>
+                                             <div class="my_list_top" style="border-bottom:none; text-align:center">
+                                                    <input type="button" value="添加联系人" class="subBut addmsg">  
+                                            </div>
+                    </div>
+
+                                                <!--联系人信息-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             </div>
+                                        </div>
+                                        <div class="tabcontent" style="display: none;">
+                                            <div class="warpper">5</div>
+                                        </div>
+                                        <div class="tabcontent" style="display: none;">
+                                            <div class="warpper">
+                                                 <div class="warpper">
+                                            
+                                            <div class="my_list_bottom">
+                                                
+                                                <table width="100%">
+                                                    <tbody><tr>
+                                                        <th width="10%" class="center">姓名</th>
+                                                        <th width="10%" class="center">关系</th>
+                                                        <th width="" class="center">单位</th>
+                                                        <th class="center">地址</th>
+                                                        <th width="10%" class="center">职位</th>
+                                                        <th width="10%" class="center">月薪</th>
+                                                        <th width="10%" class="center">操作</th>
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td class="center">
+                                                            张晓东
+                                                        </td>
+                                                        <td class="center">朋友</td>
+                                                        <td class="center">贷鼠网</td>
+                                                        <td class=" center">北京市朝阳区</td>
+                                                        <td class="center">前端工程师</td>
+                                                        <td class="center">5000</td>
+                                                        <td class=" center">
+                                                            <a href="javascript:void(0)">编辑</a> 
+                                                            | 
+                                                            <a href="javascript:void(0)">删除</a>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody></table>
+                                            </div>
+                                            </div>
+                                             <div class="my_list_top" style="border-bottom:none; text-align:center">
+                                                    <input type="button" value="添加联系人" class="subBut addmsg">  
+                                            </div>
+                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabcontent" style="display: none;">
+                                            <div class="warpper">5</div>
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+              <!--页脚-->
+    
+
+        <div class="ui-footer">
+            <div class="ui-container">
+                <div class="site-link">
+                    <ul class="fn-clear">
+                        <li><a href="javascript:void(0)" rel="nofollow">关于我们</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow">名词解释</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow" >法律法规</a></li>
+                        <li><a href="javascript:void(0)">理财知识</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow">诚聘英才</a></li>
+                        <li><a href="javascript:void(0)">友情链接</a></li>
+                        <li><a href="javascript:void(0)" >官方论坛</a></li>
+                        <li><a href="javascript:void(0)" >网站地图</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center fn-clear">
+                    <div class="footer-contact">
+                        <i class="icon-sp1 sp1-hotline-footer mr20"></i>
+                        <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-weibo ml10"></i></a>
+                        <div class="weixin-wrap">
+                            <i id="footerQrcode" class="icon-sp1 sp1-weixin ml10"></i>
+                           
+                        </div>
+                        <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-email ml10"></i></a>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="ui-container fn-clear">
+                    <div class="auth-link fn-clear">
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-norton-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-kexin-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-cfca-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-icp-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-police-normal"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p class="p1"><span class="copyright-left">©Copyright(c)2014 iqianjin.com.All Rights Reserved</span><a target="_blank" href="javascript:void(0)" rel="nofollow">京ICP备14017729</a></p>
+                        <p class="p2"><span class="copyright-left">京公网安备11010102001399号</span><a href="/icp/icp.jsp" target="_blank">京ICP证150121号</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+		<!--QQ客服-->
+
+		
+
+        </div>
+
+
+
+      
+    
+
+
+
+
+     <div id="popup"></div>
+
+    <div id="popupcontent" style="display:none">
+        <div class="popcon">
+
+            <div class="warpper">
+
+                  
+
+                  
+                    <div class="basicfrome">
+                       
+                       
+                      
+                      
+                     
+                        <div class="label">
+                            <div class="subject">联系人姓名：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecond" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecond" class="length4" placeholder="请输入联系人姓名" value="测试2">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">联系人关系：</div>
+                            <select name="ctl00$ctl00$ContentPlaceHolder1$Content3$SecondRelation" id="ctl00_ctl00_ContentPlaceHolder1_Content3_SecondRelation">
+    <option value="同事">同事</option>
+    <option selected="selected" value="好友">好友</option>
+    <option value="同学">同学</option>
+</select>
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">联系人电话：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondPhone" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondPhone" class="length4" placeholder="请输入联系人电话" onkeyup="value=value.replace(/[^\d]/g,'')" value="15689076543">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">所在单位：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondCompany" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondCompany" class="length2" placeholder="请输入联系人所在单位" value="北京大清邮局">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">工作地址：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondAddress" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondAddress" class="length2" placeholder="请输入联系人工作地址" value="北京朝阳区">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">职位：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondPosition" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondPosition" class="length4" placeholder="请输入联系人职位" value="测试工程">
+                        </div>
+                        <div class="label">
+                            <div class="subject">月薪：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondMonthly" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondMonthly" class="length4" placeholder="请输入联系人月薪" onkeyup="clearNoNum(this)" value="100000">元
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="bottom">
+                <a class="jhwc">确定</a>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript" src="../public/scripts/popup.js"></script>
+   <script type="text/javascript">
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        });
+
+
+         $(function(){
+            $(".tab a").click(function(){
+                var num=$(this).index();
+                var parent=$(this).parents(".tabview");
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on");
+                parent.find(".tabcontent").eq(num).show();
+                parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide();
+            
+            });
+
+
+
+
+            /*支付方式*/
+
+            $(".zft").change(function(){
+                if($(this)[0].checked==true){
+                    $(".showbank").slideDown();
+                }
+                
+            })
+
+             $(".beifu").change(function(){
+                if($(this)[0].checked==true){
+                     $(".showbank").slideUp();
+                }
+                
+            })
+
+            $(".showbank a").click(function(){
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on")
+            })
+            
+        });
+
+
+        $(".addmsg").bind("click",function(){
+          $.popup({
+                title:"添加/编辑联系人信息",
+                content: function(){
+                  return $("#popupcontent").html();
+                }, //内容
+                close: true, //是否关闭
+                closeCallback:null,
+                popupStyle: "jihuo",
+                popupPosition:"fixed"
+               
+           })
+
+       });
+
+       $(".jhwc").live("click",function(){
+            $.close(".popup",function(){
+                alert(1)
+            })
+       })
+
+
+        
+    })
+   </script>
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+</body></html>

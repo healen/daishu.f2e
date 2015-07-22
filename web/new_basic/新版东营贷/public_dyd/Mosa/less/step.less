@@ -1,0 +1,197 @@
+@import "../document";
+
+
+/*
+*2015
+*个人中心
+*zxd
+*/
+
+body{
+    background: #ffffff;
+}
+
+.mbx{
+    height: 50px;
+    margin-top: 10px;
+
+    font-size: @titleFoutSize;
+    .inmbx{
+        text-align: center;
+        width: @docWidth;
+        margin: 0px auto;
+        line-height: 50px;
+        
+        padding-left: 92px;
+    }
+}
+
+.content{
+    width: @docWidth;
+    margin: 0px auto;
+    min-height: 500px;
+    .une{
+        margin-top: 20px;
+        height: 60px;
+        position: relative;
+        ._clearfix();
+    
+        .steplist{
+            font-size: 20px;
+            position: absolute;
+            left: 0px;
+            top: 17px;
+            width: 100%;
+            ._clearfix();
+            .step{
+                color:#747474;
+                background: #ffffff;
+                float: left;
+                display: block;
+                padding: 0px 10px;
+                margin-left: 130px;
+                ._clearfix();
+                span{
+                    display: block;
+                    float: left;
+                    font-size: 14px;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    border-radius: 10px;
+                    text-align: center;
+                    margin-top: 3px;
+                    margin-right: 5px;
+                    border:1px solid #747474
+                }
+                &.on{
+                    color: @markColor;
+
+                    span{
+                        border-color:@markColor;
+                        background: @markColor;
+                        color: #ffffff;
+                    }
+                }
+            }
+            z-index: 1;
+        }
+
+        &:before{
+            position: absolute;
+            left: 0px;
+            content:"";
+            width: 100%;
+            overflow: hidden;
+            height: 0px;
+            border-top: 1px dotted #ddd;
+            top: 50%;
+            z-index: 1;
+        }
+    }
+}
+
+.frombox{
+    width: 900px;
+    margin: 50px auto;
+
+}
+
+.inputs{
+    ._clearfix();
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    .title{
+        text-align: right;
+        width: 100px;
+        float: left;
+        padding-right: 10px;
+        line-height: 30px;
+        span{
+            color: #ae4a4a;
+            padding-right: 5px;
+            padding-top: 5px;
+        }
+    }
+    a{
+        color: @markColor;
+        text-decoration:underline;
+    }
+    .con{
+
+
+
+        float: left;
+        width: 390px;
+        margin: 0 0;
+        input{
+            font-weight: 100;
+            &.txt{
+                border:1px solid #ddd;
+                height: 30px;
+                line-height: 30px;
+                width: 100%;
+                text-indent: 0.4rem;
+                font-weight: 100;
+                color: #555;
+                font-size: 14px;
+            }
+
+        }
+        select{
+            border:1px solid #ddd;
+            height: 30px;
+            line-height: 30px;
+            width: 100%;
+            text-indent: 0.4rem;
+            font-weight: 100;
+            color: #555;
+            font-size: 14px;
+        }
+        label{
+            float: left;
+            margin-left: 10px;
+            font-size: 14px;
+            margin-top: 5px;
+            width: 80px;
+
+
+            white-space: nowrap;
+
+            input{
+                float: left;
+                margin-top: 5px;
+                margin-right: 4px;
+
+            }
+        }
+
+    }
+    .alert{
+        float: left;
+        padding-left: 10px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+.btn{
+    padding: 5px 30px;
+    border-radius: 3px;
+    border:1px solid darken(#ccc, 10%);
+    color: #333;
+    
+
+    
+    &.main{
+        background-color: @markColor;
+        color: #ffffff;
+        border:1px solid darken(@markColor, 10%);
+        &:hover{
+            background: darken(@markColor, 10%)
+        }
+    }
+
+    
+}

@@ -1,0 +1,68 @@
+@import "../document";
+
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body{
+    background: @huiBackground;
+}
+.box{
+    .header{
+        background-color:@huiBackground;
+        .head{
+            .warp{
+                height: 148px;
+                .logobox{
+                    height: 148px;
+                    a{
+                        display: block;
+                        img{
+                            height: 110px;
+                            padding-top: 12px;
+                        }
+                    }
+                }
+                h1{
+                    float: left;
+                    font-size: 25px;
+                    line-height: 50px;
+                    padding-top: 12px;
+                    color: @auxTextColor;
+                    border-left: 1px solid @borderColor;
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+    }
+}
+.reg{
+    width: 1130px;
+    background: #fff;
+    border:1px solid @markBorderColor;
+    margin: 0px auto 20px auto;
+    padding: 60px 10px;
+    ._basicFrome();
+    .basicfrome{
+        .label{
+            margin-bottom: 20px;
+            input{
+                &.yzm{
+                     width: 208px;
+                }
+                &.sub{
+                    height: 50px;
+                    width: 250px;
+                }
+            }
+        }
+    } 
+}
+
+.jihuo{
+    width: 487px!important;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值成功</title>
+    <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/alert.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+   {% inc='header.tpl' %}
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+
+                <div class="myleft">
+
+                        <a href="index.html" class="index">管理首页</a>
+                        <div class="list">
+                            <div class="navbtn on">
+                                <a href="javascript:void(0)" class="sliderview"><span>账户管理</span></a>
+                                <div class="childlist" style="display:block">
+                                     <a href="javascript:void(0)" class="on"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                     <a href="javascript:void(0)"><span>信用认证</span></a>
+                                     <a href="javascript:void(0)"><span>VIP认证</span></a>
+                                     <a href="javascript:void(0)"><span>已认证专区</span></a>
+                                     <a href="javascript:void(0)"><span>隐私设置</span></a>
+                                     <a href="javascript:void(0)"><span>提醒设置</span></a>
+                                     <a href="javascript:void(0)"><span>登录密码</span></a>
+                                     <a href="javascript:void(0)"><span>交易密码</span></a>
+                                      <a href="javascript:void(0)"><span>安全问题</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>资金管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>借出管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>借入管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>好友管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="myright">
+                    <div class="mbx">您当前所在的位置><a href="#">首页</a> > <a href="#">充值成功</a></div>
+                    <div class="msgbox">
+                        <div class="warp">
+                            <h1>恭喜您，充值成功！</h1>
+
+                            <p>充值时间：<span>2015-6-3</span></p>
+                            <p>充值金额：<span>￥50000.00</span></p>
+                            <p>流水账号：<span>563231212</span></p>
+
+                            <div class="btnlist">
+                                <input type="button" value="继续充值">
+                                <input type="button" value="查看充值记录">
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--页脚-->
+    {% inc='footer.tpl' %}
+
+    </div>
+
+
+
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript">
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        })
+
+        
+    })
+   </script>
+
+  
+    
+</body>
+</html>

@@ -1,0 +1,524 @@
+#header {
+    position: relative;
+    z-index: 10000
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -217px;
+    z-index: 10000
+}
+
+.mousetop5 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.section {
+    position: relative;
+    z-index: 100;
+    height: 100%;
+    min-height: 600px;
+    overflow: hidden
+}
+
+.trans-wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.trans-p1 {
+    background: #4cc8e4
+}
+
+.trans-p1-bg {
+    height: 100%;
+    background: url(../../img/topic/p1bg.png?v=201505212155) center top no-repeat;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.trans-p1-con {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    margin-top: -120px;
+    left: 50%;
+    margin-left: -480px;
+    text-align: center
+}
+
+.trans-p1-con-img {
+    position: relative;
+    height: 310px;
+    text-align: left
+}
+
+.trans-p1-img0 {
+    display: block;
+    height: 300px
+}
+
+.trans-p1-img1 {
+    position: absolute;
+    top: 10px;
+    right: 214px;
+    height: 130px
+}
+
+.trans-p1-img2 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 130px
+}
+
+.trans-p1-img3 {
+    position: absolute;
+    top: 178px;
+    right: 214px;
+    height: 130px
+}
+
+.trans-p1-img4 {
+    position: absolute;
+    top: 178px;
+    right: 20px;
+    height: 130px
+}
+
+.trans-p1-ceo {
+    margin-top: 50px;
+    height: 102px;
+    position: relative
+}
+
+.trans-p1-ceo-left {
+    float: left;
+    margin: 0 40px
+}
+
+.trans-p1-ceo-right {
+    float: left;
+    margin-top: 30px;
+    width: 740px;
+    color: #fff
+}
+
+.trans-p1-ceo-right p {
+    font-size: 16px;
+    line-height: 28px
+}
+
+.trans-p2 {
+    background: url(../../img/topic/p2bg.png?v=201505212155)
+}
+
+.trans-p2-con {
+    width: 960px;
+    text-align: center;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -320px
+}
+
+.trans-p2-title {
+    position: absolute;
+    top: 0;
+    left: -1200px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p2-pic {
+    position: absolute;
+    bottom: 0;
+    right: -1500px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p21 {
+    position: absolute;
+    left: -303px;
+    top: 50px
+}
+
+.trans-p22 {
+    position: absolute;
+    left: -94px;
+    top: 130px
+}
+
+.trans-p23 {
+    position: absolute;
+    left: -170px;
+    top: 363px
+}
+
+.trans-p24 {
+    position: absolute;
+    right: -143px;
+    top: -188px
+}
+
+.trans-p25 {
+    position: absolute;
+    right: -388px;
+    top: 0
+}
+
+.trans-p26 {
+    position: absolute;
+    right: -164px;
+    top: 160px
+}
+
+.trans-p3 {
+    background: #ffdb83
+}
+
+.trans-p3-bg {
+    width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -320px;
+    margin-left: -480px;
+    height: 100%;
+    background: url(../../img/topic/p31.png?v=201505212155) center 150px no-repeat;
+    z-index: 99
+}
+
+.trans-p3-con {
+    height: 600px;
+    width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -300px;
+    text-align: center;
+    z-index: 99999
+}
+
+.trans-p3-slider {
+    width: 960px;
+    position: absolute;
+    z-index: 99999;
+    bottom: 20px;
+    right: -1200px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.bx-wrapper {
+    width: 550px!important
+}
+
+.trans-p3-title {
+    margin-bottom: 140px;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: -1200px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p31 {
+    position: absolute;
+    top: 245px;
+    left: -90px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p32 {
+    position: absolute;
+    top: -82px;
+    right: -80px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p33 {
+    position: absolute;
+    bottom: -170px;
+    right: -100px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p34 {
+    position: absolute;
+    top: -86px;
+    left: -68px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p3-opacity {
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p4 {
+    background: #ecedef
+}
+
+.trans-p4-bg {
+    height: 100%;
+    background: url(../../img/topic/p4bg.png?v=201505212155) center top no-repeat
+}
+
+.trans-p4-con {
+    width: 960px;
+    height: 656px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -300px;
+    text-align: center
+}
+
+.trans-p4-title {
+    position: absolute;
+    top: 0;
+    left: -1200px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p4-pic {
+    position: absolute;
+    bottom: 0;
+    right: -1200px;
+    opacity: 0;
+    filter: Alpha(opacity=0)
+}
+
+.trans-p41 {
+    position: absolute;
+    top: -150px;
+    left: -450px
+}
+
+.trans-p42 {
+    position: absolute;
+    top: 168px;
+    left: -50px
+}
+
+.trans-p43 {
+    position: absolute;
+    top: 500px;
+    left: -364px
+}
+
+.trans-p44 {
+    position: absolute;
+    top: 433px;
+    right: 69px
+}
+
+.trans-p45 {
+    position: absolute;
+    top: 266px;
+    right: 150px
+}
+
+.trans-p46 {
+    position: absolute;
+    top: 100px;
+    right: -430px
+}
+
+.trans-p5 {
+    overflow: hidden;
+    background: #f3f5fa
+}
+
+.trans-p5-bg {
+    background: url(../../img/topic/p5bg.png?v=201505212155);
+    height: 78%;
+    position: relative
+}
+
+.trans-p5-title {
+    margin-bottom: 80px
+}
+
+.trans-p5-con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -212px;
+    text-align: center
+}
+
+.trans-p5-item {
+    float: left;
+    width: 240px;
+    text-align: center
+}
+
+.trans-p5-item a {
+    color: #fff
+}
+
+.trans-p5-item p {
+    font-size: 18px;
+    width: 240px;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 25px;
+    text-align: left
+}
+
+.trans-p5-item-center {
+    margin: 0 110px
+}
+
+.trans-p5-btn {
+    text-align: center;
+    height: 22%;
+    position: relative
+}
+
+.trans-p5-btn-con {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -200px
+}
+
+.trans-p5-btn-con .ui-button {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-size: 18px;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    width: 160px
+}
+
+.trans-p5-btn-con .ui-button-red {
+    background: #ff5c00;
+    color: #fff;
+    margin-right: 40px
+}
+
+.trans-p5-btn-con .ui-button-grey {
+    background: #ebecee;
+    color: #384859
+}
+
+.trans-lead {
+    height: 100%;
+    right: 40px;
+    z-index: 99999;
+    position: absolute;
+    top: 50%;
+    margin-top: -133px
+}
+
+.tran-lead-item {
+    margin: 10px 0
+}
+
+.tran-lead-item a {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: #fff;
+    border: 1px solid #858585;
+    border-radius: 7px;
+    opacity: .5;
+    filter: Alpha(opacity=50)
+}
+
+.trans-lead .active a {
+    background: #66686b;
+    opacity: .5;
+    filter: Alpha(opacity=50);
+    box-shadow: 0 0 7px #fff
+}
+
+.trans-lead-arrow {
+    width: 20px;
+    _margin-left: -1px;
+    background: url(../../img/topic/arrow.png?v=201505212155) left top no-repeat;
+    padding-left: 2px;
+    line-height: 17px;
+    height: 20px;
+    overflow: hidden
+}
+
+.trans-lead-arrowtop {
+    width: 20px;
+    background: url(../../img/topic/arrowtop.png?v=201505212155) left top no-repeat;
+    height: 16px;
+    overflow: hidden;
+    _margin-left: -2px
+}
+
+.trans-lead-text {
+    width: 20px;
+    line-height: 17px;
+    word-break: break-all;
+    color: #66686b;
+    padding-top: 5px;
+    margin-left: 1px
+}
+
+.bx-wrapper .bx-viewport {
+    box-shadow: none;
+    background: 0 0
+}
+
+.bxslider {
+    text-align: center;
+    background: 0 0
+}
+
+.bx-wrapper img {
+    display: inline-block!important
+}
+
+.bx-pager-link {
+    background: #c6c6c6!important
+}
+
+.bx-pager-item .active {
+    background: #ffdb83!important;
+    box-shadow: 0 0 5px #fff!important
+}
+
+.bx-wrapper .bx-pager {
+    bottom: -40px
+}
+
+.ui-dialog-header {
+    border: none!important
+}
+
+.ui-dialog-title {
+    padding: 0!important
+}

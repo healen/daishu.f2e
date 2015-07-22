@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/reg.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+
+        {% inc='header.tpl' %}
+
+        <!--主体内容-->
+        <div class="container">
+            <div class="reg">
+                <div class="basicfrome">
+                    <div class="label">
+                        <div class="subject">用户名：</div>
+                        <input type="text" class="length2" placeholder="请输入真实姓名" value="zxd">
+                        <span class="xinghao">* 您的用户名已被注册</span>
+                    </div>
+
+                    <div class="label">
+                        <div class="subject">密码：</div>
+                        <input type="password" class="length2" placeholder="请输入昵称" value="healen">
+                        <span class="xinghao">* 不好意思您的密码不符合，中文字段2至5个字符,接受英文、数字</span>
+                    </div>
+
+                    <div class="label">
+                        <div class="subject">确认密码：</div>
+                        <input type="password" class="length2" placeholder="请输入昵称" value="healen">
+                         <span class="xinghao">* 两次输入密码不一致</span>
+                    </div>
+                    <div class="label">
+                        <div class="subject">验证码：</div>
+                        <input type="text" class="yzm" placeholder="请输入真实姓名" width="150" value="20">
+                         <a href="#"><img src="../public/img/yzm.png" height="31" alt=""></a>
+                        <span class="xinghao">*</span>
+                    </div>
+
+                    <div class="label">
+                        <div class="subject">激活邮箱：</div>
+                        <input type="text" class="length2" placeholder="请输入真实姓名" width="150" value="20">
+                        
+                        <span>收到邮件后，点击激活即可完成注册</span>
+                    </div>
+
+                    <div class="label">
+                        <div class="subject">&nbsp;</div>
+                        <span></span>
+                        <label>
+                            <input type="radio" class="radio"> 我已阅读并同意使用条款及隐私条款
+                        </label>
+                        
+                        
+                        <!-- <span class="xinghao">*</span> -->
+                    </div>
+
+                    <div class="label">
+                        <div class="subject"> &nbsp;</div>
+                        <input type="button" value="激 活" class="sub" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--页脚-->
+
+        {% inc='footer.tpl' %}
+      
+
+
+    </div>
+
+
+    <div id="popup"></div>
+
+    <div id="popupcontent">
+
+        <div class="popcon">
+            <div class="top">
+                 亲爱的贷鼠网用户，激活链接已经发送到你的
+
+                 <span class="mail">kaola</span>*****邮箱，点击链接即可注册成功
+                
+            </div>
+
+            <div class="bottom">
+                <a class="jhwc">激活已完成</a>
+            </div>
+            
+        </div>
+
+       
+        
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/popup.js"></script>
+   <script src="../public/scripts/global.js"></script>  
+   <script type="text/javascript">
+
+
+   $(".sub").bind("click",function(){
+      $.popup({
+            title:"",
+            content: function(){
+              return $("#popupcontent").html();
+            }, //内容
+            close: true, //是否关闭
+            closeCallback:null,
+            popupStyle: "jihuo",
+            popupPosition:"fixed"
+           
+       })
+
+   });
+
+   $(".jhwc").live("click",function(){
+        $.close(".popup")
+   })
+
+
+     
+   </script>
+   
+   
+    
+</body>
+</html>

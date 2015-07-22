@@ -1,0 +1,198 @@
+/*element样式*/
+/*按钮*/
+/*
+*2015
+*个人中心
+*zxd
+*/
+body {
+  background: #ffffff;
+}
+.mbx {
+  height: 50px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.mbx .inmbx {
+  text-align: center;
+  width: 1170px;
+  margin: 0px auto;
+  line-height: 50px;
+  padding-left: 92px;
+}
+.content {
+  width: 1170px;
+  margin: 0px auto;
+  min-height: 500px;
+}
+.content .une {
+  margin-top: 20px;
+  height: 60px;
+  position: relative;
+  *zoom: 1;
+}
+.content .une:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content .une .steplist {
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+  top: 17px;
+  width: 100%;
+  *zoom: 1;
+  z-index: 1;
+}
+.content .une .steplist:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content .une .steplist .step {
+  color: #747474;
+  background: #ffffff;
+  float: left;
+  display: block;
+  padding: 0px 10px;
+  margin-left: 130px;
+  *zoom: 1;
+}
+.content .une .steplist .step:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content .une .steplist .step span {
+  display: block;
+  float: left;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 3px;
+  margin-right: 5px;
+  border: 1px solid #747474;
+}
+.content .une .steplist .step.on {
+  color: #2ea7e0;
+}
+.content .une .steplist .step.on span {
+  border-color: #2ea7e0;
+  background: #2ea7e0;
+  color: #ffffff;
+}
+.content .une:before {
+  position: absolute;
+  left: 0px;
+  content: "";
+  width: 100%;
+  overflow: hidden;
+  height: 0px;
+  border-top: 1px dotted #ddd;
+  top: 50%;
+  z-index: 1;
+}
+.frombox {
+  width: 900px;
+  margin: 50px auto;
+}
+.inputs {
+  *zoom: 1;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+.inputs:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.inputs .title {
+  text-align: right;
+  width: 100px;
+  float: left;
+  padding-right: 10px;
+  line-height: 30px;
+}
+.inputs .title span {
+  color: #ae4a4a;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.inputs a {
+  color: #2ea7e0;
+  text-decoration: underline;
+}
+.inputs .con {
+  float: left;
+  width: 390px;
+  margin: 0 0;
+}
+.inputs .con input {
+  font-weight: 100;
+}
+.inputs .con input.txt {
+  border: 1px solid #ddd;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-indent: 0.4rem;
+  font-weight: 100;
+  color: #555;
+  font-size: 14px;
+}
+.inputs .con select {
+  border: 1px solid #ddd;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-indent: 0.4rem;
+  font-weight: 100;
+  color: #555;
+  font-size: 14px;
+}
+.inputs .con label {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 80px;
+  white-space: nowrap;
+}
+.inputs .con label input {
+  float: left;
+  margin-top: 5px;
+  margin-right: 4px;
+}
+.inputs .alert {
+  float: left;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.btn {
+  padding: 5px 30px;
+  border-radius: 3px;
+  border: 1px solid #b3b3b3;
+  color: #333;
+}
+.btn.main {
+  background-color: #2ea7e0;
+  color: #ffffff;
+  border: 1px solid #1c8bbf;
+}
+.btn.main:hover {
+  background: #1c8bbf;
+}

@@ -1,0 +1,460 @@
+/*
+*2015
+*招标列表
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.header {
+  box-shadow: 0px 1px 10px #c8c8c8;
+}
+.la-my {
+  width: 1132px;
+  margin: 12px auto;
+}
+.la-my .top {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  padding: 7px 0px;
+  border-radius: 3px;
+  *zoom: 1;
+}
+.la-my .top:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .top .left {
+  width: 685px;
+  float: left;
+  border-right: 1px solid #efefef;
+}
+.la-my .top .left .btnbox {
+  text-align: center;
+  padding: 10px 0px;
+}
+.la-my .top .left .btnbox a.mytz {
+  display: inline-block;
+  background: #06ade1;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.la-my .top .left .btnbox a.mytz:hover {
+  background: #0587af;
+}
+.la-my .top .left .title {
+  line-height: 48px;
+  padding: 0px 30px 10px 30px;
+  font-size: 18px;
+  color: #1f95da;
+}
+.la-my .top .left .tables .tr {
+  *zoom: 1;
+  overflow: hidden;
+  margin: 0px 4px;
+  text-align: center;
+  color: #333333;
+}
+.la-my .top .left .tables .tr:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .top .left .tables .tr .td {
+  float: left;
+  width: 25%;
+  line-height: 60px;
+  height: 60px;
+  border-bottom: 1px solid #eeeeee;
+}
+.la-my .top .left .tables .tr .td.fast {
+  width: 30%;
+}
+.la-my .top .left .tables .tr .td.last {
+  width: 20%;
+}
+.la-my .top .left .tables .tr .td .myspeed {
+  width: 102px;
+  height: 36px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 10%;
+  font-size: 12px;
+}
+.la-my .top .left .tables .tr .td .myspeed .smalls {
+  line-height: 20px;
+  display: block;
+}
+.la-my .top .left .tables .tr .td .myspeed .barbox {
+  width: 100px;
+  height: 10px;
+  display: block;
+  border: 1px solid #f39913;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.la-my .top .left .tables .tr .td .myspeed .barbox span {
+  height: 10px;
+  width: 50px;
+  background: #f39913;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+.la-my .top .left .tables .tr .td .myspeed {
+  margin-top: 8px;
+}
+.la-my .top .left .tables .tr .td a.mytz {
+  display: inline-block;
+  background: #06ade1;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.la-my .top .left .tables .tr .td a.mytz:hover {
+  background: #0587af;
+}
+.la-my .top .left .tables .tr:last-child .td {
+  border-bottom: none;
+}
+.la-my .top .left .tables .tr.th {
+  background: #f5f8fd;
+}
+.la-my .top .left .tables .tr.th .td {
+  font-size: 18px;
+  color: #333333;
+  border-bottom: none;
+  line-height: 26px;
+  height: 26px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.la-my .top .right {
+  float: left;
+  width: 442px;
+}
+.la-my .top .right .inright {
+  position: relative;
+  padding: 30px 30px;
+}
+.la-my .top .right .inright .listbox {
+  *zoom: 1;
+  line-height: 30px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.la-my .top .right .inright .listbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .top .right .inright .listbox .tit {
+  float: left;
+}
+.la-my .top .right .inright .listbox .con {
+  float: left;
+}
+.la-my .top .right .inright .toux {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border: 3px solid #06ade1;
+  overflow: hidden;
+  border-radius: 53px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.la-my .top .right .inright .toux img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.la-my .bottom {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  margin-top: 8px;
+}
+.la-my .bottom .tabview .tab {
+  height: 60px;
+  *zoom: 1;
+  background: #fbfbfb;
+  margin-bottom: -1px;
+}
+.la-my .bottom .tabview .tab:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .bottom .tabview .tab a {
+  display: block;
+  float: left;
+  line-height: 59px;
+  width: 160px;
+  text-align: center;
+  background: #fbfbfb;
+  color: #999999;
+  border-bottom: 1px solid #efefef;
+}
+.la-my .bottom .tabview .tab a:hover {
+  color: #333333;
+}
+.la-my .bottom .tabview .contant {
+  border-top: 1px solid #efefef;
+  min-height: 200px;
+  background: #fff;
+}
+.la-my .bottom .tabview .contant .tables {
+  margin-top: 20px;
+}
+.la-my .bottom .tabview .contant .tables .tr {
+  *zoom: 1;
+  overflow: hidden;
+  margin: 0px 4px;
+  text-align: center;
+  color: #333333;
+}
+.la-my .bottom .tabview .contant .tables .tr:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .bottom .tabview .contant .tables .tr .td {
+  float: left;
+  width: 33.33%;
+  line-height: 60px;
+  height: 60px;
+  border-bottom: 1px solid #eeeeee;
+}
+.la-my .bottom .tabview .contant .tables .tr:last-child .td {
+  border-bottom: none;
+}
+.la-my .bottom .tabview .contant .tables .tr.th {
+  background: #f5f8fd;
+}
+.la-my .bottom .tabview .contant .tables .tr.th .td {
+  color: #333333;
+  border-bottom: none;
+  line-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+.la-my .bottom .tabview .contant .tabcontent {
+  display: none;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper {
+  padding: 36px;
+  overflow: hidden;
+  position: relative;
+  *zoom: 1;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .left {
+  width: 520px;
+  float: left;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .left .title {
+  padding-bottom: 22px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .left .msg {
+  *zoom: 1;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .left .msg:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .left .msg .l {
+  padding-bottom: 22px;
+  float: left;
+  width: 300px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .left .msg .l.r {
+  width: 220px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right {
+  float: right;
+  width: 415px;
+  background: #f5f8fd;
+  border: 1px solid #efefef;
+  position: relative;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .warrpe {
+  width: 275px;
+  margin: 20px auto;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .warrpe .title {
+  text-align: center;
+  color: #f39913;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .warrpe p {
+  margin-bottom: 10px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .warrpe p i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  margin-right: 12px;
+  background: url('../images/ico.png') no-repeat -409px -165px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right img.sy {
+  width: 160px;
+  height: 152px;
+  position: absolute;
+  top: 50%;
+  margin-top: -76px;
+  left: -100px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .gungun {
+  width: 14px;
+  height: 44px;
+  overflow: hidden;
+  position: absolute;
+  background: url('../images/ico.png') no-repeat -355px -150px;
+  top: -22px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .gungun.r {
+  right: 55px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .right .gungun.l {
+  left: 55px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head {
+  *zoom: 1;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dotted #dddddd;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .left {
+  width: 740px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .left p {
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .left a {
+  color: #999999;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right {
+  width: 220px;
+  background: #fff;
+  border-color: #fff;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .name {
+  font-size: 18px;
+  color: #1f95da;
+  line-height: 24px;
+  *zoom: 1;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .name:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .name i {
+  display: inline-block;
+  width: 22px;
+  height: 24px;
+  float: left;
+  margin-right: 5px;
+  background: url('../images/ico.png') no-repeat -478px 0px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .name i.v1 {
+  background: url('../images/ico.png') no-repeat -478px 0px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .name i.v2 {
+  background: url('../images/ico.png') no-repeat -478px -24px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .name i.v3 {
+  background: url('../images/ico.png') no-repeat -478px -48px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .jibie {
+  font-size: 14px;
+  color: #06ade1;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .head .right .date {
+  font-size: 12px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot .title {
+  padding-bottom: 5px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot textarea {
+  width: 98%;
+  padding: 1%;
+  height: 100px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot .btnbox {
+  text-align: right;
+  padding: 10px 0px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot .btnbox input {
+  display: inline-block;
+  background: #06ade1;
+  height: 35px;
+  padding: 0px 40px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot .btnbox input:hover {
+  background: #0587af;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot .btnbox .reset {
+  background: #f39913;
+}
+.la-my .bottom .tabview .contant .tabcontent .warpper .msgbox .foot .btnbox .reset:hover {
+  background: #c97c0a;
+}
+.la-my .bottom .tabview .contant .info {
+  padding: 20px 40px;
+}
+.myright .mbx {
+  line-height: 67px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333;
+  background: #ffffff;
+  margin-bottom: -1px;
+  border-top: 2px solid #06ade1;
+  padding: 0px 25px;
+}

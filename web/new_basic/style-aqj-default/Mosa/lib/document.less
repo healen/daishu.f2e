@@ -1,0 +1,44 @@
+
+.-_document{
+    ._base(){
+        
+        //document的基础方法，对文档内容进行提前清除浮动。
+        //@method base
+        #hd,#bd,#ft,.hd,.bd,.ft,.g-clear,.g-mod,.g-mod .inner{
+            /*clearfix();*/
+        }
+    }
+    ._krssDoc(@id,@headHeight:64px,@bdWidth:@pageWidth,@ftHeight:230px){
+        (~"@{id}"){
+            height:100%;
+        }
+        .-_document base();
+
+        html,body{
+            height:100%;
+        }
+        #hd,#bd,#ft{
+            position:relative;
+        }
+        #hd{
+            z-index:4;
+            height:@headHeight;
+        }
+        #bd{
+            min-height:100%;
+            margin:-@headHeight auto -@ftHeight;
+        }
+        #bd-inner{
+            padding:@headHeight+33px  0 @ftHeight + 60px;
+            width:@bdWidth;
+            margin:0 auto;
+        }
+        #ft{
+            z-index:3;
+            width:100%;
+            height: @ftHeight;
+        }
+    }
+}
+
+

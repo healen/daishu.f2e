@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要借款</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/borrow.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+ 
+        {% inc='header.tpl' %}
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+             <a href="#" class="banner">
+                    <img src="../public/img/banner3.png" alt="">
+                </a>
+               <div class="borrow top">
+                   <div class="box">
+                       <div class="range" unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
+                           <div class="title">
+                               借款金额
+                               <input type="text" value="0" class="prise">
+                               元
+                           </div>
+                           <div class="commd">
+                                <div class="rangebar">
+                                    <div class="line"></div>
+                                    <div class="handerbar">￥</div>
+                                    <div class="numbar add">+</div>
+                                    <div class="numbar plus">-</div>
+                                    <div class="showScale" data-Company=""></div>
+                                    <div class="showSmallScale"></div>
+                                </div>
+                           </div>
+                           <input type="hidden" name="InitNumber" value="10">
+                           <input type="hidden" name="Step" value="20000">
+                           <input type="hidden" name="StepNumber" value="6">
+                           <input type="hidden" name="Result" value="">
+                       </div>
+
+
+                       
+
+
+
+
+                   </div>
+
+
+
+
+
+                   <div class="box">
+                       <div class="range" unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
+                           <div class="title">
+                               借款利率
+                           </div>
+                           <div class="commd">
+                                <div class="rangebar">
+                                    <div class="line"></div>
+                                    <div class="handerbar">%</div>
+                                    <div class="numbar add">+</div>
+                                    <div class="numbar plus">-</div>
+                                    <div class="showScale" data-Company="%"></div>
+                                    <div class="showSmallScale"></div>
+                                </div>
+                           </div>
+                           <input type="hidden" name="InitNumber" value="0">
+                           <input type="hidden" name="Step" value="2.5">
+                           <input type="hidden" name="StepNumber" value="10">
+                           <input type="hidden" name="Result" value="26">
+                       </div>
+                   </div>
+                   <div class="box">
+                       <div class="table">
+
+                            <label class="tr">
+                               <div class="td first">&nbsp;</div>
+                               <div class="td sen">借款期限</div>
+                               <div class="td">借款利率</div>
+                               <div class="td">月还款额</div>
+                               <div class="td last">总还款额</div>
+                            </label>   
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                     
+                       </div>
+                   </div>
+                   <div class="box end">
+                        <div class="btnbox">
+                            <a href="#" class="btn_a">申请借款</a>
+                        </div>
+                        
+                   </div>
+               </div>
+               <div class="borrow mit">
+                   <div class="box">
+                        <div class="title">
+                               借款流程
+                        </div>
+                        <div class="borrowOrd">
+                            <div class="borrowbar">
+                                <div class="yuan y1">1
+                                    <span>填写信息上传资料</span>
+                                </div>
+                                <div class="yuan y2">2
+                                    <span>提交申请</span>
+                                </div>
+                                <div class="yuan y3">3
+                                    <span>筹措借款</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                   </div>
+                   <div class="box end">
+                        <div class="title">
+                               必要申请资料
+                        </div>
+
+                        <div class="icobx">
+                            <div class="qure">
+                                <div class="ics sfz">
+                                <b>1</b>
+                                    
+                                </div>
+                                <p>身份证复印件</p>
+                                
+                            </div>
+
+                            <div class="qure center">
+
+                                 <div class="ics gzk">
+                                 <b>2</b>
+                                    
+                                </div>
+
+                                 <p>工资卡银行流水</p>
+                                 <p class="alert">(<a href="#">网银截屏</a>或上传银行打印流水照片)</p>
+                                
+                            </div>
+
+                            <div class="qure">
+                                 <div class="ics xy">
+                                 <b>3</b>
+                                    
+                                </div>
+                                 <p>央行信用报告</p>
+                                  <p class="alert">(<a href="#">网上获取</a>或到各地征信机构获取)</p>
+                                
+                            </div>
+                        </div>
+                        <div class="btnts">
+                           <i></i> 温馨提示：贷鼠网会根据借款人提交的资料及信息进行综合评估，不同信用资质的用户。在审核通过之后，会匹配不同比例的服务费，具体以信用审核结果为准。
+                        </div>
+                   </div>
+               </div>
+               <div class="borrow bottom">
+                   <div class="box end">
+                        <div class="title">
+                               贷款入门帮助
+                        </div>
+
+                        <div class="help">
+                           <a href="#">贷款利率是如何规定的</a>
+                           <a href="#">借款流程</a>
+                           <a href="#">贷款利率是如何规定的</a>
+                           <a href="#">借款流程</a>
+                           <a href="#">贷款利率是如何规定的</a>
+                           <a href="#">借款流程</a>
+                           <a href="#">贷款利率是如何规定的</a>
+                        </div>
+                   </div>
+               </div>
+  
+
+
+
+            
+
+
+
+
+            </div>
+        </div>
+
+        {% inc='footer.tpl' %}
+
+
+
+     
+
+
+
+		
+
+		
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript" src="../public/scripts/range.js"></script>
+ 
+   <script type="text/javascript">
+        $(".range").range({})
+   </script>
+    
+</body>
+</html>

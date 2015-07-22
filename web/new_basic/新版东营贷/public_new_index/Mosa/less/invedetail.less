@@ -1,0 +1,554 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+
+
+/*
+*2015
+*招标列表
+*zxd
+*/
+
+body{
+    background: @huiBackground;
+}
+.header{
+    box-shadow: 0px 1px 10px #c8c8c8;
+}
+.banner{
+    @height:350px;
+    height: @height;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .m-poolp {
+      background: url(../img/ind/bgpng.png) repeat;
+      width: 240px;
+      height: 235px;
+      text-align: center;
+      position: absolute;
+      right: 130px;
+      top: 50%;
+      margin-top: -118px;
+      z-index: 1;
+      p {
+          font-size: 16px;
+          color: #666;
+          padding: 30px 0 10px 0;
+      }
+      em {
+          font-size: 60px;
+          color: #ff6600;
+          display: block;
+          margin: 0px auto;
+      }
+      .p-account {
+          clear: both;
+          line-height: 30px;
+          color: #666666;
+          text-align: right;
+          font-size: 12px;
+          padding: 0 20px 10px 0;
+        }
+        .a-btn {
+      width: 205px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      display: inline-block;
+      background: #ff6600;
+      font-size: 18px;
+      color: #fff;
+      border-radius: 5px;
+    }
+    }
+
+
+
+    ul{
+         height: @height;
+         width: 100%;
+        li{
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            display: none;
+            top: 0px;
+            left: 0px;
+            text-align: center;
+            a{
+                display: block;
+                width: 1055px;
+                margin: 0px auto;
+                img{
+                    height: @height;
+                }
+            }
+        }
+    }
+    .btnlst{
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        text-align: center;
+        span{
+            cursor: pointer;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            background: #fff;
+            border-radius: 7px;
+            
+            //text-indent: -9999px;
+            font-size: 0;
+            margin: 0px 5px;
+            overflow: hidden;
+            &.on{
+                background-color: @markBgColor;
+            }
+        }
+    }
+    .prev,.next {
+        width: 60px;
+        height: 90px;
+        margin: -60px 0 0;
+        background: url(../images/ad_ctr.png) no-repeat 0 0;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        text-indent: -9999px;
+        filter: alpha(opacity=20);
+        opacity: 0.2;
+       
+    }
+    .prev{
+         left: 50px;
+    }
+    .next{
+        background-position: 0 -90px;
+        right: 50px;
+    }
+}
+.la-my {
+  @padding:10px;
+  width: @documentWidth;
+  margin: 12px auto; 
+
+  .top{
+    background: #fff;
+    border:1px solid @borderColor1;
+    padding:7px 0px;
+    border-radius: 3px;
+    ._clearfix();
+    .left{
+        width: 685px;
+        float: left;
+        border-right: 1px solid @borderColor2;
+        .btnbox{
+            text-align: center;
+            padding: 10px 0px;
+            a.mytz{
+                display: inline-block;
+                background: @markBgColor;
+                line-height: 35px;
+                padding: 0px 20px;
+                border-radius: 3px;
+                color: #ffffff;
+                cursor: pointer;
+                &:hover{
+                    background:darken(@markBgColor, 10%);
+                }
+            }
+        }
+        .title{
+            line-height: 48px;
+            padding: 0px 30px 10px 30px;
+            font-size: @titleFoutSize;
+            color: @markMy;
+        }
+
+        .tables{
+            .tr{
+                ._clearfix();
+               
+                overflow: hidden;
+                margin:0px 4px;
+                text-align: center;
+                color:  @myTextColor;
+                .td{
+                    float: left;
+                    width: 25%;
+                    line-height: 60px;
+                    height: 60px;
+                    &.fast{
+                        width: 30%;
+                    }
+                    &.last{
+                        width: 20%;
+                    }
+                    border-bottom:1px solid @borderColor1;
+                    .-speed ._base(myspeed);
+                    .myspeed{
+                        margin-top: 8px;
+                    }
+
+                    a.mytz{
+                        display: inline-block;
+                        background: @markBgColor;
+                        line-height: 35px;
+                        padding: 0px 20px;
+                        border-radius: 3px;
+                        color: #ffffff;
+                        cursor: pointer;
+                        &:hover{
+                            background:darken(@markBgColor, 10%);
+                        }
+                    }
+
+                }
+                &:last-child{
+                    .td{
+                        border-bottom:none;
+                    }
+                }
+
+                &.th{
+                    background:@danlan; 
+                    .td{
+                        font-size: @titleFoutSize;
+                        color: @myTextColor;
+                        border-bottom: none;
+                        line-height: 26px;
+                        height: 26px;
+                        font-size: @samllFoutSize;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            &.fn{
+
+            }
+        }
+    }
+    .right{
+        float: left;
+        width: @documentWidth+-690;
+        .inright{
+            position: relative;
+            padding: 30px 30px;
+            .listbox{
+                ._clearfix();
+                line-height: 30px;
+                font-size: @titleFoutSize;
+                .tit{
+                    float: left;
+                }
+                .con{
+                    float: left;
+
+                }
+                margin-top: 30px;
+
+            }
+
+            .toux{
+                .-box ._size(100px,100px);
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                border:3px solid @markBgColor;
+                overflow: hidden;
+                border-radius: 53px;
+                margin-right: 25px;
+                cursor: pointer;
+                img{
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            
+            
+        }
+    }
+  }
+
+  .bottom{
+    background: #fff;
+    border:1px solid @borderColor1;
+    border-radius: 3px;
+    margin-top: 8px;
+    .tabview{
+        .tab{
+            height: 60px;
+            
+            ._clearfix();
+            background: @boxBgColor;
+            margin-bottom: -1px;
+            a{
+                display: block;
+                float: left;
+                line-height: 59px;
+                width: 160px;
+                text-align: center;
+                border-right: 1px solid @borderColor2;
+                background: @boxBgColor;
+                color: @mainColor;
+                 border-bottom: 1px solid @borderColor2;
+                &:hover{
+                    color: @myTextColor;
+                }
+                &.on{
+                    background: #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+        }
+        .contant{
+            border-top: 1px solid @borderColor2;
+            min-height: 200px;
+            background: #fff;
+            .tables{
+                margin-top: 20px;
+                .tr{
+                    ._clearfix();
+                   
+                    overflow: hidden;
+                    margin:0px 4px;
+                    text-align: center;
+                    color:  @myTextColor;
+                    .td{
+                        float: left;
+                        width: 33.33%;
+                        line-height: 60px;
+                        height: 60px;
+                        border-bottom:1px solid @borderColor1;
+                    }
+                    &:last-child{
+                        .td{
+                            border-bottom:none;
+                        }
+                    }
+
+                    &.th{
+                        background:@danlan; 
+                        .td{
+                           
+                            color: @myTextColor;
+                            border-bottom: none;
+                            line-height: 55px;
+                            height: 55px;
+                           
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+            .tabcontent{
+                display: none;
+                .warpper{
+                    padding: 36px;
+                    overflow: hidden;
+                    position: relative;
+                    ._clearfix();
+                    .left{
+                        width: 520px;
+                        float: left;
+                        @pdbottom:22px;
+                        .title{
+                            padding-bottom: @pdbottom;
+                        }
+                        .msg{
+                             ._clearfix();
+                             .l{
+                                padding-bottom: @pdbottom;
+                                float: left;
+                                width: 300px;
+                                &.r{
+                                    width: 220px;
+                                }
+                             }
+                        }
+                    }
+                    .right{
+                        float: right;
+                        width: 415px;
+                        background: @danlan;
+                        border:1px solid @borderColor2;
+                        position: relative;
+                        .warrpe{
+                            width: 275px;
+                            margin: 20px auto;
+                            @marginbottom:10px;
+                            .title{
+                                text-align: center;
+                                color: @markBgColorAux;
+                                font-size: @titleFoutSize;
+                                margin-bottom:  @marginbottom+5;
+                            }
+                            p{
+                                margin-bottom:  @marginbottom;
+                                i{
+                                    display: inline-block;
+                                    width: 14px;
+                                    height: 14px;
+                                    overflow: hidden;
+                                    margin-right: 12px;
+                                    background: url('@{img}/ico.png') no-repeat -409px -165px;
+                                }
+                            }
+
+                        }
+
+                        img{
+                            &.sy{
+                                width: 160px;
+                                height: 152px;
+                                position: absolute;
+                                top: 50%;
+                                margin-top: -76px;
+                                left: -100px;
+                            }
+                        }
+
+                        .gungun{
+                            width: 14px;
+                            height: 44px;
+                            overflow: hidden;
+                            position: absolute;
+                            background: url('@{img}/ico.png') no-repeat -355px -150px;
+                            top:-22px;
+                            &.r{
+                                right: 55px;
+                            }
+                            &.l{
+                                left: 55px;
+                            }
+                        }
+
+                    }
+
+                    .msgbox{
+                        .head{
+                            ._clearfix();
+                            padding-bottom: 15px;
+                            margin-bottom: 15px;
+                            border-bottom: 1px dotted @borderColor;
+                            .left{
+                                width: 740px;
+                                p{
+                                    line-height: 24px;
+                                    margin-bottom: 15px;
+                                }
+                                a{
+                                    color: @mainColor;
+                                }
+                            }
+                            .right{
+                                width: 220px;
+                                background: #fff;
+                                border-color: #fff;
+                                .name{
+                                    font-size: @titleFoutSize;
+                                    color:@markMy; 
+                                    line-height: 24px;
+                                    ._clearfix();
+                                    i{
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 24px;
+                                        float: left;
+                                        margin-right: 5px;
+                                         background: url('@{img}/ico.png') no-repeat -478px 0px;
+                                         &.v1{
+                                             background: url('@{img}/ico.png') no-repeat -478px 0px;
+                                         }
+                                          &.v2{
+                                             background: url('@{img}/ico.png') no-repeat -478px -24px;
+                                         }
+
+                                          &.v3{
+                                             background: url('@{img}/ico.png') no-repeat -478px -48px;
+                                         }
+                                    }
+                                }
+                                .jibie{
+                                    font-size: @samllFoutSize;
+                                    color: @markBgColor;
+                                }
+                                .date{
+                                    font-size: @samllFout;
+                                }
+                            }
+                        }
+                        .foot{
+                            .title{
+                                padding-bottom: 5px;
+                            }
+                            textarea{
+                                width: 98%;
+                                padding: 1%;
+                                height: 100px;
+                                border-radius: 3px;
+                                border:1px solid @borderColor;
+                            }
+                            .btnbox{
+                                text-align: right;
+                                padding: 10px 0px;
+                                input{
+                                    display: inline-block;
+                                    background: @markBgColor;
+                                    
+                                    height: 35px;
+                                    padding: 0px 40px;
+                                    border-radius: 3px;
+                                    color: #ffffff;
+                                    cursor: pointer;
+                                    border:none;
+                                    margin-left: 10px;
+                                     &:hover{
+                                        background:darken(@markBgColor, 10%);
+                                    }
+                                }
+                                .reset{
+                                   
+                                    background: @markBgColorAux;
+                                     &:hover{
+                                        background:darken(@markBgColorAux, 10%);
+                                    }
+                                }
+
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            .info{
+                 padding: 20px 40px;
+            }
+           
+        }
+    }
+  }
+
+}
+
+.myright{
+        .mbx{
+            line-height: 67px;
+            border-bottom:1px solid  @borderColor1;
+            color: @myTextColor;
+            background: #ffffff;
+            margin-bottom: -1px;
+            border-top: 2px solid @markBgColor;
+            padding: 0px 25px;
+        }
+}

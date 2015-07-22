@@ -1,0 +1,411 @@
+/*
+*2015
+*个人中心
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.header {
+  box-shadow: 0px 1px 10px #c8c8c8;
+}
+.la-my {
+  width: 1132px;
+  margin: 0px auto;
+  margin-top: 20px;
+  *zoom: 1;
+}
+.la-my:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .myleft {
+  float: left;
+  width: 214px;
+  overflow: hidden;
+  margin-right: 7px;
+}
+.la-my .myright {
+  float: left;
+  width: 911px;
+  overflow: hidden;
+  margin-right: 0px;
+}
+.la-my {
+  margin-bottom: 40px;
+}
+.la-my .myleft .index {
+  height: 70px;
+  text-align: center;
+  background: #06ade1;
+  color: #fff;
+  display: block;
+  line-height: 70px;
+  border-radius: 3px 0px 0px 0px;
+}
+.la-my .myleft .list {
+  border-radius: 0px 0px 0px 3px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  overflow: hidden;
+}
+.la-my .myleft .list .navbtn {
+  background: #fbfbfb;
+  position: relative;
+}
+.la-my .myleft .list .navbtn i {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 26px;
+  z-index: 9;
+  top: 30px;
+  background-image: url('../images/ico.png');
+  background-repeat: no-repeat;
+  background-position: -109px -166px;
+}
+.la-my .myleft .list .navbtn a {
+  display: block;
+  height: 70px;
+  line-height: 69px;
+  text-align: center;
+}
+.la-my .myleft .list .navbtn a span {
+  display: block;
+  margin: 0px 26px;
+  border-bottom: 1px solid #efefef;
+  color: #333333;
+}
+.la-my .myleft .list .navbtn:last-child a span {
+  border-bottom: none;
+}
+.la-my .myleft .list .navbtn .childlist {
+  display: none;
+}
+.la-my .myleft .list .navbtn .childlist a {
+  display: block;
+  background: #f2f2f2;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+}
+.la-my .myleft .list .navbtn .childlist a span {
+  display: block;
+  margin: 0px 26px;
+  padding-left: 50px;
+  height: 48px;
+  border-bottom: 1px dotted #e4e4e4;
+  text-align: left;
+  font-size: 13px;
+  color: #666666;
+}
+.la-my .myleft .list .navbtn .childlist a:last-child span {
+  border-bottom: none;
+}
+.la-my .myleft .list .navbtn .childlist a:hover,
+.la-my .myleft .list .navbtn .childlist a.on {
+  background: #caecff;
+}
+.la-my .myleft .list .navbtn .childlist a:hover span,
+.la-my .myleft .list .navbtn .childlist a.on span {
+  color: #333333;
+}
+.la-my .myleft .list .navbtn.on i {
+  background-position: -109px -180px;
+}
+.la-my .myleft .list .navbtn.on > a span {
+  color: #06ade1;
+}
+.la-my .myright .mbx {
+  line-height: 67px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333;
+  background: #ffffff;
+  margin-bottom: -1px;
+  border-top: 2px solid #06ade1;
+  padding: 0px 25px;
+}
+.la-my .myright .topcontent {
+  background: #fff;
+  margin-bottom: 7px;
+  border: 1px solid #eeeeee;
+}
+.la-my .myright .topcontent .warp {
+  padding: 0px 24px;
+}
+.la-my .myright .topcontent .warp .mytop {
+  height: 190px;
+  *zoom: 1;
+  margin: 8px 0px;
+}
+.la-my .myright .topcontent .warp .mytop > b {
+  font-size: 20px;
+  padding-right: 20px;
+}
+.la-my .myright .topcontent .warp .mytop > span {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.la-my .myright .topcontent .warp .mytop > span .blur {
+  color: #06ade1;
+}
+.la-my .myright .topcontent .warp .mytop:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .myright .topcontent .warp .mytop .left {
+  float: left;
+  width: 50%;
+  height: 190px;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp {
+  *zoom: 1;
+  padding: 14px 0px;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp .toux {
+  width: 100px;
+  height: 100px;
+  float: left;
+  border: 3px solid #06ade1;
+  overflow: hidden;
+  border-radius: 53px;
+  margin-right: 25px;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp .toux img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp .content {
+  float: left;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp .content h2 {
+  color: #1f95da;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp .content .inp {
+  margin-bottom: 20px;
+}
+.la-my .myright .topcontent .warp .mytop .left .mywarp .content .inp p {
+  font-size: 12px;
+  color: #666666;
+}
+.la-my .myright .topcontent .warp .mytop .right {
+  width: 49.8%;
+  height: 190px;
+  float: left;
+  border-left: 1px solid #eeeeee;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp {
+  *zoom: 1;
+  padding: 14px 0px;
+  padding-left: 35px;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content {
+  float: left;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content h2 {
+  color: #1f95da;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content h2 span {
+  color: #06ade1;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .inp {
+  margin-bottom: 20px;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .inp p {
+  font-size: 14px;
+  color: #666666;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .inp p span {
+  color: #000000;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .icobxo {
+  text-align: center;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .icobxo a {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #06ade1;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .icobxo a:hover {
+  background-color: #0587af;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .icobxo a.txj {
+  background: #06ade1;
+}
+.la-my .myright .topcontent .warp .mytop .right .mywarp .content .icobxo a.txj:hover {
+  background-color: #0587af;
+}
+.la-my .myright .bottomcontent {
+  background: #fff;
+  margin-bottom: 7px;
+  border: 1px solid #eeeeee;
+}
+.la-my .myright .bottomcontent .warp {
+  padding: 0px 24px;
+}
+.la-my .myright .bottomcontent .warp div.box {
+  border-bottom: 1px solid #eeeeee;
+}
+.la-my .myright .bottomcontent .warp div.box:last-child {
+  border-bottom: none;
+  padding-bottom: 110px;
+}
+.la-my .myright .bottomcontent .warp div.box .sivebj {
+  width: 730px;
+  margin: 0px auto;
+  *zoom: 1;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.la-my .myright .bottomcontent .warp div.box .sivebj:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .myright .bottomcontent .warp div.box .sivebj.num {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.la-my .myright .bottomcontent .warp div.box .sivebj div {
+  width: 115px;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+.la-my .myright .bottomcontent .warp div.box .sivebj div span {
+  color: #06ade1;
+}
+.la-my .myright .bottomcontent .warp div.box .sivebj div.zwf {
+  width: 35px;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox {
+  width: 720px;
+  margin: 0px auto;
+  padding: 30px 0px 0px 0px;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox h2 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox h2 span.box {
+  display: inline-block;
+  border: none;
+  margin-right: 70px;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox h2 span.box span.huang {
+  color: #06ade1;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox h2 span.box span.lan {
+  color: #06ade1;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox p {
+  margin-bottom: 30px;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox p span.box {
+  display: inline-block;
+  margin-right: 25px;
+  border-bottom: none;
+}
+.la-my .myright .bottomcontent .warp div.box .listbox p span.box span {
+  color: #000000;
+}
+.icobxo {
+  text-align: center;
+}
+.icobxo i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+  background-image: url('../images/ico.png');
+  background-position: 0px -213px;
+  cursor: pointer;
+}
+.icobxo i.tx {
+  background-position: 0px -213px;
+}
+.icobxo i.tx:hover,
+.icobxo i.tx.on {
+  background-color: #c3e9ff;
+  background-position: 0px -248px;
+}
+.icobxo i.suo {
+  background-position: -35px -213px;
+}
+.icobxo i.suo:hover,
+.icobxo i.suo.on {
+  background-color: #c3e9ff;
+  background-position: -35px -248px;
+}
+.icobxo i.sj {
+  background-position: -70px -213px;
+}
+.icobxo i.sj:hover,
+.icobxo i.sj.on {
+  background-color: #c3e9ff;
+  background-position: -70px -248px;
+}
+.icobxo i.xx {
+  background-position: -105px -213px;
+}
+.icobxo i.xx:hover,
+.icobxo i.xx.on {
+  background-color: #c3e9ff;
+  background-position: -105px -248px;
+}
+.icobxo a {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #06ade1;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+.icobxo a:hover {
+  background-color: #0587af;
+}
+.icobxo a.txj {
+  background: #06ade1;
+}
+.icobxo a.txj:hover {
+  background-color: #0587af;
+}

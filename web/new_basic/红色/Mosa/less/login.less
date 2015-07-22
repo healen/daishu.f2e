@@ -1,0 +1,170 @@
+@import "../document";
+
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body{
+    background: @huiBackground;
+}
+.box{
+    .header{
+        background-color:@huiBackground;
+        .head{
+            .warp{
+                height: 148px;
+                .logobox{
+                    height: 148px;
+                    a{
+                        display: block;
+                        img{
+                            height: 110px;
+                            padding-top: 12px;
+                        }
+                    }
+                  
+                }
+                h1{
+                    float: left;
+                    font-size: 25px;
+                    line-height: 50px;
+                    padding-top: 12px;
+                    color: @auxTextColor;
+                    border-left: 1px solid @borderColor;
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+    }
+}
+.login{
+    width: @documentWidth;
+    height: 480px;
+    border:1px solid @borderColor;
+    margin: 0px auto 50px auto;
+    .-box ._shadow(0px 1px 5px #c5c5c5);
+    ._clearfix();
+    .l{
+        .-box ._size(721px,480px);
+        float: left;
+        img{
+            display: block;
+            height: 480px;
+        }
+    }
+    .r{
+        float: left;
+        .-box ._size(410px,480px);
+        .-bg ._color(#fff);
+        form{
+            display: block;
+            .-box ._size(354px,400px);
+            margin: 40px auto;
+            .title{
+                margin-bottom: 28px;
+            }
+            div.input{
+                height: 50px;
+                border:1px solid @borderColor;
+                border-radius: 3px;
+                overflow: hidden;
+                ._clearfix();
+                 &.username{
+                    .-icon ._base(login,50,'@{img}/ico.png',-2px,-160px,@huiBackground);
+                 }
+
+                 &.password{
+                    .-icon ._base(login,50,'@{img}/ico.png',-51px,-158px,@huiBackground);
+                 }
+                .i-login-50{
+                    display: block;
+                    float: left; 
+                }
+
+                input{
+                    height: 46px;
+                    *line-height: 46px;
+                    line-height: 46px;
+                    display: block;
+                    padding-left: 10px;
+                    width: 280px;
+                    border:1px solid #fff;
+                    float: left;
+
+                }
+            }
+            .tips{
+                color: @inputPlaceholderColor;
+            }
+            div.yzm{
+               ._clearfix();
+               div.input{
+                    width: 220px;
+                    float: left;
+                    margin-right: 10px;
+                    input{
+                        width: 220px;
+                    }
+               }
+               img{
+                width: 120px;
+                height: 48px;
+                border:1px solid @borderColor;
+               }
+            }
+            div.alert{
+                height: 28px;
+                line-height: 28px;
+                padding: 0px 10px;
+                text-align: center;
+                color: @alertTextColor;
+            }
+            .btnbox{
+               
+                .m-btn{
+                    .-form ._btnbase();
+                }
+                .-form ._button(login,58px,#f95723,1px solid #f95723,@color:#ffffff);
+                .btn-login{
+                    display: block;
+                    padding:0px 0px;
+                    width: 95%;
+                    margin: 10px auto;
+                    font-size: @bigFontSize;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #f33d03;
+                    }
+                }
+            }
+
+            .alist{
+                ._clearfix();
+                width: 95%;
+                margin: 0px auto;
+                a{
+                    display:block;
+                    &.left{
+                        float: left;
+                        text-align: left;
+                        color: @markBgColorAux;
+                        &:hover{
+                            color: @linkColorHover;
+                        }
+
+                    }
+                    &.right{
+                        float: right;
+                        text-align: right;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

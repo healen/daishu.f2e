@@ -1,0 +1,731 @@
+/*element样式*/
+
+.-icon{
+    ._base(@select,@size,@img,@x,@y,@color:none){
+        .m-icon{
+            .-display ._inline-block();
+            background-repeat: no-repeat;
+            vertical-align:top;
+            font-size:0;
+            line-height:0;
+            cursor: pointer;
+        }
+        .i-@{select}-@{size}{
+            .-bg ._img(@img);
+            .-box ._square(@size);
+            background-position: @x @y;  
+            background-color:@color      
+        }
+        // ._hover(@size,@type)when(@type = 1){
+        //     .i-@{select}-@{size}:hover,.i-@{select}-@{size}.hover{
+        //         @imgUrlHover:~'@{imgUrl}Hover';
+        //         .-bg ._img(@imgUrlHover, @imgType);
+        //     }
+        // }
+        // ._hover(@size,@type);
+    }
+}
+.-list{
+    ._base(@select,@height){
+        .list-@{select}{
+            li{
+
+                border-bottom: 1px dotted @borderColor;
+                line-height: @height;
+                color: @baseTextColor;
+            
+                ._clearfix();
+                .td{
+                    position: relative;
+                    float: left;
+                    width: 12%;
+                    text-align: center;
+                    .-text ._nowrap();
+                    .-text ._ellipsis();
+                    &.first{
+                        width: 40%;
+                        text-align: left;
+                        ._clearfix();
+                        .ico-20{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: @mainAuxColor;
+                            color: #ffffff;
+                            float: left;
+                            margin:21px 10px 0px 0px;
+                            line-height: 20px;
+                            text-align: center;
+                            border-radius: 2px;
+                            font-size: @samllFoutSize;
+                        }
+                    }
+                    &.left{
+                         width: 70%;
+                        text-align: left;
+                        ._clearfix();
+                        .ico-20{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            border:1px solid @markBgColor;
+                            background: none;
+                            color: @markBgColor;
+                            float: left;
+                            margin:20px 10px 0px 0px;
+                            line-height: 20px;
+                            text-align: center;
+                            border-radius: 20px;
+                            font-size: @samllFoutSize;
+                        }
+
+                    }
+                    &.right{
+                        float: right;
+                        color: @auxTextColor;
+                        width: auto;
+                    }
+                   
+                    
+                    &.last{
+                        text-align: right;
+                    }
+                }
+                &:last-child{
+                    border-bottom:none;
+                }
+                 &.title{
+                    border-bottom:none;
+                    font-size: @samllFoutSize;
+                    color: @lightTextColor;
+                    .td{
+                       &.first{
+                            .ico-20{
+                                visibility: hidden;
+                            }
+                     } 
+                    }
+                     
+                }
+            }
+            
+        }
+    }
+}
+
+.-speed{
+    ._base(@select){
+         .@{select}{
+            width: 102px;
+            height: 36px;
+            display: block;
+            margin: 0px auto;
+            margin-top: 10%;
+            font-size: 12px;
+            .smalls{
+                line-height: 20px;
+                display: block;
+            }
+            .barbox{
+                width: 100px;
+                height: 10px;
+                display: block;
+                border:1px solid @markBgColorAux;
+                overflow: hidden;
+                border-radius: 10px;
+                span{
+                    height: 10px;
+                    width: 50px;
+                    background: @markBgColorAux;
+                    display: block;
+                    border-radius: 0px 10px 10px 0px;
+                }
+            }
+        }
+    }
+   
+}
+
+
+
+/*按钮*/
+._btn(@height:40px,
+    @pdxy:30px,
+    @color:#fff,
+    @background:@markBgColor,
+    @ftsize:@baseFontSize,
+    @center:0
+    ){
+    cursor: pointer;
+    height:@height;
+    line-height: @height;
+    padding-left:@pdxy;
+    border-radius: 3px;
+    padding-right:@pdxy;
+    color: @color;
+    background: @background; 
+    font-size: @baseFontSize;
+    display: inline-block;
+    text-align: center;
+    &:hover{
+        background:darken(@background, 10%);
+    }
+}
+
+
+
+
+.-form{
+    ._btnbase(){
+        .m-btn{
+            .-display ._inline-block();
+            vertical-align: middle;
+            text-align:center;
+            cursor: pointer;
+            outline: none;
+            overflow: visible;
+            width: auto;
+            *width:1; 
+            .-box ._sizing(content-box);      
+        }
+    }
+    ._button(@select,@height:46px,@background:none,@border:1px solid #c8c8c8,@color:#aaaaaa){
+        .btn-@{select}{
+            height: @height;
+            padding: 0px 40px;
+            background: @background;
+            border:@border;
+            border-radius: 3px;
+            color:@color; 
+
+        }
+    }
+}
+.-my{
+    ._layout(@select:my,@cw:@documentWidth,@lw:214px,@rw:911px,@marginTop:40px){
+        .la-@{select}{
+            width: @cw;
+            margin: 0px auto;
+            margin-top: @marginTop;
+            ._clearfix();
+            .myleft{
+                float: left;
+                width: @lw;
+                overflow: hidden;
+                margin-right: 7px;
+            }
+            .myright{
+                float: left;
+                width: @rw;
+                overflow: hidden;
+                margin-right: 0px;
+            }
+        }
+
+    }
+}
+._basicFrome(){
+    .basicfrome{
+       font-size: @samllFoutSize;
+        .label{
+            ._clearfix();
+            margin-bottom: 5px;
+            &.showbank{
+                display: none;
+            }
+            .subject{
+                float: left;
+                width: 135px;
+                text-align: right;
+                line-height: 32px;
+            }
+            .blankico{
+                ._clearfix();
+                padding:10px 0px;
+                padding-left: 140px;
+                width: 600px;
+                a{
+                    display: block;
+                    float: left;
+                    margin-right: 10px;
+                    width: 120px;
+                    border:2px solid @borderColor;
+                    margin-bottom: 10px;
+                    &.on{
+                        border-color:@markBgColor; 
+                    }
+
+                }
+                img{
+                    display: block;
+                    margin: 0px auto;
+                   
+
+                 
+                }
+            }
+            input{
+
+                width: 160px;
+                padding: 0px 10px;
+                border-radius: 3px;
+                border:1px solid @borderColor;
+                height: 30px;
+                display: block;
+                float: left;
+
+                &.length4{
+                    width: 160px;
+                }
+                &.length2{
+                    width: 290px;
+                }
+                &.yzm{
+                    width: 75px;
+                    margin-right: 6px;
+                }
+
+                &.sub{
+                    background: @markBgColor;
+                    width: 100px;
+                    border-radius: 4px;
+                    color: #fff;
+                    border:none;
+                    margin-right: 10px;
+
+                    &:hover{
+                         background-color:darken(@markBgColor, 10%);
+                    }
+                }
+                &.bad{
+                     background: @markBorderColor;
+                    width: 100px;
+                    border-radius: 4px;
+                    color: #fff;
+                    border:none;
+                    margin-right: 10px;
+
+                    &:hover{
+                         background-color:darken(@markBorderColor, 10%);
+                    }
+                }
+
+                &.radio{
+                    width:auto;
+                    margin-top: 2px;
+                   
+                }
+
+
+                &.checkbox{
+                    width:auto;
+                   
+                } 
+        
+            }
+            .yzmbtn{
+                display: inline-block;
+                line-height: 32px;
+                background: @markBgColorAux;
+                text-align: center;
+                border-radius: 2px;
+                color: #fff;
+                border:none;
+                width: 100px;
+                margin-left: 10px;
+            }
+
+             select{
+                    width: 180px;
+                    border-radius: 3px;
+                    padding-left: 10px;
+                    border:1px solid @borderColor;
+                    height: 30px;
+                    display: block;
+                    float: left;
+             }
+             textarea{
+                width: 690px;
+                padding: 0px 10px;
+                height: 100px;
+                border-radius: 3px;
+                float: left;
+                border:1px solid @borderColor;
+             }
+
+            .xinghao{
+                line-height: 32px;
+                padding-left: 10px;
+                color: @markBgColor;
+            }
+            span{
+                line-height: 32px;
+                padding-left: 5px;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+//普通列表
+._tables(){
+    .tables{
+        margin-top: 20px;
+        .tr{
+            ._clearfix();
+           
+            overflow: hidden;
+            margin:0px 4px;
+            text-align: center;
+            color:  @myTextColor;
+            .td{
+                float: left;
+                width: 33.33%;
+                line-height: 60px;
+                height: 60px;
+                border-bottom:1px solid @borderColor1;
+            }
+            &:last-child{
+                .td{
+                    border-bottom:none;
+                }
+            }
+
+            &.th{
+                background:@danlan; 
+                .td{
+                   
+                    color: @myTextColor;
+                    border-bottom: none;
+                    line-height: 55px;
+                    height: 55px;
+                   
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+
+//个人中心列表
+._myTable(){
+     .my_list_top{
+        padding: 10px;
+        margin-bottom: 10px;
+
+        border-bottom: 1px solid @borderColor1;
+        .bar{
+            padding-bottom: 10px;
+        }
+        span{
+            display: inline-block;
+            line-height: 34px;
+            &.box{
+                display: inline-block;
+                margin-right: 10px;
+            }
+            &.sidetitle{
+                width: 120px;
+                text-align: right;
+                padding-left: 10px;
+            }
+
+        }
+        select{
+          
+          border: 1px solid @borderColor;
+          height: 36px;
+          padding: 0px 10px
+        }
+        input{
+            &.text{
+              width: 160px;  
+              border: 1px solid @borderColor;
+              height: 34px;
+              padding: 0px 10px
+            }
+
+            &.time{
+              width: 120px;  
+              border: 1px solid @borderColor;
+              height: 34px;
+              padding: 0px 10px;
+              background: url('@{img}/ico.png') no-repeat right -113px;
+            }
+            &.subBut{
+                display: inline-block;
+                background: @markBgColor;
+                line-height: 35px;
+                padding: 0px 20px;
+                border-radius: 3px;
+                color: #ffffff;
+                cursor: pointer;
+                border:none;
+                &:hover{
+                    background:darken(@markBgColor, 10%);
+                }
+
+
+            }
+
+             &.retBut{
+                   display: inline-block;
+                    background: @markBgColorAux;
+                    line-height: 35px;
+                    padding: 0px 20px;
+                    border-radius: 3px;
+                    color: #ffffff;
+                    cursor: pointer;
+                    border:none;
+                    &:hover{
+                        background:darken(@markBgColorAux, 10%);
+                    }
+                }
+
+            
+        }
+    }
+     .my_list_bottom{
+        table{
+            line-height: 30px;
+            tr{
+                td{
+                    border-bottom: 1px dotted @borderColor2;
+                    padding: 15px 5px;
+                    ._clearfix();
+                    font-size: @samllFoutSize;
+                    a{
+                        &.tit{
+                             display: inline-block;
+                            width: 130px;
+                            line-height: 30px;
+                            float: left;
+                            .-text ._nowrap();
+                            .-text ._ellipsis();
+
+                            }
+                       
+                    }
+                    .-speed ._base(myspeed);
+                    .myspeed{
+                        margin-top: 0px;
+                        text-align: center;
+                    }
+
+                    span{
+                        &.mack{
+                            color: @markBgColor;
+                        }
+                    }
+
+                   
+                }
+            }
+            th{
+                background: @boxBgColor;
+                border-bottom: 1px dotted @borderColor2;
+                padding: 15px 5px;
+               
+              
+            }
+
+        }
+
+
+          .center{
+                        text-align: center;
+                    }
+
+
+    }
+}
+
+
+//分页
+._pageList(@list){
+    .page-@{list}{
+        text-align: center;
+        padding: 10px 0px;
+        a{
+            display: inline-block;
+            padding: 2px 10px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            &.num{
+                border:1px  solid @borderColor;
+               
+                &.on{
+                    border:1px  solid @markBgColorAux;
+                    background: @markBgColorAux;
+                    color: #fff;
+                }
+            }
+        }
+       
+    }
+}
+
+
+
+
+/*公共样式*/
+.box{
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+  .article-new {
+      position: absolute;
+      padding-left: 4px;
+      top: 6px;
+      animation: Beat 1s infinite;
+      -webkit-animation: Beat 1s infinite;
+      -moz-animation: Beat 1s infinite;
+      -o-animation: Beat 1s infinite;
+    }
+}
+/*header*/
+/*私有样式*/
+.box{
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+/*过渡样式*/
+a{
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -ms-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.underline{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.xinghao{
+    color: @markBgColor;
+}
+input{
+    &.text{
+      width: 160px;  
+      border: 1px solid @borderColor;
+      height: 34px;
+      padding: 0px 10px
+    }
+    &.time{
+      width: 120px;  
+      border: 1px solid @borderColor;
+      height: 34px;
+      padding: 0px 10px;
+      background: url('@{img}/ico.png') no-repeat right -113px;
+    }
+    &.subBut{
+        display: inline-block;
+        background: @markBgColor;
+        line-height: 35px;
+        padding: 0px 20px;
+        border-radius: 3px;
+        color: #ffffff;
+        cursor: pointer;
+        border:none;
+        &:hover{
+            background:darken(@markBgColor, 10%);
+        }
+    }
+     &.retBut{
+           display: inline-block;
+            background: @markBgColorAux;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            border:none;
+            &:hover{
+                background:darken(@markBgColorAux, 10%);
+            }
+        } 
+}
+
+
+.bottonbox{
+    margin-top: 10px;
+    padding:20px 0px;
+    text-align: center;
+    &.subBut{
+        display: inline-block;
+        background: @markBgColor;
+        line-height: 35px;
+        padding: 0px 20px;
+        border-radius: 3px;
+        color: #ffffff;
+        cursor: pointer;
+        border:none;
+       
+        &:hover{
+            background:darken(@markBgColor, 10%);
+        }
+
+
+    }
+
+     &.retBut{
+           display: inline-block;
+            margin-right: 10px;
+            background: @markBgColorAux;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            border:none;
+            &:hover{
+                background:darken(@markBgColorAux, 10%);
+            }
+        }
+}
+
+/*信用等级*/
+ span{
+    &.samllmark{
+        font-size: 12px;
+    }
+    &.dj{
+        width: 45px;
+        height: 24px;
+        background: @markBgColorMain;
+        display: inline-block;
+        text-align: center;
+        line-height: 24px;
+        font-size: @baseFontSize;
+        color: #fff;
+        border-radius: 12px;
+
+    }
+    &.e{
+        background: @markBgColor;
+        
+    }
+}
+//当前位置
+.mbx{
+    padding: 5px 25px;
+    a{
+        color: @baseTextColor;
+        padding: 0px 0px;
+        &:hover{
+            color: @linkColorHover;
+        }
+    }
+}
+
+
+
+

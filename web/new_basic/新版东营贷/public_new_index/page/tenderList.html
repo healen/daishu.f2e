@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招标列表</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/tenderList.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+         
+ <!-----header.tpl开始读取---->
+    <div class="header">
+        <div class="hhead">
+            <div class="content">
+                <div class="l">
+                    <a href="">帮助中心</a>
+                    <span>|</span>
+                    <a href="">免费注册</a>
+                    <span>|</span>
+                    <a href="">登陆</a>
+                </div>
+                <div class="r">
+                    <div class="wx">
+                        <span class="ico weixin"></span>
+                        <p class="erweima">
+                            <img src="../public/img/erweima.jpg" alt="">
+                        </p>
+                    </div>
+                    <div class="qq">
+                        <span class="ico tentsnt"></span>
+                        <span>123456789</span>
+                    </div>
+                     <div class="tel">
+                        <span class="ico phone"></span>
+                        <span>400-666-8888</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="hbody">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="../public/img/logo1.png" alt="">
+                </a>
+            </h1>
+            <ul class="nav">
+                <li><a href="#">我要投资</a></li>
+                <li><a href="#">我的账户</a></li>
+                <li><a href="#">安全保障</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">新手引导</a></li>
+                <li><a href="#">活动专区</a></li>
+            </ul>                        
+        </div>
+    </div>
+ <!-----header.tpl读取完成---->
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <a href="#" class="banner">
+                    <img src="../public/img/banner3.png" alt="">
+                </a>
+
+                <div class="wherebox">
+                    <div class="titlebox">
+                        <h2 style="background-color: #2ea7e0; color: #ffffff;">
+                            <span style="cursor: pointer;" onclick="showInfo(this);" id="status" remark="1">正在招标</span><i style="background-image: none; width:20px;"></i>
+                        </h2>
+                        <h2>
+                            <span style="cursor: pointer;" onclick="showInfo(this);" id="Span1" remark="2">推荐招标</span><i style="background-image: none; width:20px;"></i>
+                        </h2>
+                        <h2>
+                            <span style="cursor: pointer;" onclick="showInfo(this);" id="Span2" remark="3">成功招标</span><i style="background-image: none; width:20px;"></i>
+                        </h2>
+
+                        <div class="markbox">
+                        </div>
+                        
+                    </div>
+
+                    <div class="contentlist">
+                        <div class="listbox">
+                            <div class="ltr">
+                                <div class="ltd fast">利率：</div>
+                                <div class="ltright">
+                                    <div class="ltd"><a href="javascript:void(0)">10%-12%</a> </div>
+                                    <div class="ltd on"><a href="javascript:void(0)">12%-16%</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">16%-18%</a>  </div>
+                                </div>
+                            </div>
+                            <div class="ltr">
+                                <div class="ltd fast">期限：</div>
+                                <div class="ltright">
+                                    <div class="ltd"><a href="javascript:void(0)">1月以下</a> </div>
+                                    <div class="ltd on"><a href="javascript:void(0)">1-3月</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">3-6月</a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">6-12月 </a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">12月以上</a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">1月以下</a> </div>
+                                    <div class="ltd on"><a href="javascript:void(0)">1-3月</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">3-6月</a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">6-12月 </a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">12月以上</a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">1月以下</a> </div>
+                                    <div class="ltd on"><a href="javascript:void(0)">1-3月</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">3-6月</a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">6-12月 </a>  </div>
+                                    <div class="ltd"><a href="javascript:void(0)">12月以上</a>  </div>
+                                </div> 
+                            </div>
+                            <div class="ltr">
+                                <div class="ltd fast">借款类型：</div>
+                                 <div class="ltright">
+                                    <div class="ltd"><a href="javascript:void(0)">普通借款标</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">债权转让标</a> </div>
+                                </div>
+                            </div>
+                            <div class="ltr">
+                                <div class="ltd fast">保障模式：</div>
+                                <div class="ltright">
+                                    <div class="ltd"><a href="javascript:void(0)">担保模式</a> </div>
+                                </div>
+                            </div>
+                            <div class="ltr">
+                                <div class="ltd fast">其投金额：</div>
+                                <div class="ltright">
+                                    <div class="ltd"><a href="javascript:void(0)">￥1000~￥5000</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">￥5000~￥10000</a> </div>
+                                    <div class="ltd"><a href="javascript:void(0)">￥10000以上</a>  </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="listbox">
+                    <div class="tr th">                                                                                                    
+                        <div class="td fast">借款标题</div>
+                        <div class="td">年利率</div>
+                        <div class="td">借款金额</div>
+                        <div class="td">借款期限</div>
+                        <div class="td">进度</div>
+                        <div class="td">状态</div>
+                    </div>
+                    <div class="tr">
+                        <div class="td fast">合拍E贷201501300164</div>
+                        <div class="td">15.54%</div>
+                        <div class="td">￥4,990,000.00</div>
+                        <div class="td">2月</div>
+                        <div class="td">
+                            <span class="myspeed">
+                                <span class="smalls">50%</span>
+                                <span class="barbox"><span style="width:50px"></span></span>
+                            </span>
+                        </div>
+                        <div class="td">
+                            <a href="#" class="mytz">我要投资</a>
+                        </div>
+                    </div>
+
+                     <div class="tr">
+                        <div class="td fast">合拍E贷201501300164</div>
+                        <div class="td">15.54%</div>
+                        <div class="td">￥4,990,000.00</div>
+                        <div class="td">2月</div>
+                        <div class="td">
+                            <span class="myspeed">
+                                <span class="smalls">50%</span>
+                                <span class="barbox"><span style="width:50px"></span></span>
+                            </span>
+                        </div>
+                        <div class="td">
+                            <a href="#" class="mytz">我要投资</a>
+                        </div>
+                    </div>
+
+
+                     <div class="tr">
+                        <div class="td fast">合拍E贷201501300164</div>
+                        <div class="td">15.54%</div>
+                        <div class="td">￥4,990,000.00</div>
+                        <div class="td">2月</div>
+                        <div class="td">
+                            <span class="myspeed">
+                                <span class="smalls">50%</span>
+                                <span class="barbox"><span style="width:50px"></span></span>
+                            </span>
+                        </div>
+                        <div class="td">
+                            <a href="#" class="mytz">我要投资</a>
+                        </div>
+                    </div>
+
+
+                     <div class="tr">
+                        <div class="td fast">合拍E贷201501300164</div>
+                        <div class="td">15.54%</div>
+                        <div class="td">￥4,990,000.00</div>
+                        <div class="td">2月</div>
+                        <div class="td">
+                            <span class="myspeed">
+                                <span class="smalls">50%</span>
+                                <span class="barbox"><span style="width:50px"></span></span>
+                            </span>
+                        </div>
+                        <div class="td">
+                            <a href="#" class="mytz">我要投资</a>
+                        </div>
+                    </div>
+
+
+                     <div class="tr">
+                        <div class="td fast">合拍E贷201501300164</div>
+                        <div class="td">15.54%</div>
+                        <div class="td">￥4,990,000.00</div>
+                        <div class="td">2月</div>
+                        <div class="td">
+                            <span class="myspeed">
+                                <span class="smalls">50%</span>
+                                <span class="barbox"><span style="width:50px"></span></span>
+                            </span>
+                        </div>
+                        <div class="td">
+                            <a href="#" class="mytz">我要投资</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+
+            
+
+
+
+
+            </div>
+        </div>
+
+
+        <!--footer.tpl开始读取-->
+    <div class="footer">
+        <div class="warper">
+            <div class="left">
+                <div class="content">
+                    <div class="footnav">
+                        <a href="#">我要投资</a>
+                        <span>|</span>
+                        <a href="#">帮助中心</a>
+                        <span>|</span>
+                        <a href="#">关于我们</a>
+                        <span>|</span>
+                        <a href="#">新闻公告</a>
+                    </div>
+                    <p>Copyright © 2015 XXXXXX All Rights Reserved. 版权所有</p>
+                    <p>京ICP备 12345678-1号    法律顾问：贷鼠网</p>
+                    <p>推荐使用IE7以上版本浏览器浏览</p>
+                    <p>
+                        <img src="../public/images/xin1.png" alt=""/>
+                        <img src="../public/images/xin2.png" alt=""/>
+                        <img src="../public/images/xin3.png" alt=""/>
+                        <img src="../public/images/xin4.png" alt=""/>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <div class="telbox">
+                        <div class="ico"></div>
+                        <div class="contentbox">
+                            <div class="title">全国客服热线</div>
+                            <div class="tel">400-666-888</div>
+                        </div>       
+                    </div>
+
+                    <div class="address">
+                        <div class="title">地址：</div>
+                        北京市朝阳区劲松南磨房路37号华腾北塘1505
+                    </div>
+
+
+                     <div class="address">
+                        <div class="title">工作时间：</div>
+                        09：00 ~ 18：00
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+<!--footer.tpl读取完成-->
+
+
+
+
+     
+
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript">
+
+    $(function(){
+
+        (function(){
+            var strHtml=""
+            $(".ltd").bind("click",trendlistInit);
+            function trendlistInit(){
+                var tr=$(this).parents(".ltr");
+                var trIndex=tr.index();
+                var tdIndex=$(this).index();
+                var val=$(this).find("a").html();
+                strHtml='<span class="mark r'+trIndex+'"><span class="content">'+val+'</span><span class="close"></span></span>';
+                // if(tdIndex==1){
+                //     $(".r"+trIndex).remove();
+                //     $(this).siblings(".ltd").removeClass("on");
+                //     return 
+                // }
+                $(this).addClass("on").siblings(".ltd").removeClass("on");
+                if($(".r"+trIndex).length==0){
+                    $(".markbox").append(strHtml);
+                }else{
+                    $(".r"+trIndex).find(".content").html(val);
+                }
+            }
+        })()
+
+        $(".markbox >.mark>.close").live("click",function(){
+            var p=$(this).parents(".mark")
+            var regex=/\d+$/g
+
+            var num=p.attr("class");
+            var arr=regex.exec(num)
+
+            p.remove();
+           $(".listbox .ltr").eq(arr[0]).find(".ltd").removeClass("on");
+
+        })
+        
+    })
+
+
+        function showInfo(obj) {
+            selectInfoObj = obj;
+            var parentObj = $(obj).parent();
+            parentObj.css("background-color", "#2ea7e0").css("color", "#ffffff");
+            parentObj.siblings().css("background-color", "").css("color", "").css("border", "");
+            var status = $(obj).attr("remark");
+            //getInfolist(status);
+        }
+   </script>
+    
+</body>
+</html>

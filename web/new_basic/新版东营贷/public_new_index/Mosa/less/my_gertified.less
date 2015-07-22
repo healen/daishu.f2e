@@ -1,0 +1,477 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+/*
+*2015
+*个人中心
+*zxd
+*/
+
+body{
+    background: @huiBackground;
+}
+.header{
+    box-shadow: 0px 1px 10px #c8c8c8;
+}
+.-my ._layout(my,@documentWidth,214px,911px,20px);
+.la-my{
+    margin-bottom: 40px;
+     ._pageList(list);
+    .myleft{
+         @listTitleHeight:70px;
+        .index{
+            height: @listTitleHeight;
+            text-align:center;
+            background: @markBgColor;
+            color: #fff;
+            display: block;
+            line-height: @listTitleHeight;
+            border-radius: 3px 0px 0px 0px
+        }
+        .list{
+            border-radius: 0px 0px 0px 3px;
+            border:1px solid @borderColor1;
+            border-top: none;
+            overflow: hidden;
+            .navbtn{
+                background: @boxBgColor;
+                position: relative;
+
+                i{
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    right: 26px;
+                    z-index: 9;
+                    top: 30px;
+                    background-image: url('@{img}/ico.png');
+                    background-repeat: no-repeat;
+                    background-position: -109px -166px; 
+                }
+                a{
+                    display: block;
+                    height: @listTitleHeight;
+                    line-height: @listTitleHeight+-1;
+                    text-align:center;
+                    span{
+                        display: block;
+                        margin: 0px 26px;
+                        border-bottom: 1px solid @borderColor2;
+                        color: @myTextColor;
+                    }
+                }
+                &:last-child{
+                    a{
+                        span{
+                             border-bottom:none;
+                        }
+                    }
+                }
+                .childlist{
+                    display: none;
+                     a{
+                        display: block;
+                        background: @huiBackground;
+                        height: 49px;
+                        line-height: 49px;
+                        text-align:center;
+                        span{
+                            display: block;
+                            margin: 0px 26px;
+                            padding-left: 50px;
+                            height: 48px;
+                            border-bottom: 1px dotted #e4e4e4;
+                            text-align: left;
+                            font-size: @samllFoutSize+-1;
+                            color: @auxTextColor;
+                        }
+                        &:last-child{
+                            span{
+                                border-bottom: none;
+                            }
+                        }
+                        &:hover,&.on{
+                            background: #caecff;
+                            span{
+                                color: @myTextColor;
+                            }
+                        }
+                    }
+                }
+                 &.on{
+                    i{
+                        background-position: -109px -180px;
+                    }
+                    &>a{
+                        span{
+                            color: @linkColorHover;
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+    }
+    .myright{
+         .mbx{
+            line-height: 67px;
+            border-bottom:1px solid  @borderColor1;
+            color: @myTextColor;
+            background: #ffffff;
+            margin-bottom: -1px;
+            border-top: 2px solid @markBgColor;
+            padding: 0px 25px;
+        }
+        .tabview{
+        .tab{
+            height: 60px;
+            
+            ._clearfix();
+            background: @boxBgColor;
+            margin-bottom: -1px;
+             border-top: 1px solid @borderColor2;
+            a{
+                display: block;
+                float: left;
+                line-height: 59px;
+                padding: 0px 15px;
+                text-align: center;
+                border-right: 1px solid @borderColor2;
+               
+                background: @boxBgColor;
+                color: @mainColor;
+                 border-bottom: 1px solid @borderColor2;
+                &:hover{
+                    color: @myTextColor;
+                }
+                &.on{
+                    background: #fff;
+                    border-bottom: 1px solid #fff;
+                }
+                &.last{
+                    border-right: none;
+                }
+            }
+
+        }
+        .contant{
+            border-top: 1px solid @borderColor2;
+            min-height: 200px;
+            background: #fff;
+            min-height: 850px;
+           
+            .tabcontent{
+                display: none;
+                .warpper{
+                    color: @auxTextColor;
+                    padding: 8px 15px;
+                    overflow: hidden;
+                    position: relative;
+                    ._myTable();
+                    ._clearfix();
+                    .msg{
+                        padding: 20px 40px 0px 40px;
+                        background: @danlan;
+                        font-size: @samllFoutSize;
+                       
+                        p{
+                            padding-bottom: 15px;
+                        }
+                    }
+
+                    .vip{
+                        padding:10px;
+                        .titles{
+                            margin-bottom: 10px;
+                        }
+
+                    }
+
+                    .title{
+                        line-height: 60px;
+                        padding: 0px 40px;
+                        border-bottom: 1px solid @borderColor2;
+                        span{
+                            font-size: @samllFoutSize;
+                           
+                        }
+                        &.lin20{
+                            line-height: 20px;
+                            padding: 10px 40px; 
+                        }
+                    }
+
+                    ._basicFrome();
+                    
+
+                    .basicfrome{
+                        padding: 10px;
+                    }
+                    .rz{
+                        padding: 10px 40px;
+                        .alert{
+                            font-size: @samllFoutSize;
+                        }
+                        .box{
+                            padding-bottom: 20px;
+                        }
+                        .basicfrome{
+                            padding:0px;
+                            .label{
+                                margin-bottom: 0px;
+                                .subject{
+                                    width: 72px;
+                                    line-height: 20px;
+                                }
+                                span{
+                                    line-height: 20px;
+                                }
+
+                            } 
+                        } 
+
+                        .listbox{
+                            ._clearfix();
+                            margin-top: 20px;
+                            .list{
+                                width: 49%;
+                                height: 75px;
+                                float: left;
+                                margin-bottom: 20px;
+                                ._clearfix();
+                                i{
+                                    @x:366px;
+                                    display: block;
+                                    float: left;
+                                    width: 72px;
+                                    height: 72px;
+                                    margin-right: 20px;
+                                    background: url('@{img}/auth_icon.png') no-repeat 0px 0px;
+                                    &.sfrz{
+                                        background-position: -450px 0px;
+                                        &.on{
+                                            background-position: -450+@x 0px;
+                                        }
+                                    }
+
+                                     &.zyrz{
+                                        background-position: -365px -79px;
+                                         &.on{
+                                            background-position: -365+@x 0px;
+                                        }
+                                    }
+
+                                     &.xybg{
+                                        background-position: -450px -79px;
+                                         &.on{
+                                            background-position: -450+@x 0px;
+                                        }
+                                    }
+
+                                    &.sprz{
+                                        background-position: -365px -0px;
+                                         &.on{
+                                            background-position: -365+@x 0px;
+                                        }
+                                    }
+
+                                    &.sjrz{
+                                         background-position: -497px -297px;
+                                         &.on{
+                                            background-position: -497+@x -297px;
+                                        }
+                                    }
+                                }
+                                p{
+                                    color: @markBgColor;
+                                    ._clearfix();
+                                    height: 25px;
+                                    b{
+                                        display: block;
+                                        float: left;
+                                    }
+
+                                    span{
+                                        display: inline-block;
+                                        float: left;
+                                        margin-top: 2px;
+                                        width: 25px;
+                                        height: 20px;
+                                        background: url('@{img}/auth_icon.png') no-repeat -281px -1px;
+                                        margin-left: 10px;
+                                    }
+                                }
+                                .btn{
+                                    display: inline-block;
+                                    background: @markBgColor;
+                                    width: 115px;
+                                    text-align: center;
+                                    line-height: 35px;
+                                    border-radius: 4px;
+                                    color: #fff;
+                                    border:none;
+                                    margin-right: 10px;
+                                    height: 35px;
+                                    margin-top: 10px;
+                                    cursor: pointer;
+                                    &:hover{
+                                         background-color:darken(@markBgColor, 10%);
+                                    }
+                                }
+                            }
+                            
+                        }
+
+                        .listbox2{
+                             ._clearfix();
+                            margin-top: 20px;
+                            .list{
+                                width: 100px;
+                                height: 90px;
+                                float: left;
+                                margin-bottom: 20px;
+                                text-align: center;
+                                ._clearfix();
+                                margin-right: 10px;
+                                i{
+                                    @x:366px;
+                                    display: block;
+                                    
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: auto;
+                                    background: url('@{img}/auth_icon.png') no-repeat 0px 0px;
+                                    &.fcrz{
+                                        background-position: -364px -164px;
+                                        &.on{
+                                            background-position: -364px+@x -164px;
+                                        }
+                                    }
+
+                                     &.clrz{
+                                        background-position: -434px -164px;
+                                         &.on{
+                                            background-position: -434px+@x -164px;
+                                        }
+                                    }
+
+                                     &.jtcz{
+                                        background-position: -504px -164px;
+                                         &.on{
+                                            background-position: -504px+@x -164px;
+                                        }
+                                    }
+
+                                    &.zlrz{
+                                        background-position: -434px -234px;
+                                         &.on{
+                                            background-position: -434px+@x -234px;
+                                        }
+                                    }
+
+                                    &.xckc{
+                                         background-position: -574px -234px;
+                                         &.on{
+                                            background-position: -574px+@x -234px;
+                                        }
+                                    }
+
+                                    &.dyrz{
+                                         background-position: -504px -444px;
+                                         &.on{
+                                            background-position: -504px+@x -444px;
+                                        }
+                                    }
+
+
+                                     &.dbrz{
+                                         background-position: -434px -304px;
+                                         &.on{
+                                            background-position: -434px+@x -304px;
+                                        }
+                                    }
+
+                                    &.sbrz{
+                                         background-position: -364px -374px;
+                                         &.on{
+                                            background-position: -364px+@x -374px;
+                                        }
+                                    }
+
+                                    &.qtrz{
+                                         background-position: -644px -444px;
+                                         &.on{
+                                            background-position: -644px+@x -444px;
+                                        }
+                                    }
+                                }
+                                p{
+                                    vertical-align: middle;
+                                    ._clearfix();
+                                    height: 25px;
+                                    text-align: center;
+                                    b{
+                                        display: inline-block;
+                                        
+                                        font-weight: 100;
+                                        font-size:@samllFout; 
+                                        height: 17px;
+                                        line-height: 17px;
+                                    }
+
+                                    span{
+                                        display: inline-block;
+                                        
+                                        margin-top: 2px;
+                                        width: 17px;
+                                        height: 20px;
+                                        background: url('@{img}/auth_icon.png') no-repeat -209px 4px;
+                                        margin-left: 10px;
+                                    }
+                                }
+                                .btn{
+                                    display: inline-block;
+                                    background: @markBgColor;
+                                    width: 115px;
+                                    text-align: center;
+                                    line-height: 35px;
+                                    border-radius: 4px;
+                                    color: #fff;
+                                    border:none;
+                                    margin-right: 10px;
+                                    height: 35px;
+                                    margin-top: 10px;
+                                    cursor: pointer;
+                                    &:hover{
+                                         background-color:darken(@markBgColor, 10%);
+                                    }
+                                }
+                            }
+                            
+                           
+
+                        }
+
+
+
+                    }
+                 
+
+                    
+                }
+            }
+
+            .info{
+                 padding: 20px 40px;
+            }
+           
+        }
+    }
+ 
+
+      
+    }
+}

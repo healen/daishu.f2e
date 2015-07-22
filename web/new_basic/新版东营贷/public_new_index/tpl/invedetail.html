@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>投资详情</title>
+		<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+		<link rel="stylesheet" href="../public/styles/invedetail.css" type="text/css">
+		<link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+		<div class="box">
+	
+			{% inc='header.tpl' %}
+
+				<!--主体内容-->
+				<div class="container">
+					 <div class="la-my">
+						<div class="mbx">
+							<a href="#">我要投资</a>><a href="#">投资详情</a>
+						</div>
+						<div class="top">
+							<div class="left">
+								<div class="title">
+									私营业主生意周转继续资金
+								</div>
+
+								 <div class="tables">
+				                    <div class="tr th"> 
+				                    	<div class="td">标的总额</div>
+				                        <div class="td">年利率</div>
+				                        <div class="td">借款期限</div>
+				                        <div class="td">进度</div>
+				                    </div>
+				                    <div class="tr">
+				                        <div class="td">￥5000000.00</div>
+				                        <div class="td">16%</div>
+				                        <div class="td">1年</div>
+				                        <div class="td">
+				                            <span class="myspeed">
+				                                <span class="smalls">50%</span>
+				                                <span class="barbox"><span style="width:50px"></span></span>
+				                            </span>
+				                        </div>
+				                    </div> 
+				                </div>
+
+				                <div class="tables">
+				                    <div class="tr th"> 
+				                    	<div class="td">还款方式</div>
+				                        <div class="td">最低投标金额</div>
+				                        <div class="td">最高投标金额</div>
+				                        <div class="td">剩余时间</div>
+				                    </div>
+				                    <div class="tr">
+				                        <div class="td">到期还款 按月还款</div>
+				                        <div class="td">￥100.00</div>
+				                        <div class="td">￥25000.00</div>
+				                        <div class="td" id="showData">3天7小时11分11秒</div>
+				                    </div> 
+				                </div>
+
+				                <div class="btnbox">
+				                	
+				                	<a href="javascript:void(0)" class="mytz" onclick="PropDivInfo()">立即投标</a>
+				                </div>
+
+
+
+
+							</div>
+							<div class="right">
+								<div class="inright">
+
+								 <div class="toux"><img src="../public/img/tx.png" alt=""></div>
+									<div class="listbox">
+										<div class="tit">借款人：</div><div class="con">张晓东啊张</div>
+									</div>
+
+									<div class="listbox">
+										<div class="tit">信用等级：</div><div class="con"><span class="dj e">E</span> <span class="dj">A</span></div>
+									</div>
+
+
+									<div class="listbox">
+										<div class="tit">认证信息：</div><div class="con">
+											 <div class="icobxo">
+                                                <i class="myico tx"></i>
+                                                <i class="myico suo"></i>
+                                                <i class="myico sj"></i>
+                                                <i class="myico xx"></i>
+                                            </div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+
+
+
+
+
+						<div class="bottom">
+							<div class="tabview">
+								<div class="tab">
+									<a href="javascript:void(0)" class="on">标的详情</a>
+									<a href="javascript:void(0)">借款图片信息</a>
+									<a href="javascript:void(0)">借款人资料</a>
+									<a href="javascript:void(0)">投资记录</a>
+									<a href="javascript:void(0)">投标奖励</a>
+									<a href="javascript:void(0)">留言板 </a>
+								</div>
+								<div class="contant">
+									<div class="tabcontent" style="display:block">
+										<div class="warpper">
+											本人生意规模扩大，急需资金进行扩张。有房有车，绝对信誉。本人主营服装，努力打造自己的服装品牌，目前店面有4家，欢迎大家进行投资。
+										</div>
+									</div>
+									<div class="tabcontent">
+										<div class="warpper">
+											<div class="banner" id="swipe" >
+									    	    <ul>
+									    	    	<li style="display:block">
+									    	            <a href="#">
+									    	            	<img src="../public/img/banner/banner-1.jpg" alt=""  height="350">
+									    	            </a>
+									    	        </li>
+									    	        <li>
+									    	            <a href="#">
+									    	            	<img src="../public/img/loginbanner.png" alt=""  height="350">
+									    	            </a>
+									    	        </li>
+									    	        <li>
+									    	            <a href="#">
+									    	            	<img src="../public/img/banner/banner-1.jpg" alt=""  height="350">
+									    	            </a>
+									    	        </li>
+									    	        
+									    	         
+									    	    </ul>
+									    	</div>
+										</div>
+									</div>
+									<div class="tabcontent">
+										<div class="warpper">
+											<div class="left">
+												<div class="title">借款人基本信息</div>
+												<div class="msg">
+													<div class="l">性 别： 女</div>
+													<div class="l r">最高学历： 本科</div>
+												</div>
+												<div class="msg">
+													<div class="l">现居地：福建省莆田市荔城区</div>
+													<div class="l r">月均收入： 12,024.29元</div>
+												</div>
+
+												<div class="msg">
+													<div class="l">婚姻状况： 已婚 </div>
+													<div class="l r">信用卡额度：100,000</div>
+												</div>
+
+												<div class="msg">
+													<div class="l">年收入： 144,291.48元 </div>
+													<div class="l r"></div>
+												</div>
+											</div>
+											<div class="right">
+												<span class="gungun l"></span>
+												<span class="gungun r"></span>
+												<div class="warrpe">
+													<div class="title">贷鼠信用审核</div>
+													<p><i></i>通过身份认证，上传身份证复印件</p>
+													<p><i></i>信用报告</p>
+													<p><i></i>收入证明</p>
+													<p><i></i>工作认证及房产认证</p>
+												</div>
+												<img src="../public/img/tg.png" alt="" class="sy">
+											</div>
+											
+										</div>
+									</div>
+									<div class="tabcontent">
+										<div class="tables">
+
+						                    <div class="tr th"> 
+						                    	<div class="td">出借人</div>
+						                        <div class="td">投标金额</div>
+						                        <div class="td">投标日期</div>
+						                      
+						                    </div>
+						                    <div class="tr">
+						                        <div class="td">张晓东</div>
+						                        <div class="td">￥10000000.00</div>
+						                        <div class="td">2015-02-06</div>
+						                      
+						                    </div> 
+						                     <div class="tr">
+						                        <div class="td">张晓东</div>
+						                        <div class="td">￥10000000.00</div>
+						                        <div class="td">2015-02-06</div>
+						                      
+						                    </div>
+						                </div>
+										
+									</div>
+									<div class="tabcontent">4</div>
+									<div class="tabcontent">
+										<div class="warpper">
+											<div class="msgbox">
+												<div class="head">
+													<div class="left">
+														<p>质量真菜，而且质量和是哪个合上的时候有异响，要不是因为物流不方便早就退货了。下次再也不来这家了，真的很郁闷！</p>
+														<a href="#">回复(0)</a>
+													</div>
+													<div class="right">
+														<div class="name"><i class="v1"></i>jdjsmnjxnas</div><!--class v1金  v2银 v3铜-->
+														<div class="jibie">金牌会员</div>
+														<div class="date">2015-02-06 11:30</div>
+													</div>
+												</div>
+												<form class="foot">
+													<div class="title">咨询或留言</div>
+													<textarea placeholder="请输入留言内容"></textarea>
+													<div class="btnbox">
+														<input type="submit" value="提 交" class="submit" />
+														<input type="reset" value="取 消" class="reset" />
+									                	
+									                </div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+					 </div>
+				</div>
+			{% inc='footer.tpl' %}
+
+
+
+
+		
+		</div>
+
+
+		<div id="popup"></div>
+
+
+		<div id="popcontent" style="display: none">
+
+            <div class="basicfrome">
+                <div class="label">
+                    <div class="subject">当前选择标的：</div>
+                    <span class="title">太安全车贷-CD15001奥迪A3质押借款</span>
+                </div>
+
+                <div class="label">
+                    <div class="left">
+                        <div class="subject">最低投标金额：</div>
+                        <span class="xinghao">￥10.00</span>
+                    </div>
+
+                    <div class="right">
+                        <div class="subject">最高投标金额：</div>
+                        <span class="xinghao">￥90000.00</span>
+                    </div>
+
+                </div>
+
+                <div class="label">
+                    <div class="subject">投标金额：</div>
+                    <input type="text" id="txtLendMoney" class="length3" onkeyup="keyUp(this);"
+                        onkeypress="keyPress(this);" onblur="onBlur(this);CalculateRepay();" placeholder="请输入投标金额" value="">
+                    <span class="xinghao">*</span>
+                </div>
+                <div class="label">
+                    <div class="subject">交易密码：</div>
+                    <input type="password" id="txtTradePwd" class="length3" value="">
+                    <span class="xinghao">*</span>
+                </div>
+
+                
+                <div class="label">
+                    <div class="subject">投标备注：</div>
+                    <textarea name="txtSubject" id="txtSubject" class="textareas"></textarea>
+                </div>
+                <div class="label">
+                    <div class="subject">&nbsp;</div>
+                    <input type="button" value="提 交" onclick="DoLend();" class="sub" />
+                    <input type="button" value="取 消" onclick="ClosePropDiv();" class="bad" />
+                </div>
+
+                <div class="label mb0">
+                    <div class="subject">&nbsp;</div>
+                    <span id="sShowInfo"></span>
+                </div>
+            </div>
+            <script type="text/javascript" ></script>
+            <input type="hidden" id="txtDateline" value="1" />
+            <input type="hidden" id="txtRate" value="16.00" />
+            <input type="hidden" id="txtBorrowId" />
+            <input type="hidden" id="txtBorrowUserName" value="cz20888" />
+            <input type="hidden" id="txtCurrentUserName" value="" />
+            <input type="hidden" id="txtLendLeast" value="10.00" />
+            <input type="hidden" id="txtMaxMoney" value="90000.00" />
+        </div>
+
+	 <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	 <script type="text/javascript" src="../public/scripts/popup.js"></script>
+     <script src="../public/scripts/global.js"></script>
+     <script type="text/javascript" src="../public/scripts/swipe.js"></script>
+
+	 <script type="text/javascript">
+	  	$("#swipe").swipe({
+	        timeout:"no",
+	        events:"click"
+	    });
+	 	$(function(){
+	 		$(".tab a").click(function(){
+	 			var num=$(this).index();
+	 			var parent=$(this).parents(".tabview");
+	 			$(this).addClass("on");
+	 			$(this).siblings("a").removeClass("on");
+	 			parent.find(".tabcontent").eq(num).show();
+	 			parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide()
+	 		
+	 		})
+	 	})
+
+	 	 function PropDivInfo() {
+           
+            $.popup({
+                title: "", //标题
+                content: function() {
+                    return $("#popcontent").html();
+                }, //内容
+                close: true, //是否关闭
+                closeCallback: null,
+                popupStyle: "",
+                popupPosition: "fixed",
+                btnList: [
+                    // {
+                    //     "class": "",
+                    //     "text": "确认",
+                    //     "callback": null
+                    // },
+                    // {
+                    //     "class": "comfbox",
+                    //     "text": "取消",
+                    //     "callback": null
+                    // }
+                ]
+            });
+        }
+
+
+
+
+
+
+
+	 </script>
+
+
+
+	 <script language="javascript" type="text/javascript"> 
+			var interval = 1000; 
+			function ShowCountDown(year, month, day, divname) { 
+			var now = new Date(); 
+			var endDate = new Date(year, month - 1, day, 14, 07); 
+			var leftTime = endDate.getTime() - now.getTime(); 
+			var leftsecond = parseInt(leftTime / 1000); 
+			var day1 = Math.floor(leftsecond / (60 * 60 * 24)); 
+			var hour1 = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600); 
+			var hour = Math.floor((leftsecond - 60 * 60) / 3600); 
+			hour=hour-(day1*24);
+			//如果小时为负数 显示0 
+			if (hour > 0) { 
+			} 
+			else { 
+			hour = 0; 
+			} 
+			if (day1 < 0) { 
+			hour = hour1 
+			} 
+			var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour1 * 3600) / 60); 
+			var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour1 * 3600 - minute * 60); 
+			var cc = document.getElementById(divname); 
+			//如果结束时间为负数 就显示0 
+			if (leftTime > 0) { 
+			cc.innerHTML = day1 + "天" + hour + "小时" + minute + "分" + second + "秒"; 
+			//如果显示年份 取消注释 
+			//cc.innerHTML = "距离" + year + "年" + month + "月" + day + "日还有：" + hour + "小时" + minute + "分" + second + "秒"; 
+			} 
+			else { 
+			cc.innerHTML = 0 + "小时" + 0 + "分" + 0 + "秒"; 
+			} 
+			} 
+			//showData是DIV的ID 2010，8，10表示是年月日的意思 参数根据自己的需求设置。 
+			window.setInterval(function () { ShowCountDown(2015, 3, 1, 'showData'); }, interval); 
+		</script> 
+
+		
+</body>
+</html>

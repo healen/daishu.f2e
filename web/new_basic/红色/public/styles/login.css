@@ -1,0 +1,232 @@
+/*element样式*/
+/*按钮*/
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.box .header {
+  background-color: #f2f2f2;
+}
+.box .header .head .warp {
+  height: 148px;
+}
+.box .header .head .warp .logobox {
+  height: 148px;
+}
+.box .header .head .warp .logobox a {
+  display: block;
+}
+.box .header .head .warp .logobox a img {
+  height: 110px;
+  padding-top: 12px;
+}
+.box .header .head .warp h1 {
+  float: left;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 12px;
+  color: #666666;
+  border-left: 1px solid #dddddd;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+.login {
+  width: 1132px;
+  height: 480px;
+  border: 1px solid #dddddd;
+  margin: 0px auto 50px auto;
+  box-shadow: 0px 1px 5px #c5c5c5;
+  *zoom: 1;
+}
+.login:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .l {
+  width: 721px;
+  height: 480px;
+  float: left;
+}
+.login .l img {
+  display: block;
+  height: 480px;
+}
+.login .r {
+  float: left;
+  width: 410px;
+  height: 480px;
+  background-color: #ffffff;
+}
+.login .r form {
+  display: block;
+  width: 354px;
+  height: 400px;
+  margin: 40px auto;
+}
+.login .r form .title {
+  margin-bottom: 28px;
+}
+.login .r form div.input {
+  height: 50px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.login .r form div.input:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .r form div.input.username .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.login .r form div.input.username .i-login-50 {
+  background-image: url('../images/ico.png');
+  width: 50px;
+  height: 50px;
+  background-position: -2px -160px;
+  background-color: #f2f2f2;
+}
+.login .r form div.input.password .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.login .r form div.input.password .i-login-50 {
+  background-image: url('../images/ico.png');
+  width: 50px;
+  height: 50px;
+  background-position: -51px -158px;
+  background-color: #f2f2f2;
+}
+.login .r form div.input .i-login-50 {
+  display: block;
+  float: left;
+}
+.login .r form div.input input {
+  height: 46px;
+  *line-height: 46px;
+  line-height: 46px;
+  display: block;
+  padding-left: 10px;
+  width: 280px;
+  border: 1px solid #fff;
+  float: left;
+}
+.login .r form .tips {
+  color: #aaaaaa;
+}
+.login .r form div.yzm {
+  *zoom: 1;
+}
+.login .r form div.yzm:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .r form div.yzm div.input {
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+}
+.login .r form div.yzm div.input input {
+  width: 220px;
+}
+.login .r form div.yzm img {
+  width: 120px;
+  height: 48px;
+  border: 1px solid #dddddd;
+}
+.login .r form div.alert {
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+  text-align: center;
+  color: #ff0000;
+}
+.login .r form .btnbox .m-btn .m-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  overflow: visible;
+  width: auto;
+  *width: 1;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.login .r form .btnbox .btn-login {
+  height: 58px;
+  padding: 0px 40px;
+  background: #f95723;
+  border: 1px solid #f95723;
+  border-radius: 3px;
+  color: #ffffff;
+}
+.login .r form .btnbox .btn-login {
+  display: block;
+  padding: 0px 0px;
+  width: 95%;
+  margin: 10px auto;
+  font-size: 22px;
+  cursor: pointer;
+}
+.login .r form .btnbox .btn-login:hover {
+  background-color: #f33d03;
+}
+.login .r form .alist {
+  *zoom: 1;
+  width: 95%;
+  margin: 0px auto;
+}
+.login .r form .alist:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .r form .alist a {
+  display: block;
+}
+.login .r form .alist a.left {
+  float: left;
+  text-align: left;
+  color: #39b6e4;
+}
+.login .r form .alist a.left:hover {
+  color: #f24846;
+}
+.login .r form .alist a.right {
+  float: right;
+  text-align: right;
+}

@@ -1,0 +1,478 @@
+/*element样式*/
+/*按钮*/
+/*公共样式*/
+.box {
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+.box .article-new {
+  position: absolute;
+  padding-left: 4px;
+  top: 6px;
+  animation: Beat 1s infinite;
+  -webkit-animation: Beat 1s infinite;
+  -moz-animation: Beat 1s infinite;
+  -o-animation: Beat 1s infinite;
+}
+/*header*/
+/*私有样式*/
+.box {
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+/*过渡样式*/
+a {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+.xinghao {
+  color: #ff6c00;
+}
+input.text {
+  width: 160px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+}
+input.time {
+  width: 120px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+  background: url('../images/ico.png') no-repeat right -113px;
+}
+input.subBut {
+  display: inline-block;
+  background: #ff6c00;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+input.subBut:hover {
+  background: #cc5600;
+}
+input.retBut {
+  display: inline-block;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+input.retBut:hover {
+  background: #c97c0a;
+}
+.bottonbox {
+  margin-top: 10px;
+  padding: 20px 0px;
+  text-align: center;
+}
+.bottonbox.subBut {
+  display: inline-block;
+  background: #ff6c00;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.bottonbox.subBut:hover {
+  background: #cc5600;
+}
+.bottonbox.retBut {
+  display: inline-block;
+  margin-right: 10px;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.bottonbox.retBut:hover {
+  background: #c97c0a;
+}
+/*信用等级*/
+span.samllmark {
+  font-size: 12px;
+}
+span.dj {
+  width: 45px;
+  height: 24px;
+  background: #73c343;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+}
+span.e {
+  background: #ff6c00;
+}
+.mbx {
+  padding: 5px 25px;
+}
+.mbx a {
+  color: #4c4c4c;
+  padding: 0px 0px;
+}
+.mbx a:hover {
+  color: #ff6c00;
+}
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.box .header {
+  background-color: #fff;
+}
+.box .header .topbar {
+  width: auto;
+  height: 40px;
+  background-color: #ff6c00;
+  font-size: 16px;
+}
+.box .header .topbar .warp {
+  width: 1132px;
+  height: 40px;
+  margin: 0px auto;
+  *zoom: 1;
+}
+.box .header .topbar .warp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .topbar .warp .l {
+  float: left;
+}
+.box .header .topbar .warp .l a {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  color: #ff6c00;
+  margin-right: 20px;
+}
+.box .header .topbar .warp .l a.reg {
+  color: #65cbfc;
+}
+.box .header .topbar .warp .l span {
+  color: #65cbfc;
+}
+.box .header .topbar .warp .r {
+  float: right;
+}
+.box .header .topbar .warp .r a {
+  color: #999999;
+  line-height: 40px;
+  display: inline-block;
+  padding-left: 46px;
+}
+.box .header .topbar .warp .r a:hover {
+  color: #ff6c00;
+}
+.box .header .head {
+  display: block;
+  font-size: 18px;
+}
+.box .header .head .warp {
+  width: 1132px;
+  height: 70px;
+  margin: 0px auto;
+  *zoom: 1;
+}
+.box .header .head .warp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .head .warp .logobox {
+  width: auto;
+  height: 70px;
+  float: left;
+  margin-left: -5px;
+}
+.box .header .head .warp .logobox a img {
+  height: 70px;
+}
+.box .header .head .warp ul {
+  *zoom: 1;
+}
+.box .header .head .warp ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .head .warp ul.nav {
+  float: right;
+  margin-top: 15px;
+  margin-right: -28px;
+}
+.box .header .head .warp ul li {
+  line-height: 50px;
+  float: left;
+}
+.box .header .head .warp ul li a {
+  display: block;
+  width: 120px;
+  text-align: center;
+  border-bottom: 5px solid  #fff;
+}
+.box .header .head .warp ul li a:hover {
+  border-color: #ff6c00;
+}
+.box .header .head .warp ul li.on a {
+  color: #ff6c00;
+  border-color: #ff6c00;
+}
+.box .header {
+  background-color: #f2f2f2;
+}
+.box .header .head .warp {
+  height: 148px;
+}
+.box .header .head .warp .logobox {
+  height: 148px;
+}
+.box .header .head .warp .logobox a {
+  display: block;
+}
+.box .header .head .warp .logobox a img {
+  height: 110px;
+  padding-top: 12px;
+}
+.box .header .head .warp h1 {
+  float: left;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 0px;
+  color: #666666;
+  border-left: 1px solid #dddddd;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+.login {
+  width: 1132px;
+  height: 480px;
+  border: 1px solid #dddddd;
+  margin: 0px auto 50px auto;
+  box-shadow: 0px 1px 5px #c5c5c5;
+  *zoom: 1;
+}
+.login:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .l {
+  width: 721px;
+  height: 480px;
+  float: left;
+}
+.login .l img {
+  display: block;
+  height: 480px;
+}
+.login .r {
+  float: left;
+  width: 410px;
+  height: 480px;
+  background-color: #ffffff;
+}
+.login .r form {
+  display: block;
+  width: 354px;
+  height: 400px;
+  margin: 40px auto;
+}
+.login .r form .title {
+  margin-bottom: 28px;
+}
+.login .r form div.input {
+  height: 50px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.login .r form div.input:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .r form div.input.username .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.login .r form div.input.username .i-login-50 {
+  background-image: url('../images/ico.png');
+  width: 50px;
+  height: 50px;
+  background-position: -2px -160px;
+  background-color: #f2f2f2;
+}
+.login .r form div.input.password .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.login .r form div.input.password .i-login-50 {
+  background-image: url('../images/ico.png');
+  width: 50px;
+  height: 50px;
+  background-position: -51px -158px;
+  background-color: #f2f2f2;
+}
+.login .r form div.input .i-login-50 {
+  display: block;
+  float: left;
+}
+.login .r form div.input input {
+  height: 46px;
+  *line-height: 46px;
+  display: block;
+  padding-left: 10px;
+  width: 280px;
+  border: 1px solid #fff;
+  float: left;
+}
+.login .r form .tips {
+  color: #aaaaaa;
+}
+.login .r form div.yzm {
+  *zoom: 1;
+}
+.login .r form div.yzm:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .r form div.yzm div.input {
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+}
+.login .r form div.yzm div.input input {
+  width: 220px;
+}
+.login .r form div.yzm img {
+  width: 120px;
+  height: 48px;
+  border: 1px solid #dddddd;
+}
+.login .r form div.alert {
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+  text-align: center;
+  color: #ff0000;
+}
+.login .r form .btnbox .m-btn .m-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  overflow: visible;
+  width: auto;
+  *width: 1;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.login .r form .btnbox .btn-login {
+  height: 58px;
+  padding: 0px 40px;
+  background: #f95723;
+  border: 1px solid #f95723;
+  border-radius: 3px;
+  color: #ffffff;
+}
+.login .r form .btnbox .btn-login {
+  display: block;
+  padding: 0px 0px;
+  width: 95%;
+  margin: 10px auto;
+  font-size: 22px;
+  cursor: pointer;
+}
+.login .r form .btnbox .btn-login:hover {
+  background-color: #f33d03;
+}
+.login .r form .alist {
+  *zoom: 1;
+  width: 95%;
+  margin: 0px auto;
+}
+.login .r form .alist:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.login .r form .alist a {
+  display: block;
+}
+.login .r form .alist a.left {
+  float: left;
+  text-align: left;
+  color: #f39913;
+}
+.login .r form .alist a.left:hover {
+  color: #ff6c00;
+}
+.login .r form .alist a.right {
+  float: right;
+  text-align: right;
+}

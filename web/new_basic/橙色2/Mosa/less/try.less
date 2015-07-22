@@ -1,0 +1,166 @@
+@import "../document";
+
+/*
+*2015
+*首页样式
+*zxd
+*/
+.banner{
+    @height:350px;
+    height: @height;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .-box ._shadow(0px 3px 10px #c5c5c5);
+    ul{
+         height: @height;
+         width: 100%;
+        li{
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            display: none;
+            top: 0px;
+            left: 0px;
+            a{
+                display: block;
+                width: @documentWidth;
+                margin: 0px auto;
+                img{
+                    height: @height;
+                }
+            }
+        }
+    }
+    .btnlst{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+        span{
+            cursor: pointer;
+            .-box ._square(10);
+            border:2px solid #ffffff;
+            display: inline-block;
+            //text-indent: -9999px;
+            .-box ._radius(50%);
+            font-size: 0;
+            margin: 0px 5px;
+            overflow: hidden;
+            &.on{
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+.busin{
+    margin: 20px 0px;
+    .warp{
+        width: @documentWidth;
+        overflow: hidden;
+        margin: 0px auto;
+        .inwarp{
+            width: @documentWidth+3;
+            ._clearfix();
+            .list{
+                float: left;
+                width:floor(@documentWidth/3);
+                border-right: 1px dotted @borderColor;
+                div.inlist{
+                    width: 250px;
+                    margin: 0px auto;
+                    text-align:center;
+                    &.l1{
+                        .-icon ._base(ico,100,'@{img}/ico.png',-18px,-15px);    
+                    }
+                    &.l2{
+                        .-icon ._base(ico,100,'@{img}/ico.png',-155px,-15px); 
+                    }
+                    &.l3{
+                        .-icon ._base(ico,100,'@{img}/ico.png',-290px,-15px); 
+                    }
+                    .-icon ._base(ico,100,'@{img}/ico.png',-290px,-15px);
+                    h2{
+                        text-align: center;
+                        font-weight: 100;
+                        font-size:@bigFontSize;
+                        margin: 5px 0px;
+                    }
+                    p{
+                        text-align: left;
+                        font-size: @baseFontSize;
+                        color: @auxTextColor;
+                        span{
+                            color:@markBgColor; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tbox{
+    .-bg ._color(@boxBgColor);
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &.lbox{
+        border-top: none;
+        .-bg ._color(#fff);
+
+    }
+    .warp{
+        ._clearfix();
+        .-box ._size(@documentWidth,auto);
+        margin: 0px auto;
+        overflow: hidden;
+        h2{
+            font-size: @bigFontSize;
+        }
+
+        .-list ._base(mylist,60px);
+        .-speed ._base(myspeed);
+        .-form ._btnbase();
+        .-form ._button(wite,38px);
+        .btn-wite{
+            &:hover{
+                color: @mainColor;
+                border-color: @mainColor;
+            }
+        }
+        .btnbox{
+            text-align: center;
+            padding: 10px 0px;
+        }
+        .inwarp{
+            width: @documentWidth+20;
+            ._clearfix();
+            .box{
+                float: left;
+                width: @documentWidth/2-12;
+                background: @boxBgColor;
+                border:1px solid @borderColor;
+                
+                overflow: hidden;
+                margin-right: 18px;
+                .inbox{
+                    display: block;
+                    margin: 38px;
+                    font-size: @samllFoutSize;
+                    p{
+                         display: inline-block;
+                        &.title{
+
+                            color: @markBgColorAux;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/my_list.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+
+     {% inc='header.tpl' %}
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <div class="myleft">
+
+                    <a href="index.html" class="index">管理首页</a>
+                    <div class="list">
+                        <div class="navbtn on">
+                            <a href="javascript:void(0)" class="sliderview"><span>账户管理</span></a>
+                            <div class="childlist" style="display:block">
+                                 <a href="javascript:void(0)" class="on"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                                 <a href="javascript:void(0)"><span>信用认证</span></a>
+                                 <a href="javascript:void(0)"><span>VIP认证</span></a>
+                                 <a href="javascript:void(0)"><span>已认证专区</span></a>
+                                 <a href="javascript:void(0)"><span>隐私设置</span></a>
+                                 <a href="javascript:void(0)"><span>提醒设置</span></a>
+                                 <a href="javascript:void(0)"><span>登录密码</span></a>
+                                 <a href="javascript:void(0)"><span>交易密码</span></a>
+                                  <a href="javascript:void(0)"><span>安全问题</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>资金管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借出管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借入管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>好友管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="myright">
+                     <div class="mbx">您当前所在的位置><a href="#">首页</a> > <a href="#">我的贷鼠仓</a></div>
+                     <div class="topcontent">
+
+                        <div class="warp">
+                        <div class="tabview">
+                                <div class="tab">
+                                    <a href="javascript:void(0)" class="on">正在收款中的借款</a>
+                                    <a href="javascript:void(0)" class="">收款明细账</a>
+                                    <a href="javascript:void(0)" class="">出账明细账</a>
+                                    <a href="javascript:void(0)" class="">已还清的借款</a>
+                                </div>
+                                <div class="contant">
+                                    <div class="tabcontent" style="display: block;">
+                                        <div class="warpper">
+                                            <div class="my_list_top">
+                                                <div class="bar">
+                                                     <span class="box">
+                                                        <span class="sidetitle">发布时间：</span>
+                                                        <input type="text" name="time1" onclick="WdatePicker()" maxlength="21" class="time"/>
+                                                        <span>-</span>
+                                                        <input type="text" name="time1" onclick="WdatePicker()" maxlength="21" class="time"/>  
+                                                        <select name="" id="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                <div class="bar">
+                                                     <span class="box">
+                                                        <span class="sidetitle">标题关键字：</span>
+                                                        <input type="text" name="time1" class="text"/>
+                                                    </span>
+                                                </div>
+                                                <span class="box">
+                                                    <input type="button" value="查询" class="subBut" name="time1"/>
+                                                    <input type="reset" value="重置" class="retBut" name="time1"/>
+                                                </span>
+                                            </div>
+
+                                            <div class="my_list_bottom">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <th width="25%">借款标题</th>
+                                                        <th width="10%" class="center">投标金额</th>
+                                                        <th width="10%" class="center">实际金额</th>
+                                                        <th width="10%" class="center">年利率</th>
+                                                        <th class="center">投标成功时间</th>
+                                                        <th class="center">借款者</th>
+                                                        <th class="">操作</th>
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td>
+                                                            <a href="#" class="tit"> 私营业主春私营业主春节周转节周转.. </a>
+                                                            <span class="mack">[推荐]</span>
+                                                        </td>
+                                                        <td class="center">￥1000.00</td>
+                                                        <td class="center">￥100.00</td>
+                                                        <td class="center"> 16.00%</td>
+                                                        <td class="center"> 2015/3/11 9:41:03</td>
+                                                        <td class="center">test123</td>
+                                                        <td class="">
+                                                            <a href="javascript:void(0)">查看收款详情</a> 
+                                                            | 
+                                                            <a href="javascript:void(0)">查看借款协议</a>
+                                                        </td>
+                                                    </tr>
+
+
+                                                     <tr>
+                                                        <td>
+                                                            <a href="#" class="tit"> 私营业主春私营业主春节周转节周转.. </a>
+                                                            <span class="mack">[推荐]</span>
+                                                        </td>
+                                                        <td class="center">￥1000.00</td>
+                                                        <td class="center">￥100.00</td>
+                                                        <td class="center"> 16.00%</td>
+                                                        <td class="center"> 2015/3/11 9:41:03</td>
+                                                        <td class="center">test123</td>
+                                                        <td class="">
+                                                            <a href="javascript:void(0)">查看收款详情</a> 
+                                                            | 
+                                                            <a href="javascript:void(0)">查看借款协议</a>
+                                                        </td>
+                                                    </tr>
+
+
+                                                     <tr>
+                                                        <td>
+                                                            <a href="#" class="tit"> 私营业主春私营业主春节周转节周转.. </a>
+                                                            <span class="mack">[推荐]</span>
+                                                        </td>
+                                                        <td class="center">￥1000.00</td>
+                                                        <td class="center">￥100.00</td>
+                                                        <td class="center"> 16.00%</td>
+                                                        <td class="center"> 2015/3/11 9:41:03</td>
+                                                        <td class="center">test123</td>
+                                                        <td class="">
+                                                            <a href="javascript:void(0)">查看收款详情</a> 
+                                                            | 
+                                                            <a href="javascript:void(0)">查看借款协议</a>
+                                                        </td>
+                                                    </tr>
+
+
+                                                     <tr>
+                                                        <td>
+                                                            <a href="#" class="tit"> 私营业主春私营业主春节周转节周转.. </a>
+                                                            <span class="mack">[推荐]</span>
+                                                        </td>
+                                                        <td class="center">￥1000.00</td>
+                                                        <td class="center">￥100.00</td>
+                                                        <td class="center"> 16.00%</td>
+                                                        <td class="center"> 2015/3/11 9:41:03</td>
+                                                        <td class="center">
+                                                            <span class="dj e">E</span>
+                                                        </td>
+                                                        <td class="">
+                                                           <span class="myspeed">
+                                                                <span class="smalls">80%</span>
+                                                                <span class="barbox"><span style="width:80px"></span></span>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td>
+                                                            <a href="#" class="tit"> 私营业主春私营业主春节周转节周转.. </a>
+                                                            <span class="mack">[推荐]</span>
+                                                        </td>
+                                                        <td class="center">￥1000.00</td>
+                                                        <td class="center">￥100.00</td>
+                                                        <td class="center"> 16.00%</td>
+                                                        <td class="center"> 2015/3/11 9:41:03</td>
+                                                        <td class="center">test123</td>
+                                                        <td class="">
+                                                            <a href="javascript:void(0)">查看收款详情</a> 
+                                                            | 
+                                                            <a href="javascript:void(0)">查看借款协议</a>
+                                                        </td>
+                                                    </tr>
+
+
+                                                 </table>
+
+
+                                                <div class="page-list">
+                                                    
+                                                    <a href="javascript:void(0)">上一页</a>
+                                                     <a href="javascript:void(0)" class="num on">1</a>
+                                                     <a href="javascript:void(0)" class="num">2</a>
+                                                     <a href="javascript:void(0)" class="num">3</a>
+                                                     <a href="javascript:void(0)" class="num">4</a>
+
+                                                    <a href="javascript:void(0)">下一页</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tabcontent" style="display: none;">
+                                        <div class="warpper">2</div>
+                                    </div>
+                                    <div class="tabcontent" style="display: none;">
+                                         <div class="warpper">3</div>
+                                    </div>
+                                    <div class="tabcontent" style="display: none;">
+                                        <div class="warpper">5</div>
+                                    </div>
+                                    <div class="tabcontent" style="display: none;">
+                                        <div class="warpper">5</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        {% inc='footer.tpl' %}
+
+
+
+
+
+
+	
+    </div>
+
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../public/scripts/lib/date/WdatePicker.js"></script>
+    <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript">
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        });
+
+       
+
+         $(function(){
+            $(".tab a").click(function(){
+                var num=$(this).index();
+                var parent=$(this).parents(".tabview");
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on");
+                parent.find(".tabcontent").eq(num).show();
+                parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide();
+            
+            });
+        });
+
+
+        
+    })
+   </script>
+    
+</body>
+</html>

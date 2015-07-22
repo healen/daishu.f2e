@@ -1,0 +1,445 @@
+/*element样式*/
+/*按钮*/
+/*公共样式*/
+.box {
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+.box .article-new {
+  position: absolute;
+  padding-left: 4px;
+  top: 6px;
+  animation: Beat 1s infinite;
+  -webkit-animation: Beat 1s infinite;
+  -moz-animation: Beat 1s infinite;
+  -o-animation: Beat 1s infinite;
+}
+/*header*/
+/*私有样式*/
+.box {
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+/*过渡样式*/
+a {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+.xinghao {
+  color: #ff6c00;
+}
+input.text {
+  width: 160px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+}
+input.time {
+  width: 120px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+  background: url('../images/ico.png') no-repeat right -113px;
+}
+input.subBut {
+  display: inline-block;
+  background: #ff6c00;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+input.subBut:hover {
+  background: #cc5600;
+}
+input.retBut {
+  display: inline-block;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+input.retBut:hover {
+  background: #c97c0a;
+}
+.bottonbox {
+  margin-top: 10px;
+  padding: 20px 0px;
+  text-align: center;
+}
+.bottonbox.subBut {
+  display: inline-block;
+  background: #ff6c00;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.bottonbox.subBut:hover {
+  background: #cc5600;
+}
+.bottonbox.retBut {
+  display: inline-block;
+  margin-right: 10px;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.bottonbox.retBut:hover {
+  background: #c97c0a;
+}
+/*信用等级*/
+span.samllmark {
+  font-size: 12px;
+}
+span.dj {
+  width: 45px;
+  height: 24px;
+  background: #73c343;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+}
+span.e {
+  background: #ff6c00;
+}
+.mbx {
+  padding: 5px 25px;
+}
+.mbx a {
+  color: #4c4c4c;
+  padding: 0px 0px;
+}
+.mbx a:hover {
+  color: #ff6c00;
+}
+/*
+*2015
+*招标列表
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.header {
+  box-shadow: 0px 1px 10px #c8c8c8;
+}
+.la-my {
+  width: 1132px;
+  margin: 12px auto;
+}
+.la-my .borrow {
+  padding: 10px 30px;
+  background: #fff;
+  margin-bottom: 7px;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+}
+.la-my .borrow.top {
+  height: 168px;
+  overflow: hidden;
+  position: relative;
+}
+.la-my .borrow.top .bar {
+  width: 920px;
+  height: 6px;
+  background: #d4d4d4;
+  position: absolute;
+  left: 50%;
+  margin-left: -460px;
+  top: 70px;
+}
+.la-my .borrow.top .bar .bars {
+  width: 920px;
+  height: 6px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #ff6c00;
+}
+.la-my .borrow.top .bar .qiu {
+  width: 24px;
+  height: 24px;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  border-radius: 28px;
+  background: #d4d4d4;
+  color: #999999;
+}
+.la-my .borrow.top .bar .qiu span {
+  display: block;
+  width: 110px;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  text-align: center;
+  top: 60px;
+}
+.la-my .borrow.top .bar .qiu.n1 {
+  left: 0px;
+}
+.la-my .borrow.top .bar .qiu.n2 {
+  left: 225px;
+}
+.la-my .borrow.top .bar .qiu.n3 {
+  left: 450px;
+}
+.la-my .borrow.top .bar .qiu.n4 {
+  left: 675px;
+}
+.la-my .borrow.top .bar .qiu.n5 {
+  left: 900px;
+}
+.la-my .borrow.top .bar .qiu.on {
+  width: 34px;
+  height: 34px;
+  margin-top: -21px;
+  border-radius: 38px;
+  background: #ff6c00;
+  color: #ff6c00;
+}
+.la-my .borrow.top .bar .qiu.on span {
+  top: 65px;
+}
+.la-my .borrow.mit {
+  padding: 0px 20px 10px 20px;
+}
+.la-my .borrow.mit .title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px dotted #dddddd;
+  padding: 0px 20px;
+}
+.la-my .borrow.mit .borrowcard {
+  width: 1045px;
+  overflow: hidden;
+  display: block;
+  margin: 15px auto;
+}
+.la-my .borrow.mit .borrowcard .inborrcard {
+  *zoom: 1;
+  width: 1100px;
+}
+.la-my .borrow.mit .borrowcard .inborrcard:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .borrow.mit .borrowcard .inborrcard .card {
+  width: 220px;
+  height: 105px;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px dotted #ff6c00;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.la-my .borrow.mit .borrowcard .inborrcard .card h2 {
+  font-size: 18px;
+  margin-top: 24px;
+}
+.la-my .borrow.mit .borrowcard .inborrcard .card p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #999999;
+}
+.la-my .borrow.mit .borrowcard .inborrcard .card.on,
+.la-my .borrow.mit .borrowcard .inborrcard .card:hover {
+  background: #ecf8ff;
+}
+.la-my .borrow.mit .basicfrome {
+  font-size: 14px;
+}
+.la-my .borrow.mit .basicfrome .label {
+  *zoom: 1;
+  margin-bottom: 5px;
+}
+.la-my .borrow.mit .basicfrome .label:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .borrow.mit .basicfrome .label.showbank {
+  display: none;
+}
+.la-my .borrow.mit .basicfrome .label .subject {
+  float: left;
+  width: 135px;
+  text-align: right;
+  line-height: 32px;
+}
+.la-my .borrow.mit .basicfrome .label .blankico {
+  *zoom: 1;
+  padding: 10px 0px;
+  padding-left: 140px;
+  width: 600px;
+}
+.la-my .borrow.mit .basicfrome .label .blankico:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .borrow.mit .basicfrome .label .blankico a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 120px;
+  border: 2px solid #dddddd;
+  margin-bottom: 10px;
+}
+.la-my .borrow.mit .basicfrome .label .blankico a.on {
+  border-color: #ff6c00;
+}
+.la-my .borrow.mit .basicfrome .label .blankico img {
+  display: block;
+  margin: 0px auto;
+}
+.la-my .borrow.mit .basicfrome .label input {
+  width: 160px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.la-my .borrow.mit .basicfrome .label input.length4 {
+  width: 160px;
+}
+.la-my .borrow.mit .basicfrome .label input.length2 {
+  width: 290px;
+}
+.la-my .borrow.mit .basicfrome .label input.yzm {
+  width: 75px;
+  margin-right: 6px;
+}
+.la-my .borrow.mit .basicfrome .label input.sub {
+  background: #ff6c00;
+  width: 100px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.la-my .borrow.mit .basicfrome .label input.sub:hover {
+  background-color: #cc5600;
+}
+.la-my .borrow.mit .basicfrome .label input.bad {
+  background: #c8c8c8;
+  width: 100px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.la-my .borrow.mit .basicfrome .label input.bad:hover {
+  background-color: #afafaf;
+}
+.la-my .borrow.mit .basicfrome .label input.radio {
+  width: auto;
+  margin-top: 2px;
+}
+.la-my .borrow.mit .basicfrome .label input.checkbox {
+  width: auto;
+}
+.la-my .borrow.mit .basicfrome .label .yzmbtn {
+  display: inline-block;
+  line-height: 32px;
+  background: #f39913;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  width: 100px;
+  margin-left: 10px;
+}
+.la-my .borrow.mit .basicfrome .label select {
+  width: 180px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.la-my .borrow.mit .basicfrome .label textarea {
+  width: 690px;
+  padding: 0px 10px;
+  height: 100px;
+  border-radius: 3px;
+  float: left;
+  border: 1px solid #dddddd;
+}
+.la-my .borrow.mit .basicfrome .label .xinghao {
+  line-height: 32px;
+  padding-left: 10px;
+  color: #ff6c00;
+}
+.la-my .borrow.mit .basicfrome .label span {
+  line-height: 32px;
+  padding-left: 5px;
+}
+.la-my .borrow.mit .basicfrome {
+  padding: 10px;
+  color: #666666;
+}
+.la-my .borrow.mit .basicfrome .label {
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.la-my .borrow.mit .basicfrome .label .subject {
+  width: 80px;
+}
+.la-my .borrow.mit .basicfrome p {
+  padding-left: 48px;
+  margin-bottom: 15px;
+}
+.la-my .borrow.mit .basicfrome p input.submit {
+  display: inline-block;
+  background: #ff6c00;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.la-my .borrow.mit .basicfrome p input.submit:hover {
+  background: #cc5600;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/login.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+       <div class="header">
+            
+            <div class="head">
+                <div class="warp">
+                    <div class="logobox">
+                        <a href="/index.html"><img src="../public/img/logo.png" alt=""></a>
+                    </div>
+                    <h1>欢迎登录</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--主体内容-->
+        <div class="container">
+        <div class="login">
+            <div class="l">
+                <img src="../public/img/loginbanner.png" alt="">
+            </div>
+            <div class="r">
+                <form action="">
+                    <div class="title">请使用贷鼠网账号登录</div>
+                    <div class="input username">
+                       
+                        <input type="text" placeholder="请输用户名" class="usernametxt">
+                         <i class="i-login-50"></i>
+                    </div>
+                    <div class="alert"><!--用户名已存在--></div>
+                    <div class="input password">
+                        <i class="i-login-50"></i>
+                        <input type="password" placeholder="请输密码">
+                    </div>
+                    <div class="alert"><!--密码不能为空--></div>
+                    <div class="yzm">
+                        <div class="input">
+                            <input type="text" placeholder="请输验证码">
+                        </div>
+                        <a href="#"><img src="../public/img/yzm.png" alt=""></a>
+                    </div>
+                    
+                    <div class="alert"><!--验证码错误--></div>
+
+
+                    <div class="btnbox">
+                        <input type="button" value="登 录" class="m-btn btn-login">
+
+                    </div>
+
+                    <div class="alist">
+                        <a href="" class="left">免费注册</a>
+                        <a href="" class="right">找回密码?</a>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+           
+          
+
+          
+
+
+          
+
+        </div>
+
+
+        {% inc='footer.tpl' %}
+        
+
+
+
+
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/ieplaceholder.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript">
+   $(function(){
+        $(".input input").ieplaceholder("tips");
+
+   })
+   </script>
+   
+    
+</body>
+</html>

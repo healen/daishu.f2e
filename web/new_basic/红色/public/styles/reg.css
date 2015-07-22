@@ -1,0 +1,193 @@
+/*element样式*/
+/*按钮*/
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.box .header {
+  background-color: #f2f2f2;
+}
+.box .header .head .warp {
+  height: 148px;
+}
+.box .header .head .warp .logobox {
+  height: 148px;
+}
+.box .header .head .warp .logobox a {
+  display: block;
+}
+.box .header .head .warp .logobox a img {
+  height: 110px;
+  padding-top: 12px;
+}
+.box .header .head .warp h1 {
+  float: left;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 12px;
+  color: #666666;
+  border-left: 1px solid #dddddd;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+.reg {
+  width: 1130px;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  margin: 0px auto 20px auto;
+  padding: 60px 10px;
+}
+.reg .basicfrome {
+  font-size: 14px;
+}
+.reg .basicfrome .label {
+  *zoom: 1;
+  margin-bottom: 5px;
+}
+.reg .basicfrome .label:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.reg .basicfrome .label.showbank {
+  display: none;
+}
+.reg .basicfrome .label .subject {
+  float: left;
+  width: 135px;
+  text-align: right;
+  line-height: 32px;
+}
+.reg .basicfrome .label .blankico {
+  *zoom: 1;
+  padding: 10px 0px;
+  padding-left: 140px;
+  width: 600px;
+}
+.reg .basicfrome .label .blankico:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.reg .basicfrome .label .blankico a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 120px;
+  border: 2px solid #dddddd;
+  margin-bottom: 10px;
+}
+.reg .basicfrome .label .blankico a.on {
+  border-color: #f24846;
+}
+.reg .basicfrome .label .blankico img {
+  display: block;
+  margin: 0px auto;
+}
+.reg .basicfrome .label input {
+  width: 160px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.reg .basicfrome .label input.length4 {
+  width: 160px;
+}
+.reg .basicfrome .label input.length2 {
+  width: 290px;
+}
+.reg .basicfrome .label input.yzm {
+  width: 75px;
+  margin-right: 6px;
+}
+.reg .basicfrome .label input.sub {
+  background: #f24846;
+  width: 100px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.reg .basicfrome .label input.sub:hover {
+  background-color: #ef1916;
+}
+.reg .basicfrome .label input.bad {
+  background: #c8c8c8;
+  width: 100px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.reg .basicfrome .label input.bad:hover {
+  background-color: #afafaf;
+}
+.reg .basicfrome .label input.radio {
+  width: auto;
+  margin-top: 2px;
+}
+.reg .basicfrome .label input.checkbox {
+  width: auto;
+}
+.reg .basicfrome .label .yzmbtn {
+  display: inline-block;
+  line-height: 32px;
+  background: #39b6e4;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  width: 100px;
+  margin-left: 10px;
+}
+.reg .basicfrome .label select {
+  width: 180px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.reg .basicfrome .label textarea {
+  width: 690px;
+  padding: 0px 10px;
+  height: 100px;
+  border-radius: 3px;
+  float: left;
+  border: 1px solid #dddddd;
+}
+.reg .basicfrome .label .xinghao {
+  line-height: 32px;
+  padding-left: 10px;
+  color: #f24846;
+}
+.reg .basicfrome .label span {
+  line-height: 32px;
+  padding-left: 5px;
+}
+.reg .basicfrome .label {
+  margin-bottom: 20px;
+}
+.reg .basicfrome .label input.yzm {
+  width: 208px;
+}
+.reg .basicfrome .label input.sub {
+  height: 50px;
+  width: 250px;
+}
+.jihuo {
+  width: 487px!important;
+}

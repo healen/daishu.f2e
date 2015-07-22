@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/login.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+       <div class="header">
+            
+            <div class="head">
+                <div class="warp">
+                    <div class="logobox">
+                        <a href="/index.html"><img src="../public/img/logo.png" alt=""></a>
+                    </div>
+                    <h1>欢迎登录</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--主体内容-->
+        <div class="container">
+        <div class="login">
+            <div class="l">
+                <img src="../public/img/loginbanner.png" alt="">
+            </div>
+            <div class="r">
+                <form action="">
+                    <div class="title">请使用贷鼠网账号登录</div>
+                    <div class="input username">
+                       
+                        <input type="text" placeholder="请输用户名" class="usernametxt">
+                         <i class="i-login-50"></i>
+                    </div>
+                    <div class="alert"><!--用户名已存在--></div>
+                    <div class="input password">
+                        <i class="i-login-50"></i>
+                        <input type="password" placeholder="请输密码">
+                    </div>
+                    <div class="alert"><!--密码不能为空--></div>
+                    <div class="yzm">
+                        <div class="input">
+                            <input type="text" placeholder="请输验证码">
+                        </div>
+                        <a href="#"><img src="../public/img/yzm.png" alt=""></a>
+                    </div>
+                    
+                    <div class="alert"><!--验证码错误--></div>
+
+
+                    <div class="btnbox">
+                        <input type="button" value="登 录" class="m-btn btn-login">
+
+                    </div>
+
+                    <div class="alist">
+                        <a href="" class="left">免费注册</a>
+                        <a href="" class="right">找回密码?</a>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+           
+          
+
+          
+
+
+          
+
+        </div>
+
+
+        <!--footer.tpl开始读取-->
+    <div class="footer">
+        <div class="warper">
+            <div class="left">
+                <div class="content">
+                    <div class="footnav">
+                        <a href="#">我要投资</a>
+                        <span>|</span>
+                        <a href="#">帮助中心</a>
+                        <span>|</span>
+                        <a href="#">关于我们</a>
+                        <span>|</span>
+                        <a href="#">新闻公告</a>
+                    </div>
+                    <p>Copyright © 2015 XXXXXX All Rights Reserved. 版权所有</p>
+                    <p>京ICP备 12345678-1号    法律顾问：贷鼠网</p>
+                    <p>推荐使用IE7以上版本浏览器浏览</p>
+                    <p>
+                        <img src="../public/images/xin1.png" alt=""/>
+                        <img src="../public/images/xin2.png" alt=""/>
+                        <img src="../public/images/xin3.png" alt=""/>
+                        <img src="../public/images/xin4.png" alt=""/>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <div class="telbox">
+                        <div class="ico"></div>
+                        <div class="contentbox">
+                            <div class="title">全国客服热线</div>
+                            <div class="tel">400-666-888</div>
+                        </div>       
+                    </div>
+
+                    <div class="address">
+                        <div class="title">地址：</div>
+                        北京市朝阳区劲松南磨房路37号华腾北塘1505
+                    </div>
+
+
+                     <div class="address">
+                        <div class="title">工作时间：</div>
+                        09：00 ~ 18：00
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+<!--footer.tpl读取完成-->
+
+        
+
+
+
+
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/ieplaceholder.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript">
+   $(function(){
+        $(".input input").ieplaceholder("tips");
+
+   })
+   </script>
+   
+    
+</body>
+</html>

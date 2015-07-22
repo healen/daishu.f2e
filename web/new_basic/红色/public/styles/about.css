@@ -1,0 +1,112 @@
+/*element样式*/
+/*按钮*/
+/*
+*2015
+*个人中心
+*zxd
+*/
+body {
+  background: #f2f2f2;
+}
+.header {
+  box-shadow: 0px 1px 10px #c8c8c8;
+}
+.la-my {
+  width: 1132px;
+  margin: 0px auto;
+  margin-top: 20px;
+  *zoom: 1;
+}
+.la-my:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.la-my .myleft {
+  float: left;
+  width: 214px;
+  overflow: hidden;
+  margin-right: 7px;
+}
+.la-my .myright {
+  float: left;
+  width: 911px;
+  overflow: hidden;
+  margin-right: 0px;
+}
+.la-my {
+  margin-bottom: 40px;
+}
+.la-my .myleft .index {
+  height: 70px;
+  text-align: center;
+  background: #f24846;
+  color: #fff;
+  display: block;
+  line-height: 70px;
+  border-radius: 3px 0px 0px 0px;
+}
+.la-my .myleft .list {
+  border-radius: 0px 0px 0px 3px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  overflow: hidden;
+}
+.la-my .myleft .list .navbtn {
+  background: #fbfbfb;
+  position: relative;
+}
+.la-my .myleft .list .navbtn i {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 26px;
+  z-index: 9;
+  top: 30px;
+  background-image: url('../images/ico.png');
+  background-repeat: no-repeat;
+  background-position: -109px -166px;
+}
+.la-my .myleft .list .navbtn a {
+  display: block;
+  height: 70px;
+  line-height: 69px;
+  text-align: center;
+}
+.la-my .myleft .list .navbtn a span {
+  display: block;
+  margin: 0px 26px;
+  border-bottom: 1px solid #efefef;
+  color: #4c4c4c;
+}
+.la-my .myleft .list .navbtn:last-child a span {
+  border-bottom: none;
+}
+.la-my .myleft .list .navbtn.on > a span {
+  color: #f24846;
+}
+.la-my .myright .mbx {
+  line-height: 67px;
+  border: 1px solid #eeeeee;
+  color: #4c4c4c;
+  background: #ffffff;
+  margin-bottom: -1px;
+  border-top: 2px solid #f24846;
+  padding: 0px 25px;
+}
+.la-my .myright .topcontent {
+  background: #fff;
+  margin-bottom: 7px;
+  border: 1px solid #eeeeee;
+}
+.la-my .myright .topcontent .warp {
+  padding: 0px 24px;
+}
+.la-my .myright .topcontent .warp .mytop {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 800px;
+}

@@ -1,0 +1,389 @@
+@import "../document";
+
+body{
+    background: @huiBackground;
+}
+.-my ._layout(my,@documentWidth,214px,911px,20px);
+.la-my{
+    margin-bottom: 40px;
+    .myleft{
+         @listTitleHeight:70px;
+        .index{
+            height: @listTitleHeight;
+            text-align:center;
+            background: @markBgColorMy;
+            color: #fff;
+            display: block;
+            line-height: @listTitleHeight;
+            border-radius: 3px 0px 0px 0px
+        }
+        .list{
+            border-radius: 0px 0px 0px 3px;
+            border:1px solid @borderColor1;
+            border-top: none;
+            overflow: hidden;
+            .navbtn{
+                background: @boxBgColor;
+                position: relative;
+
+                i{
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    right: 26px;
+                    z-index: 9;
+                    top: 30px;
+                    background-image: url('@{img}/ico.png');
+                    background-repeat: no-repeat;
+                    background-position: -109px -166px; 
+                }
+                a{
+                    display: block;
+                    height: @listTitleHeight;
+                    line-height: @listTitleHeight+-1;
+                    text-align:center;
+                    span{
+                        display: block;
+                        margin: 0px 26px;
+                        border-bottom: 1px solid @borderColor2;
+                        color: @myTextColor;
+                    }
+                }
+                &:last-child{
+                    a{
+                        span{
+                             border-bottom:none;
+                        }
+                    }
+                }
+                .childlist{
+                    display: none;
+                     a{
+                        display: block;
+                        background: @huiBackground;
+                        height: 49px;
+                        line-height: 49px;
+                        text-align:center;
+                        span{
+                            display: block;
+                            margin: 0px 26px;
+                            padding-left: 50px;
+                            height: 48px;
+                            border-bottom: 1px dotted #e4e4e4;
+                            text-align: left;
+                            font-size: @samllFoutSize+-1;
+                            color: @auxTextColor;
+                        }
+                        &:last-child{
+                            span{
+                                border-bottom: none;
+                            }
+                        }
+                        &:hover,&.on{
+                            background: #caecff;
+                            span{
+                                color: @myTextColor;
+                            }
+                        }
+                    }
+                }
+                 &.on{
+                    i{
+                        background-position: -109px -180px;
+                    }
+                    &>a{
+                        span{
+                            color: @linkColorHover;
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+    }
+    .myright{
+        background: #ffffff;
+        .mbx{
+            line-height: 67px;
+            border-bottom:1px solid  @borderColor1;
+            color: @myTextColor;
+            background: #ffffff;
+            margin-bottom: -1px;
+            border-top: 2px solid @markBgColorMy;
+            padding: 0px 25px;
+        }
+        .topcontent{
+            background: #fff;
+            margin-bottom: 7px;
+            border:1px solid @borderColor1;
+            .warp{
+                padding: 0px 24px;
+                
+                .mytop{
+                    height: 190px;
+                    ._clearfix();
+                    margin: 8px 0px;
+                    .left{
+                        float: left;
+                        width: 50%;
+                        height: 190px;
+                        .mywarp{
+                            ._clearfix();
+                            padding: 14px 0px;
+                            .toux{
+                                .-box ._size(100px,100px);
+                                float: left;
+                                border:3px solid @markBgColor;
+                                overflow: hidden;
+                                border-radius: 53px;
+                                margin-right: 25px;
+                                img{
+                                    display: block;
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            .content{
+                                float: left;
+                                h2{
+                                    color: @markMy;
+                                    font-size: @titleFoutSize;
+                                    margin-bottom: 10px;
+                                }
+                                .inp{
+                                    margin-bottom: 20px;
+                                     p{
+                                        font-size: @samllFout;
+                                        color: @auxTextColor;
+                                    }
+                                }
+                                .icobxo{
+                                    i{
+                                        display: inline-block;
+                                        .-box ._size(35px,35px);
+                                        background-color:#f5f5f5;
+                                        margin-right: 20px; 
+                                        background-image: url('@{img}/ico.png');
+                                        background-position: 0px -213px;
+                                        cursor: pointer;
+
+                                        &.tx{
+                                            background-position: 0px -213px;
+                                            &:hover,&.on{
+                                                background-color: #c3e9ff;
+                                                background-position: 0px -248px;
+                                            }
+                                        }
+                                        &.suo{
+                                            background-position: -35px -213px;
+                                            &:hover{
+                                                background-color: #c3e9ff;
+                                                background-position: -35px -248px;
+                                            }
+                                        }
+                                        &.sj{
+                                             background-position: -70px -213px;
+                                             &:hover{
+                                                background-color: #c3e9ff;
+                                                background-position: -70px -248px;
+                                            }
+                                        }
+
+                                         &.xx{
+                                             background-position: -105px -213px;
+                                             &:hover{
+                                                background-color: #c3e9ff;
+                                                background-position: -105px -248px;
+                                            }
+                                        }
+                                    }
+                                }
+                               
+
+                            }
+
+                        }
+
+                        
+                    }
+                    .right{
+                        width: 49.8%;
+                        height: 190px;
+                        float: left;
+                        border-left: 1px solid @borderColor1;
+                        .mywarp{
+                            ._clearfix();
+                            padding: 14px 0px;
+                            padding-left: 35px;
+                            .content{
+                                float: left;
+                                h2{
+                                    color: @markMy;
+                                    font-size: @bigFontSize;
+                                    margin-bottom: 10px;
+                                    span{
+                                        color: @markBgColor;
+                                    }
+                                }
+                                .inp{
+                                    margin-bottom: 20px;
+                                     p{
+                                        span{
+                                            color: #000000;
+                                        }
+                                        font-size: @samllFoutSize;
+                                        color: @auxTextColor;
+
+                                    }
+                                }
+                                .icobxo{
+                                    text-align: center;
+                                    a{
+                                        width: 100px;
+                                        height: 30px;
+                                        text-align: center;
+                                        color: #fff;
+                                        background-color: @markBgColor;
+                                        line-height: 30px;
+                                        display: inline-block;
+                                        border-radius: 4px;
+                                        margin: 0px 10px;
+                                        &:hover{
+                                             background-color:darken(@markBgColor, 10%);
+                                        }
+                                       
+                                    }
+                                    a.txj{
+                                        background: @markBgColorMy;
+                                        &:hover{
+                                            background-color:darken(@markBgColorMy, 10%);
+                                        }
+
+                                    }
+                                   
+                                        
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .bottomcontent{
+            background: #fff;
+            margin-bottom: 7px;
+            border:1px solid @borderColor1;
+            .warp{
+                padding: 0px 24px;
+                div.box{
+                    border-bottom: 1px solid @borderColor1;
+                    &:last-child{
+                        border-bottom: none;
+                        padding-bottom: 110px;
+
+                    }
+                    .sivebj{
+                        width: 714px;
+                        margin: 0px auto;
+                        ._clearfix();
+                        font-size:@titleFoutSize;
+                        margin-top: 30px;
+                        &.num{
+                            font-size: @titleFoutSize+4;
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                        }
+                        div{
+
+                            width: 150px;
+                            overflow: hidden;
+                            text-align: center;
+                            float: left;
+                          
+                            span{
+                                color:@markBgColor;
+                            }
+
+                        }
+                        div.zwf{
+                                width: 35px;
+                            }
+
+                    }
+                    .listbox{
+                        width: 720px;
+                        margin: 0px auto;
+                        padding: 30px 0px 0px 0px;
+                        h2{
+                            font-size:@titleFoutSize;
+                            span.box{
+                                display: inline-block;
+                                border:none;
+                                margin-right: 70px;
+                                span.huang{
+                                    color: @markBgColor;
+                                }
+                                span.lan{
+                                    color: @markBgColorMy;
+                                }
+                            }
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            margin-bottom: 30px;
+                            span.box{
+                                display:inline-block;
+                                margin-right: 25px;
+                                border-bottom: none;
+                                span{
+                                    color: #000000;
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.msgbox{
+   
+    background: #ffffff;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-top:1px solid #fffff;
+
+    .warp{
+        margin: 40px auto;
+        padding:0px 50px;
+    }
+    h1{
+        font-size: 30px;
+        padding-bottom: 10px;
+        
+        color: @markBgColor;
+    }
+    p{
+        span{
+            color: @markBgColor;
+        }
+    }
+    .btnlist{
+        padding-top: 20px;
+        input{
+            ._btn();
+            border:none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    }
+}

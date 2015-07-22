@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/login.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+        <div class="header">
+            <div class="head">
+                <div class="warp">
+                    <div class="logobox">
+                        <a href="/index.html"><img src="../public/img/logo.png" alt=""></a>
+                    </div>
+                    <h1>欢迎登录</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--主体内容-->
+        <div class="container">
+	        <div class="login">
+	            <div class="l">
+	                <img src="../public/img/loginbanner.png" alt="">
+	            </div>
+	            <div class="r">
+	                <form action="">
+	                    <div class="title">请使用贷鼠网账号登录</div>
+	                    <div class="input username">
+	                        <i class="i-login-50"></i>
+	                        <input type="text" placeholder="请输用户名" class="usernametxt">
+	                    </div>
+	                    <div class="alert"><!--用户名已存在--></div>
+	                    <div class="input password">
+	                        <i class="i-login-50"></i>
+	                        <input type="password" placeholder="请输密码">
+	                    </div>
+	                    <div class="alert"><!--密码不能为空--></div>
+	                    <div class="yzm">
+	                        <div class="input">
+	                            <input type="text" placeholder="请输验证码">
+	                        </div>
+	                        <a href="#"><img src="../public/img/yzm.png" alt=""></a>
+	                    </div>
+	                    
+	                    <div class="alert"><!--验证码错误--></div>
+
+
+	                    <div class="btnbox">
+	                        <input type="button" value="登 录" class="m-btn btn-login">
+
+	                    </div>
+
+	                    <div class="alist">
+	                        <a href="" class="left">免费注册</a>
+	                        <a href="" class="right">找回密码?</a>
+	                    </div>
+
+
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+        <!--页脚-->
+    
+
+
+        <div class="ui-footer">
+            <div class="ui-container">
+                <div class="site-link">
+                    <ul class="fn-clear">
+                        <li><a href="javascript:void(0)" rel="nofollow">关于我们</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow">名词解释</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow" >法律法规</a></li>
+                        <li><a href="javascript:void(0)">理财知识</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow">诚聘英才</a></li>
+                        <li><a href="javascript:void(0)">友情链接</a></li>
+                        <li><a href="javascript:void(0)" >官方论坛</a></li>
+                        <li><a href="javascript:void(0)" >网站地图</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center fn-clear">
+                    <div class="footer-contact">
+                        <i class="icon-sp1 sp1-hotline-footer mr20"></i>
+                        <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-weibo ml10"></i></a>
+                        <div class="weixin-wrap">
+                            <i id="footerQrcode" class="icon-sp1 sp1-weixin ml10"></i>
+                           
+                        </div>
+                        <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-email ml10"></i></a>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="ui-container fn-clear">
+                    <div class="auth-link fn-clear">
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-norton-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-kexin-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-cfca-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-icp-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-police-normal"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p class="p1"><span class="copyright-left">©Copyright(c)2014 iqianjin.com.All Rights Reserved</span><a target="_blank" href="javascript:void(0)" rel="nofollow">京ICP备14017729</a></p>
+                        <p class="p2"><span class="copyright-left">京公网安备11010102001399号</span><a href="/icp/icp.jsp" target="_blank">京ICP证150121号</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!--QQ客服-->
+
+		
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/ieplaceholder.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript">
+   $(function(){
+        $(".input input").ieplaceholder("tips");
+   })
+   </script>
+   
+    
+</body>
+</html>

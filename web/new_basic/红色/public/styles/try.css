@@ -1,0 +1,377 @@
+/*element样式*/
+/*按钮*/
+/*
+*2015
+*首页样式
+*zxd
+*/
+.banner {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 3px 10px #c5c5c5;
+}
+.banner ul {
+  height: 350px;
+  width: 100%;
+}
+.banner ul li {
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+}
+.banner ul li a {
+  display: block;
+  width: 1132px;
+  margin: 0px auto;
+}
+.banner ul li a img {
+  height: 350px;
+}
+.banner .btnlst {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+}
+.banner .btnlst span {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  /* 兼容老版本firefox */
+  font-size: 0;
+  margin: 0px 5px;
+  overflow: hidden;
+}
+.banner .btnlst span.on {
+  background-color: #ffffff;
+}
+.busin {
+  margin: 20px 0px;
+}
+.busin .warp {
+  width: 1132px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.busin .warp .inwarp {
+  width: 1135px;
+  *zoom: 1;
+}
+.busin .warp .inwarp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.busin .warp .inwarp .list {
+  float: left;
+  width: 377px;
+  border-right: 1px dotted #dddddd;
+}
+.busin .warp .inwarp .list div.inlist {
+  width: 250px;
+  margin: 0px auto;
+  text-align: center;
+}
+.busin .warp .inwarp .list div.inlist.l1 .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.busin .warp .inwarp .list div.inlist.l1 .i-ico-100 {
+  background-image: url('../images/ico.png');
+  width: 100px;
+  height: 100px;
+  background-position: -18px -15px;
+  background-color: none;
+}
+.busin .warp .inwarp .list div.inlist.l2 .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.busin .warp .inwarp .list div.inlist.l2 .i-ico-100 {
+  background-image: url('../images/ico.png');
+  width: 100px;
+  height: 100px;
+  background-position: -155px -15px;
+  background-color: none;
+}
+.busin .warp .inwarp .list div.inlist.l3 .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.busin .warp .inwarp .list div.inlist.l3 .i-ico-100 {
+  background-image: url('../images/ico.png');
+  width: 100px;
+  height: 100px;
+  background-position: -290px -15px;
+  background-color: none;
+}
+.busin .warp .inwarp .list div.inlist .m-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.busin .warp .inwarp .list div.inlist .i-ico-100 {
+  background-image: url('../images/ico.png');
+  width: 100px;
+  height: 100px;
+  background-position: -290px -15px;
+  background-color: none;
+}
+.busin .warp .inwarp .list div.inlist h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 22px;
+  margin: 5px 0px;
+}
+.busin .warp .inwarp .list div.inlist p {
+  text-align: left;
+  font-size: 16px;
+  color: #666666;
+}
+.busin .warp .inwarp .list div.inlist p span {
+  color: #f24846;
+}
+.tbox {
+  background-color: #fbfbfb;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tbox.lbox {
+  border-top: none;
+  background-color: #ffffff;
+}
+.tbox .warp {
+  *zoom: 1;
+  width: 1132px;
+  height: auto;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.tbox .warp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tbox .warp h2 {
+  font-size: 22px;
+}
+.tbox .warp .list-mylist li {
+  border-bottom: 1px dotted #dddddd;
+  line-height: 60px;
+  color: #4c4c4c;
+  *zoom: 1;
+}
+.tbox .warp .list-mylist li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tbox .warp .list-mylist li .td {
+  position: relative;
+  float: left;
+  width: 12%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tbox .warp .list-mylist li .td.first {
+  width: 40%;
+  text-align: left;
+  *zoom: 1;
+}
+.tbox .warp .list-mylist li .td.first:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tbox .warp .list-mylist li .td.first .ico-20 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  color: #ffffff;
+  float: left;
+  margin: 21px 10px 0px 0px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
+}
+.tbox .warp .list-mylist li .td.left {
+  width: 70%;
+  text-align: left;
+  *zoom: 1;
+}
+.tbox .warp .list-mylist li .td.left:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tbox .warp .list-mylist li .td.left .ico-20 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f24846;
+  background: none;
+  color: #f24846;
+  float: left;
+  margin: 20px 10px 0px 0px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.tbox .warp .list-mylist li .td.right {
+  float: right;
+  color: #666666;
+  width: auto;
+}
+.tbox .warp .list-mylist li .td.last {
+  text-align: right;
+}
+.tbox .warp .list-mylist li:last-child {
+  border-bottom: none;
+}
+.tbox .warp .list-mylist li.title {
+  border-bottom: none;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.tbox .warp .list-mylist li.title .td.first .ico-20 {
+  visibility: hidden;
+}
+.tbox .warp .myspeed {
+  width: 102px;
+  height: 36px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 10%;
+  font-size: 12px;
+}
+.tbox .warp .myspeed .smalls {
+  line-height: 20px;
+  display: block;
+}
+.tbox .warp .myspeed .barbox {
+  width: 100px;
+  height: 10px;
+  display: block;
+  border: 1px solid #39b6e4;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.tbox .warp .myspeed .barbox span {
+  height: 10px;
+  width: 50px;
+  background: #39b6e4;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+.tbox .warp .m-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  overflow: visible;
+  width: auto;
+  *width: 1;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.tbox .warp .btn-wite {
+  height: 38px;
+  padding: 0px 40px;
+  background: none;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #aaaaaa;
+}
+.tbox .warp .btn-wite:hover {
+  color: #999999;
+  border-color: #999999;
+}
+.tbox .warp .btnbox {
+  text-align: center;
+  padding: 10px 0px;
+}
+.tbox .warp .inwarp {
+  width: 1152px;
+  *zoom: 1;
+}
+.tbox .warp .inwarp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tbox .warp .inwarp .box {
+  float: left;
+  width: 554px;
+  background: #fbfbfb;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+  margin-right: 18px;
+}
+.tbox .warp .inwarp .box .inbox {
+  display: block;
+  margin: 38px;
+  font-size: 14px;
+}
+.tbox .warp .inwarp .box .inbox p {
+  display: inline-block;
+}
+.tbox .warp .inwarp .box .inbox p.title {
+  color: #39b6e4;
+  margin-bottom: 20px;
+}

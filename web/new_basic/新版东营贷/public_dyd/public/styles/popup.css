@@ -1,0 +1,428 @@
+/*element样式*/
+/*按钮*/
+/*弹窗*/
+.popup .dialog {
+  background: #fff;
+  width: 720px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.popup .dialog a.close {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  background: #fff000;
+  cursor: pointer;
+  background: url('../images/ico.png') no-repeat -19px -140px;
+}
+.popup .dialog .dialog-content {
+  margin-padding: 20px;
+}
+.popup .dialog .dialog-content .dialog-title {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #444444;
+}
+.popup .dialog .dialog-content .basicfrome {
+  font-size: 14px;
+}
+.popup .dialog .dialog-content .basicfrome .label {
+  *zoom: 1;
+  margin-bottom: 5px;
+}
+.popup .dialog .dialog-content .basicfrome .label:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.popup .dialog .dialog-content .basicfrome .label.showbank {
+  display: none;
+}
+.popup .dialog .dialog-content .basicfrome .label .subject {
+  float: left;
+  width: 135px;
+  text-align: right;
+  line-height: 32px;
+}
+.popup .dialog .dialog-content .basicfrome .label .blankico {
+  *zoom: 1;
+  padding: 10px 0px;
+  padding-left: 140px;
+  width: 600px;
+}
+.popup .dialog .dialog-content .basicfrome .label .blankico:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.popup .dialog .dialog-content .basicfrome .label .blankico a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 120px;
+  border: 2px solid #dddddd;
+  margin-bottom: 10px;
+}
+.popup .dialog .dialog-content .basicfrome .label .blankico a.on {
+  border-color: #2ea7e0;
+}
+.popup .dialog .dialog-content .basicfrome .label .blankico img {
+  display: block;
+  margin: 0px auto;
+}
+.popup .dialog .dialog-content .basicfrome .label input {
+  width: 160px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.popup .dialog .dialog-content .basicfrome .label input.length4 {
+  width: 160px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.length2 {
+  width: 290px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.yzm {
+  width: 75px;
+  margin-right: 6px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.sub {
+  background: #2ea7e0;
+  width: 100px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.sub:hover {
+  background-color: #1c8bbf;
+}
+.popup .dialog .dialog-content .basicfrome .label input.bad {
+  background: #c8c8c8;
+  width: 100px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.bad:hover {
+  background-color: #afafaf;
+}
+.popup .dialog .dialog-content .basicfrome .label input.radio {
+  width: auto;
+  margin-top: 2px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.checkbox {
+  width: auto;
+}
+.popup .dialog .dialog-content .basicfrome .label .yzmbtn {
+  display: inline-block;
+  line-height: 32px;
+  background: #f39913;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  width: 100px;
+  margin-left: 10px;
+}
+.popup .dialog .dialog-content .basicfrome .label select {
+  width: 180px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.popup .dialog .dialog-content .basicfrome .label textarea {
+  width: 690px;
+  padding: 0px 10px;
+  height: 100px;
+  border-radius: 3px;
+  float: left;
+  border: 1px solid #dddddd;
+}
+.popup .dialog .dialog-content .basicfrome .label .xinghao {
+  line-height: 32px;
+  padding-left: 10px;
+  color: #2ea7e0;
+}
+.popup .dialog .dialog-content .basicfrome .label span {
+  line-height: 32px;
+  padding-left: 5px;
+}
+.popup .dialog .dialog-content .basicfrome .label {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.popup .dialog .dialog-content .basicfrome .label.mb0 {
+  margin-bottom: 0px;
+}
+.popup .dialog .dialog-content .basicfrome .label:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.popup .dialog .dialog-content .basicfrome .label .title {
+  color: #f39913;
+}
+.popup .dialog .dialog-content .basicfrome .label .left {
+  float: left;
+}
+.popup .dialog .dialog-content .basicfrome .label .right {
+  float: right;
+}
+.popup .dialog .dialog-content .basicfrome .label textarea {
+  width: 300px;
+}
+.popup .dialog .dialog-content .basicfrome .label input {
+  width: 160px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.popup .dialog .dialog-content .basicfrome .label input.sub {
+  background: #2ea7e0;
+  width: 153px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.sub:hover {
+  background-color: #1c8bbf;
+}
+.popup .dialog .dialog-content .basicfrome .label input.bad {
+  background: #c8c8c8;
+  width: 153px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.popup .dialog .dialog-content .basicfrome .label input.bad:hover {
+  background-color: #afafaf;
+}
+.popup .dialog .dialog-content .popupbtnbox {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn {
+  display: inline-block;
+  background: #2ea7e0;
+  color: #fff;
+  width: 154px;
+  line-height: 36px;
+  margin-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn:hover {
+  background-color: #1c8bbf;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn.comfbox {
+  background: #f39913;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn.comfbox:hover {
+  background-color: #c97c0a;
+}
+.popup .dialog .dialog-content .warp {
+  max-height: 650px;
+  overflow: auto;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+.popup .dialog .my_list_top {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.popup .dialog .my_list_top .bar {
+  padding-bottom: 10px;
+}
+.popup .dialog .my_list_top span {
+  display: inline-block;
+  line-height: 34px;
+}
+.popup .dialog .my_list_top span.box {
+  display: inline-block;
+  margin-right: 10px;
+}
+.popup .dialog .my_list_top span.sidetitle {
+  width: 120px;
+  text-align: right;
+  padding-left: 10px;
+}
+.popup .dialog .my_list_top select {
+  border: 1px solid #dddddd;
+  height: 36px;
+  padding: 0px 10px;
+}
+.popup .dialog .my_list_top input.text {
+  width: 160px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+}
+.popup .dialog .my_list_top input.time {
+  width: 120px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+  background: url('../images/ico.png') no-repeat right -113px;
+}
+.popup .dialog .my_list_top input.subBut {
+  display: inline-block;
+  background: #2ea7e0;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.popup .dialog .my_list_top input.subBut:hover {
+  background: #1c8bbf;
+}
+.popup .dialog .my_list_top input.retBut {
+  display: inline-block;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.popup .dialog .my_list_top input.retBut:hover {
+  background: #c97c0a;
+}
+.popup .dialog .my_list_bottom table {
+  line-height: 30px;
+}
+.popup .dialog .my_list_bottom table tr td {
+  border-bottom: 1px dotted #efefef;
+  padding: 15px 5px;
+  *zoom: 1;
+  font-size: 14px;
+}
+.popup .dialog .my_list_bottom table tr td:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.popup .dialog .my_list_bottom table tr td a.tit {
+  display: inline-block;
+  width: 130px;
+  line-height: 30px;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.popup .dialog .my_list_bottom table tr td .myspeed {
+  width: 102px;
+  height: 36px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 10%;
+  font-size: 12px;
+}
+.popup .dialog .my_list_bottom table tr td .myspeed .smalls {
+  line-height: 20px;
+  display: block;
+}
+.popup .dialog .my_list_bottom table tr td .myspeed .barbox {
+  width: 100px;
+  height: 10px;
+  display: block;
+  border: 1px solid #f39913;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.popup .dialog .my_list_bottom table tr td .myspeed .barbox span {
+  height: 10px;
+  width: 50px;
+  background: #f39913;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+.popup .dialog .my_list_bottom table tr td .myspeed {
+  margin-top: 0px;
+  text-align: center;
+}
+.popup .dialog .my_list_bottom table tr td span.mack {
+  color: #2ea7e0;
+}
+.popup .dialog .my_list_bottom table th {
+  background: #fbfbfb;
+  border-bottom: 1px dotted #efefef;
+  padding: 15px 5px;
+}
+.popup .dialog .my_list_bottom .center {
+  text-align: center;
+}
+.popup .dialog .page-list {
+  text-align: center;
+  padding: 10px 0px;
+}
+.popup .dialog .page-list a {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.popup .dialog .page-list a.num {
+  border: 1px solid #dddddd;
+}
+.popup .dialog .page-list a.num.on {
+  border: 1px solid #f39913;
+  background: #f39913;
+  color: #fff;
+}
+.popcon {
+  padding: 0px 22px;
+  line-height: 30px;
+}
+.popcon .top {
+  margin-bottom: 10px;
+}
+.popcon .top .mail {
+  color: #f39913;
+}
+.popcon .bottom {
+  text-align: center;
+}
+.popcon .bottom a.jhwc {
+  display: inline-block;
+  background: #2ea7e0;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.popcon .bottom a.jhwc:hover {
+  background: #1c8bbf;
+}

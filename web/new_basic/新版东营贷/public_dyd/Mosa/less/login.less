@@ -1,0 +1,290 @@
+@import "../document";
+
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body{
+    background: @huiBackground;
+}
+@documentWidth:1000px;
+.box{
+        .header{
+        background-color: #fff;
+        .topbar{
+            .-box ._size(auto,40px);
+            .-bg ._color(@mainBgColor);
+            font-size: @baseFontSize;
+            .warp{
+                .-box ._size(@documentWidth,40px);
+                margin: 0px auto;
+                ._clearfix();
+                .l{
+                    float: left;
+                    a{
+                        display: inline-block;
+                        .-box ._size(auto,40px);
+                        line-height: 40px;
+                        color: @markColor;
+                        &.reg{
+                            color: @mainAuxColor;
+                        }
+                        margin-right:20px;
+                    }
+                    span{
+                         color: @mainAuxColor;
+                    }
+                }
+                .r{
+                    float: right;
+                    a{
+                        color: @mainColor;
+                        line-height: 40px;
+                        display: inline-block;
+                        padding-left: 46px;
+                        &:hover{
+                            color: @mainColorHover;
+                        }
+
+                    }
+                }
+            }
+        }
+        .head{
+            display: block;
+            font-size: @titleFoutSize;
+            @height:auto;
+            .warp{
+                padding-bottom:20px;
+                padding-top: 10px;
+                .-box ._size(@documentWidth,@height);
+                margin: 0px auto;
+                ._clearfix();
+                .logobox{
+                    
+                    float: left;
+                    margin-left: -5px;
+                    a{
+                        img{
+                            height: @height;
+                        }
+                    }
+                }
+                ul{
+                    ._clearfix();
+                    &.nav{
+                        float: right;
+                        margin-top: 15px;
+                        margin-right: -28px;
+                    }
+                    li{
+
+                       
+                        line-height:50px;
+                        float: left;
+                   
+                        a{
+                            display: block;
+                            width: 120px;
+                            text-align: center;
+                            border-bottom: 5px solid  #fff;
+                             &:hover{
+                                border-color: @markBgColor;
+                             }
+
+                        }
+                        &.on{
+
+                            a{
+                                color: @markBgColor;
+                                border-color: @markBgColor;
+                            }
+                            
+                        }
+
+
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+    .header{
+        background-color:#ffffff;
+         -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+          -webkit-border-shadow: 0 1px 4px rgba(0,0,0,.2);
+          box-shadow: 0 1px 4px rgba(0,0,0,.2);
+        .head{
+            .warp{
+               
+                .logobox{
+                   
+                    a{
+                        display: block;
+                        img{
+                            height: 80px;
+                            padding-top: 0px;
+                        }
+                    }
+                  
+                }
+                h1{
+                    float: left;
+                    font-size: 20px;
+                    line-height: 30px;
+                    padding-top: 0px;
+                    color: @auxTextColor;
+                    border-left: 1px solid @borderColor;
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    margin-top: 26px;
+                }
+            }
+
+        }
+    }
+}
+.login{
+
+    @documentWidth:1000px;
+    overflow: hidden;
+    border-radius: 5px;
+    width: @documentWidth;
+    height: 385px;
+    border:1px solid @borderColor;
+    margin: 70px auto 100px auto;
+
+    
+    ._clearfix();
+    .l{
+        .-box ._size(620px,385px);
+        float: left;
+        img{
+            display: block;
+           .-box ._size(620px,385px);
+        }
+    }
+    .r{
+        float: left;
+        .-box ._size(380px,385px);
+        .-bg ._color(#fff);
+        form{
+            display: block;
+            .-box ._size(300px,400px);
+            margin: 20px auto;
+            .title{
+                margin-bottom: 15px;
+            }
+            div.input{
+                height: 50px;
+                border:1px solid @borderColor;
+                border-radius: 3px;
+                overflow: hidden;
+                position: relative;
+                ._clearfix();
+                 &.username{
+                    .-icon ._base(login,50,'@{img}/ico.png',-1px,-158px,@huiBackground);
+                 }
+
+                 &.password{
+                    .-icon ._base(login,50,'@{img}/ico.png',-50px,-160px,@huiBackground);
+                 }
+                .i-login-50{
+                    display: block;
+                    float: left;
+                    border-left: 1px solid @borderColor; 
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                }
+
+                input{
+                    height: 46px;
+                    *line-height: 46px;
+                    display: block;
+                    padding-left: 10px;
+                    width: 280px;
+                    border:1px solid #fff;
+                    float: left;
+
+                }
+            }
+            .tips{
+                color: @inputPlaceholderColor;
+            }
+            div.yzm{
+               ._clearfix();
+               div.input{
+                    width: 166px;
+                    float: left;
+                    margin-right: 10px;
+                    input{
+                        width: 220px;
+                    }
+               }
+               img{
+                width: 120px;
+                height: 48px;
+                border:1px solid @borderColor;
+               }
+            }
+            div.alert{
+                height: 20px;
+                line-height: 20px;
+                padding: 0px 10px;
+                text-align: center;
+                color: @alertTextColor;
+            }
+            .btnbox{
+               
+                .m-btn{
+                    .-form ._btnbase();
+
+                }
+                .-form ._button(login,58px,@markBgColor,1px solid @markBgColor,@color:#ffffff);
+
+                .btn-login{
+                    display: block;
+                    padding:0px 0px;
+                    width: 100%;
+                    margin: 0px;
+                    margin-bottom: 10px;
+                    font-size: @bigFontSize;
+
+                    cursor: pointer;
+                    &:hover{
+                        background-color: darken(@markBgColor, 10%);
+                    }
+                }
+            }
+
+            .alist{
+                ._clearfix();
+                width: 95%;
+                margin: 0px auto;
+                a{
+                    display:block;
+                    &.left{
+                        float: left;
+                        text-align: left;
+                        color: @markBgColor;
+                        &:hover{
+                            color: darken(@markBgColor, 10%);
+                        }
+
+                    }
+                    &.right{
+                        float: right;
+                        text-align: right;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

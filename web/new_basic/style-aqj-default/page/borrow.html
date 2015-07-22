@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要借款</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/borrow.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+        <!--页眉-->
+        <div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+                <div class="ui-container">
+                    <span class="fn-left">
+                        <a href="javascript:void(0)" rel="nofollow" target="_blank" ><i class="icon-sp1 sp1-puhui-min"></i>贷鼠网金融</a> 旗下在线投资理财金融服务平台
+                    </span>
+                    <span id="menu-had-login" class="fn-right menu-had-login">
+                        <a class="ml20 icon-nl" href="javascript:void(0)" rel="nofollow" id="top-menu-msgtip" >
+                            <i class="icon-sp1 sp1-msg-normal"></i>消息<span class="msg-count"></span>
+                        </a>
+                        <span class="nav-down">
+                            <a class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" rel="nofollow" >
+                                <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                                <span class="menu-user"></span>
+                                <i class="icon-sp1 sp1-arrow-down"></i>
+                            </a>
+                            <div id="menu-ucenter" class="ui-poptip ui-poptip-white">
+                                <div class="ui-poptip-shadow-dis">
+                                    <div class="ui-poptip-container">
+                                        <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                            <em></em>
+                                            <span></span>
+                                        </div>
+                                        <div class="ui-poptip-content">
+                                            <div class="top fn-clear">
+                                                <a href="javascript:void(0)" class="fn-left">
+                                                    <img id="user-photo" src="javascript:void(0)" alt=""></a>
+                                                    <a class="logout fn-left" href="javascript:void(0)" rel="nofollow" onclick="">退出</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                        <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                        个人中心
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                        <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                        账户充值
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)">
+                                                    <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon-nl" href="javascript:void(0)" >
+                                                        <i class="icon-sp1 sp1-asets-normal"></i>资产统计
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </span>
+                    <span id="menu-not-login" class="fn-right menu-not-login" style="display: inline;">
+                        <a class="ml20" href="javascript:void(0)" rel="nofollow" >注册</a>
+                        <span class="ml10 mr10 split">|</span>
+                        <a href="javascript:void(0)" rel="nofollow" >登录</a>
+                    </span>
+                    <a class="fn-right ml20 icon-nl kefu"></i>在线客服</a>
+                    <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>400-812-8808(9:00-21:00)</a>
+                </div>
+            </div>
+            <div class="ui-nav">
+                <div class="ui-container fn-clear" style="position: relative">
+                    <a class="top-logo icon-sp1 sp1-logo fn-left" href="javascript:void(0)" >
+                        贷鼠网最专业安全透明的O2O模式互联网投资理财金融服务p2p平台
+                    </a>
+                    <ul id="ui-nav-ul">
+                        <li data-nav="index" class="cur"><a href="javascript:void(0)" rel="nofollow">首页</a></li>
+                        <li data-nav="touzi"><a href="javascript:void(0)" rel="nofollow" >投资项目</a></li>
+                        <li data-nav="security"><a href="javascript:void(0)" rel="nofollow" >安全保障</a></li>
+                        <li data-nav="media"><a href="javascript:void(0)" rel="nofollow" >媒体报道</a></li>
+                        <li data-nav="guide"><a href="javascript:void(0)" rel="nofollow" >新手指南</a></li>
+                        <li data-nav="customer"><a href="javascript:void(0)" >客户服务</a></li>
+                        <li data-nav="about"><a class="last" href="javascript:void(0)" rel="nofollow" >关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+             <a href="#" class="banner">
+                    <img src="../public/img/banner/banner3.png" alt="">
+                </a>
+               <div class="borrow top">
+                   <div class="box">
+                       <div class="range" unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
+                           <div class="title">
+                               借款金额
+                               <input type="text" value="0" class="prise">
+                               元
+                           </div>
+                           <div class="commd">
+                                <div class="rangebar">
+                                    <div class="line"></div>
+                                    <div class="handerbar">￥</div>
+                                    <div class="numbar add">+</div>
+                                    <div class="numbar plus">-</div>
+                                    <div class="showScale" data-Company=""></div>
+                                    <div class="showSmallScale"></div>
+                                </div>
+                           </div>
+                           <input type="hidden" name="InitNumber" value="10">
+                           <input type="hidden" name="Step" value="20000">
+                           <input type="hidden" name="StepNumber" value="6">
+                           <input type="hidden" name="Result" value="">
+                       </div>
+
+
+                       
+
+
+
+
+                   </div>
+
+
+
+
+
+                   <div class="box">
+                       <div class="range" unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
+                           <div class="title">
+                               借款利率
+                           </div>
+                           <div class="commd">
+                                <div class="rangebar">
+                                    <div class="line"></div>
+                                    <div class="handerbar">%</div>
+                                    <div class="numbar add">+</div>
+                                    <div class="numbar plus">-</div>
+                                    <div class="showScale" data-Company="%"></div>
+                                    <div class="showSmallScale"></div>
+                                </div>
+                           </div>
+                           <input type="hidden" name="InitNumber" value="0">
+                           <input type="hidden" name="Step" value="2.5">
+                           <input type="hidden" name="StepNumber" value="10">
+                           <input type="hidden" name="Result" value="26">
+                       </div>
+                   </div>
+                   <div class="box">
+                       <div class="table">
+
+                            <label class="tr">
+                               <div class="td first">&nbsp;</div>
+                               <div class="td sen">借款期限</div>
+                               <div class="td">借款利率</div>
+                               <div class="td">月还款额</div>
+                               <div class="td last">总还款额</div>
+                            </label>   
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                             <label class="tr">
+                               <div class="td first"><input type="radio" name="na"> </div>
+                               <div class="td sen">3个月</div>
+                               <div class="td"> 0.88% </div>
+                               <div class="td">17106.67元</div>
+                               <div class="td last">51320.01元</div>
+                            </label>
+                     
+                       </div>
+                   </div>
+                   <div class="box end">
+                        <div class="btnbox">
+                            <a href="#" class="btn_a">申请借款</a>
+                        </div>
+                        
+                   </div>
+               </div>
+               <div class="borrow mit">
+                   <div class="box">
+                        <div class="title">
+                               借款流程
+                        </div>
+                        <div class="borrowOrd">
+                            <div class="borrowbar">
+                                <div class="yuan y1">1
+                                    <span>填写信息上传资料</span>
+                                </div>
+                                <div class="yuan y2">2
+                                    <span>提交申请</span>
+                                </div>
+                                <div class="yuan y3">3
+                                    <span>筹措借款</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                   </div>
+                   <div class="box end">
+                        <div class="title">
+                               必要申请资料
+                        </div>
+
+                        <div class="icobx">
+                            <div class="qure">
+                                <div class="ics sfz">
+                                <b>1</b>
+                                    
+                                </div>
+                                <p>身份证复印件</p>
+                                
+                            </div>
+
+                            <div class="qure center">
+
+                                 <div class="ics gzk">
+                                 <b>2</b>
+                                    
+                                </div>
+
+                                 <p>工资卡银行流水</p>
+                                 <p class="alert">(<a href="#">网银截屏</a>或上传银行打印流水照片)</p>
+                                
+                            </div>
+
+                            <div class="qure">
+                                 <div class="ics xy">
+                                 <b>3</b>
+                                    
+                                </div>
+                                 <p>央行信用报告</p>
+                                  <p class="alert">(<a href="#">网上获取</a>或到各地征信机构获取)</p>
+                                
+                            </div>
+                        </div>
+                        <div class="btnts">
+                           <i></i> 温馨提示：贷鼠网会根据借款人提交的资料及信息进行综合评估，不同信用资质的用户。在审核通过之后，会匹配不同比例的服务费，具体以信用审核结果为准。
+                        </div>
+                   </div>
+               </div>
+               <div class="borrow bottom">
+                   <div class="box end">
+                        <div class="title">
+                               贷款入门帮助
+                        </div>
+
+                        <div class="help">
+                           <a href="#">贷款利率是如何规定的</a>
+                           <a href="#">借款流程</a>
+                           <a href="#">贷款利率是如何规定的</a>
+                           <a href="#">借款流程</a>
+                           <a href="#">贷款利率是如何规定的</a>
+                           <a href="#">借款流程</a>
+                           <a href="#">贷款利率是如何规定的</a>
+                        </div>
+                   </div>
+               </div>
+  
+
+
+
+            
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <!--页脚-->
+        
+      <div class="ui-footer">
+          <div class="ui-container">
+              <div class="site-link">
+                  <ul class="fn-clear">
+                      <li><a href="javascript:void(0)" rel="nofollow">关于我们</a></li>
+                      <li><a href="javascript:void(0)" rel="nofollow">名词解释</a></li>
+                      <li><a href="javascript:void(0)" rel="nofollow" >法律法规</a></li>
+                      <li><a href="javascript:void(0)">理财知识</a></li>
+                      <li><a href="javascript:void(0)" rel="nofollow">诚聘英才</a></li>
+                      <li><a href="javascript:void(0)">友情链接</a></li>
+                      <li><a href="javascript:void(0)" >官方论坛</a></li>
+                      <li><a href="javascript:void(0)" >网站地图</a></li>
+                  </ul>
+              </div>
+              <div class="footer-center fn-clear">
+                  <div class="footer-contact">
+                      <i class="icon-sp1 sp1-hotline-footer mr20"></i>
+                      <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-weibo ml10"></i></a>
+                      <div class="weixin-wrap">
+                          <i id="footerQrcode" class="icon-sp1 sp1-weixin ml10"></i>
+                         
+                      </div>
+                      <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-email ml10"></i></a>
+                  </div>
+                
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="ui-container fn-clear">
+                  <div class="auth-link fn-clear">
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-norton-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-kexin-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-cfca-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-icp-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-police-normal"></i></a>
+                  </div>
+                  <div class="copyright">
+                      <p class="p1"><span class="copyright-left">©Copyright(c)2014 iqianjin.com.All Rights Reserved</span><a target="_blank" href="javascript:void(0)" rel="nofollow">京ICP备14017729</a></p>
+                      <p class="p2"><span class="copyright-left">京公网安备11010102001399号</span><a href="/icp/icp.jsp" target="_blank">京ICP证150121号</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+
+		<!--QQ客服-->
+
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript" src="../public/scripts/range.js"></script>
+ 
+   <script type="text/javascript">
+        $(".range").range({})
+   </script>
+    
+</body>
+</html>
