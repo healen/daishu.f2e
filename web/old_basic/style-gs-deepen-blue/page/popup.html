@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="../public/styles/about.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+
+
+
+    <div id="popup"></div>
+
+    <div id="popcontent" style="display:none">
+       <div class="basicfrome">
+
+            <div class="label">
+                <div class="subject">当前选择标的：</div>
+                <span class="title">私营业主生意周转继续资金</span>
+            </div>
+            <div class="label">
+                <div class="left">
+                  <div class="subject">最低投标金额：</div>
+                  <span class="xinghao">￥150</span>
+                </div>
+
+                <div class="right">
+                   <div class="subject">最高投标金额：</div>
+                  <span class="xinghao">￥1530</span>
+                </div>
+                
+            </div>
+
+           
+
+
+            <div class="label">
+                <div class="subject">投标金额：</div>
+                <input type="text" class="length3" placeholder="请输入真实姓名" value="zxd">
+                <span class="xinghao">*</span>
+            </div>
+
+             <div class="label">
+                <div class="subject">手机验证：</div>
+                <input type="text" class="length3" placeholder="请输入昵称" value="healen">
+                <input type="button" value="发送验证码" class="yzmbtn"/>
+            </div>
+             <div class="label">
+                <div class="subject">投标备注：</div>
+                <textarea name="" id="" class="textareas" ></textarea>
+            </div>
+             <div class="label">
+                <div class="subject"> &nbsp;</div>
+                <input type="button" value="提 交" class="sub" />
+                <input type="button" value="提 交" class="bad" />
+            </div>
+
+            <div class="label mb0">
+                <div class="subject"> &nbsp;</div>
+                投标50元,期限3个月,可获得利息收益 1.33元
+            </div>
+
+
+            
+        </div>
+      
+    </div>
+
+
+
+
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/popup.js"></script>
+
+   <script type="text/javascript">
+       $.popup({
+            title: "", //标题
+            content: function(){
+              return $("#popcontent").html();
+            }, //内容
+            close: true, //是否关闭
+            closeCallback:null,
+            popupStyle: "",
+            popupPosition:"fixed",
+            btnList: [
+                // {
+                //     "class": "",
+                //     "text": "确认",
+                //     "callback": null
+                // },
+                // {
+                //     "class": "comfbox",
+                //     "text": "取消",
+                //     "callback": null
+                // }
+            ]
+       })
+   </script>
+   
+    
+</body>
+</html>

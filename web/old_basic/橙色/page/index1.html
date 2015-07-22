@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../public/styles/index.css" type="text/css">
+</head>
+<body>
+<div class="head-wrap">
+  <div class="top-wrap">
+    <div class="FWApp" style="display: block;">
+	   	<div class="top-body">
+	        <ul class="top-login-status">
+	          <li class="welcome"><a href="#"><img src="../public/img/ind/home-ico.jpg"></a>&nbsp;您好，欢迎来到东营贷</li>
+	        </ul>
+	        <ul class="login-link">
+	          <li> <a class="gray-word" href="#">立即登录</a> </li>
+	          <li><a class="gray-word" href="#">免费注册</a></li>
+	          <li><a class="gray-word" href="#">帮助中心</a></li>
+	          <div class="clear"></div>
+	        </ul>
+	      </div>
+    </div>
+    <div class="head-body">
+      <div class="logo"> <a href="#"> <img src="../public/img/logo.png" alt="kingyoucolud"> </a> </div>
+      <div class="slogin">让每个人成为<span>互联网</span>的受益者</div>
+      <div class="logo-about"> <a href="#" target="_blank"> <img src="../public/img/ind/logo-about.jpg" alt="" style="margin-top:-10px"> </a> </div>
+      <div class="tel-400">
+
+      	<span>0546-7616188</span>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+    <div class="nav warp">
+      <div class="logo f-fl"> </div>
+      <div class="menu">
+        <ul id="nav" class="on">
+          <li class="nLi on"><a href="/sjzx/frontcms/index.brp">首页</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/financing.brp" class="nLi_ed">我要理财</a>
+            
+            <ul class="sub" style="display: none;">
+              <li><a href="#">定投宝</a></li>
+              <li><a href="/sjzx/loan/clist.brp">散标投资</a></li>
+              <li><a href="/sjzx/loan/transferList.brp">债权转让</a></li>
+            </ul>
+          </li>
+          <li class="nLi"><a href="/sjzx/loan/etpborrow.brp" class="nLi_ed">我要借款</a>
+            
+           <!--  <ul class="sub">
+              <li><a href="#" >个人借款</a></li>
+              <li><a href="#">企业借款</a></li>
+            </ul> -->
+          </li>
+          <li class="nLi"><a href="/sjzx/customer/main.brp">我的账户</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=2">关于我们</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=15&amp;type=15">新人指南</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=6&amp;type=6">媒体报道</a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="main">
+
+  	<!--滚动消息-->
+	  <div class="message">
+	    <div class="txtMarquee-top">
+	      <div class="bd">
+	        <ul class="infoList">
+	         
+	          <li>
+	              <span class="date">2015-03-15</span>
+	              <a href="#" target="_blank">重要声明：慎防讹称四海融通职员销售信贷产品</a>
+	          </li>
+	        
+	          
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+		<!--便、快、高-->
+	  <div class="main-fous">
+	    <ul class="main-fous-ul">
+	      <li>
+	        <a href="/sjzx/loan/clist.brp" style="text-decoration:none;"><img src="../public/img/ind/bian.png" class="main-fous-ul-img">
+	          <p class="main-fous-ul-title">投资理财</p>
+	          <p class="main-fous-ul-p">成为理财人，通过主动投标或加入理财计划将
+	            资金进行投资，最高获得12-22%的预期年化收益。</p>
+	              <div class="clear"></div>
+	          </a>
+	      </li>
+	      <li>
+	       
+	            <a href="/sjzx/loan/etpborrow.brp" style="text-decoration:none;">
+	        
+	            <img src="../public/img/ind/kuai.png" class="main-fous-ul-img">
+	            <p class="main-fous-ul-title">借用借款</p>
+	            <p class="main-fous-ul-p">成为借款人，按照要求完善信用信息，获得信用认
+	            证后，通过发标进行借款，最快2.5小时可获得所
+	            需资金。</p>
+	            <div class="clear"></div>
+	            </a>
+	      </li>
+	      <li class="main-fous-ul-end">
+	        <a href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=5&type=5" style="text-decoration:none;">
+	        <img src="../public/img/ind/gao.png" class="main-fous-ul-img">
+
+	        <p class="main-fous-ul-title">安全保障</p>
+	        <p  class="main-fous-ul-p" >所有投资标的100%适用本金保障计划，东营贷
+	          风险金账户已被招商银行托管，有效保障理财人的
+	          本金安全。</p>
+	            <div class="clear"></div>
+	        </a>
+	      </li>
+	      <div class="clear"></div>
+	    </ul>
+	  </div>
+
+
+	  <!--投资列表-->
+  <div class="invest-list">
+      <div class="invest-list-title">
+        <h2>投资列表</h2>
+        <div class="more"><a href="/sjzx/loan/calc.brp"><img src="../public/img/ind/cal.png">&nbsp;收益计算器</a></div>
+          <div class="clear"></div>
+      </div>
+
+      <ul class="invest-list-box">
+          <li class="list-title">
+            <ul style="color:#b2b2b2; font-weight:normal;">
+              <li class="list-title-jkbt">借款标题</li>
+              <li  class="list-title-xydj">信用等级</li>
+              <li  class="list-title-nll">年利率</li>
+              <li  class="list-title-je">金额</li>
+              <li  class="list-title-qx">期限</li>
+              <li  class="list-title-jd">进度</li>
+              <li  class="list-title-zt">状态</li>
+                <div class="clear"></div>
+            </ul>
+          </li>  
+           
+          <li class="list-box">
+              <ul>
+                <li class="list-title-jkbt">
+
+                 
+                    <span class="content-invest-x">信</span>
+                  
+                    <a href="/sjzx/loan/cdetail.brp?loanid=54" title="测试f">
+                    测试f
+                    </a>
+                </li>
+
+                <li  class="list-title-xydj"><span class="grade-A">A</span></li>
+                <li  class="list-title-nll"><span class="text3">1%</span></li>
+                <li  class="list-title-je"><span class="text4">10000</span>元</li>
+                <li  class="list-title-qx">
+                    <span class="text4">
+                    1
+                    </span>
+                    
+                          个月
+                    
+                </li>
+                <li  class="list-title-jd"> 
+                <span class="indexbar" style="width:100px">
+                
+                 <span class="baifenbi" style="width:0%"></span> 
+                
+                 </span>0%
+                </li>
+                <li  class="list-title-zt">
+               
+                  <div class="full_ico"><a href="/sjzx/loan/cdetail.brp?loanid=54">立即投资</a></div>
+                  
+                </li>
+                  <div class="clear"></div>
+              </ul>
+          </li>
+           
+          <li class="list-box">
+              <ul>
+                <li class="list-title-jkbt">
+
+                 
+                      <span class="content-invest-x">抵</span>
+                    
+                    <a href="/sjzx/loan/cdetail.brp?loanid=55" title="东营贷借款">
+                    东营贷借款
+                    </a>
+                </li>
+
+                <li  class="list-title-xydj"><span class="grade-A">A</span></li>
+                <li  class="list-title-nll"><span class="text3">9%</span></li>
+                <li  class="list-title-je"><span class="text4">10000</span>元</li>
+                <li  class="list-title-qx">
+                    <span class="text4">
+                    4
+                    </span>
+                    
+                          个月
+                    
+                </li>
+                <li  class="list-title-jd"> 
+                <span class="indexbar" style="width:100px">
+                
+                 <span class="baifenbi" style="width:0%"></span> 
+                
+                 </span>0%
+                </li>
+                <li  class="list-title-zt">
+               
+                  <div class="full_ico"><a href="/sjzx/loan/cdetail.brp?loanid=55">立即投资</a></div>
+                  
+                </li>
+                  <div class="clear"></div>
+              </ul>
+          </li>
+           
+          <li class="list-box">
+              <ul>
+                <li class="list-title-jkbt">
+
+                 
+                   <span class="content-invest-x">担</span>
+                    
+                    <a href="/sjzx/loan/cdetail.brp?loanid=23" title="东营贷产品3">
+                    东营贷产品3
+                    </a>
+                </li>
+
+                <li  class="list-title-xydj"><span class="grade-A">A</span></li>
+                <li  class="list-title-nll"><span class="text3">6%</span></li>
+                <li  class="list-title-je"><span class="text4">10000</span>元</li>
+                <li  class="list-title-qx">
+                    <span class="text4">
+                    10
+                    </span>
+                    
+                         天
+                </li>
+                <li  class="list-title-jd"> 
+                <span class="indexbar" style="width:100px">
+                
+                 <span class="baifenbi" style="width:60%"></span> 
+                
+                 </span>60%
+                </li>
+                <li  class="list-title-zt">
+               
+                  <div class="full_ico"><a href="/sjzx/loan/cdetail.brp?loanid=23">立即投资</a></div>
+                  
+                </li>
+                  <div class="clear"></div>
+              </ul>
+          </li>
+           
+          <li class="list-box">
+              <ul>
+                <li class="list-title-jkbt">
+
+                 
+                   <span class="content-invest-x">担</span>
+                    
+                    <a href="/sjzx/loan/cdetail.brp?loanid=25" title="东营贷产品4">
+                    东营贷产品4
+                    </a>
+                </li>
+
+                <li  class="list-title-xydj"><span class="grade-A">A</span></li>
+                <li  class="list-title-nll"><span class="text3">8%</span></li>
+                <li  class="list-title-je"><span class="text4">10000</span>元</li>
+                <li  class="list-title-qx">
+                    <span class="text4">
+                    4
+                    </span>
+                    
+                          个月
+                    
+                </li>
+                <li  class="list-title-jd"> 
+                <span class="indexbar" style="width:100px">
+                
+                 <span class="baifenbi" style="width:100%"></span> 
+                
+                 </span>100%
+                </li>
+                <li  class="list-title-zt">
+               
+                  <div class="full_ico"><a href="/sjzx/loan/cdetail.brp?loanid=25">立即投资</a></div>
+                  
+                </li>
+                  <div class="clear"></div>
+              </ul>
+          </li>
+          
+        <li style="text-align:center">
+          <a href="/sjzx/loan/clist.brp"> 查看更多 <img src="../public/img/ind/invest-icon02.gif"></a>
+        </li>
+      </ul>
+	  <!--  定投宝    -->
+	<div class="wudl_w1000 wudl_mt20">
+	    <div class="wudl_title wudl_title01 invest-list-title">
+	        <h2>定投宝</h2>
+	        省心省力 坐享其成
+	        <span><a href="">更多</a></span>
+	    </div>
+	    <div class="wudl_box01">
+	        <div class=" wudl_pd10 wudl_brder_b" style="display: none;">
+	            <div class="wudl_income fl wudl_mt10">
+	                3、6、12个月定期固定收益理财项目，每月获得利息收益，到期收回本金；1000元即可加入。<a href="#">详情介绍</a>
+	            </div>
+	        </div>
+	        <div>
+
+	         
+	                <div class="wudl_fya1 wudl_overflow">
+	                    <div class="wudl_left01 fl">
+	                        <p><span class="wudl_w100">期限</span><span class="wudl_w100" style="text-align: right">预期年利率</span></p>
+	                        <p>
+
+	                            <span class="wudl_radius wudl_month">
+	                             10
+	              
+	                    
+	                         天
+	                    
+	                    </span>
+	                            
+	                            <span class="wudl_Bluefont wudl_f22 fr">8%</span>
+	                        </p>
+	                    </div>
+	                    <div class="wudl_left01 wudl_right01 " onclick="">
+	                        <a href="/sjzx/loan/cdetail.brp?loanid=20">
+	                        <h1 >资金周转
+	                       <!--  <img src="/sjzx/page/style6/image/cmm.gif" title="到期额外奖励三个点" alt="到期额外奖励三个点"> -->
+	                        </h1>
+	                      </a>
+	                        <div class="wudl_current wudl_overflow">
+	                            <ul>
+	                                
+
+	                                <li>
+	                                <span class="wudl_w160 ">
+	                                <span class="fl">当前进度</span>
+	                                 <span class="wudl_Grey02 fl wudl_mr15" style="margin-top: 5px">
+	                                 
+	                                 <span class="wudl_cycle" style="width: 50%"></span>
+	                                 
+
+	                                 </span><span style="margin-top: 18px">50%</span> 
+	                                 </span>
+	                                </li>
+
+	                                <li>
+	                                   <span class="wudl_w160 wudl_Bluefont">
+	                                   <i class="wudl_principal"></i>100%本金保障
+	                                    </span>
+	                                </li>
+	                                <li><span class="wudl_w160 ">总金额￥10000</span>
+	                                </li>
+	                              
+	                                </li>
+	                            </ul>
+	                        </div>
+	                       
+	                            <div class="wudl_btm wudl_Redback wudl_btm01"><a href="/sjzx/loan/cdetail.brp?loanid=20" class="wudl_radius">我要投资</a></div>
+
+	                    </div>
+	                </div>
+	                 
+	                <div class="wudl_fya1 wudl_overflow">
+	                    <div class="wudl_left01 fl">
+	                        <p><span class="wudl_w100">期限</span><span class="wudl_w100" style="text-align: right">预期年利率</span></p>
+	                        <p>
+
+	                            <span class="wudl_radius wudl_month">
+	                             5
+	              
+	                    
+	                          个月
+	                    
+	                    </span>
+	                            
+	                            <span class="wudl_Bluefont wudl_f22 fr">5%</span>
+	                        </p>
+	                    </div>
+	                    <div class="wudl_left01 wudl_right01 " onclick="">
+	                        <a href="/sjzx/loan/cdetail.brp?loanid=15">
+	                        <h1 >生活旅游
+	                       <!--  <img src="/sjzx/page/style6/image/cmm.gif" title="到期额外奖励三个点" alt="到期额外奖励三个点"> -->
+	                        </h1>
+	                      </a>
+	                        <div class="wudl_current wudl_overflow">
+	                            <ul>
+	                                
+
+	                                <li>
+	                                <span class="wudl_w160 ">
+	                                <span class="fl">当前进度</span>
+	                                 <span class="wudl_Grey02 fl wudl_mr15" style="margin-top: 5px">
+	                                 
+	                                 <span class="wudl_cycle" style="width: 100%"></span>
+	                                 
+
+	                                 </span><span style="margin-top: 18px">100%</span> 
+	                                 </span>
+	                                </li>
+
+	                                <li>
+	                                   <span class="wudl_w160 wudl_Bluefont">
+	                                   <i class="wudl_principal"></i>100%本金保障
+	                                    </span>
+	                                </li>
+	                                <li><span class="wudl_w160 ">总金额￥30000</span>
+	                                </li>
+	                              
+	                                </li>
+	                            </ul>
+	                        </div>
+	                       
+	                            <div class="wudl_btm wudl_Redback wudl_btm01"><a href="/sjzx/loan/cdetail.brp?loanid=15" class="wudl_radius">我要投资</a></div>
+
+	                    </div>
+	                </div>
+	                
+	              <!--  <div class="wudl_fya1 wudl_overflow">
+	                    <div class="wudl_left01 fl">
+	                        <p><span class="wudl_w100">期限</span><span class="wudl_w100" style="text-align: right">预期年利率</span></p>
+	                        <p>
+	                            <span class="wudl_radius wudl_month">6个月</span>
+	                            <span class="wudl_Bluefont wudl_f22 fr">13.00%</span>
+	                        </p>
+	                    </div>
+	                    <div class="wudl_left01 wudl_right01 " onclick="">
+	                        <h1>东营贷E贷20141226001<img src="/sjzx/page/style6/image/cmm.gif" title="到期额外奖励三个点" alt="到期额外奖励三个点"></h1>
+	                        <div class="wudl_current wudl_overflow">
+	                            <ul>
+	                                <li><span class="wudl_w160 "><span class="fl">当前进度</span> <span class="wudl_Grey02 fl wudl_mr15" style="margin-top: 5px"><span class="wudl_cycle" style="width: 100.00%"></span></span><span style="margin-top: 18px">100.00%</span> </span>
+	                                </li>
+	                                <li><span class="wudl_w160 wudl_Bluefont"><i class="wudl_principal"></i>100%本金保障 </span>
+	                                </li>
+	                                <li><span class="wudl_w160 ">总金额￥100,000.00</span>
+	                                </li>
+	                                <li><span class="wudl_w160 ">9人已加入</span>
+	                                </li>
+	                            </ul>
+	                        </div> 
+	                            <div class="wudl_btm wudl_green wudl_btm01"><a href="javascript:void(0);" class="wudl_radius">正在还款</a></div>
+
+	                    </div>
+	                    <div class="f-cb"></div>
+	                </div> -->
+	                <div style="text-align:center">
+	                      <a href=""> 查看更多 <img src="../public/img/ind/invest-icon02.gif"></a>
+	                </div>
+	           </div>
+	    </div>
+	</div>
+  </div>
+
+
+
+
+
+
+
+
+   <div class="index-right-box">
+    <!-- <div class="shouxi-table">
+      <div class="shouxi-table-title" ><span class="text5">收益对比</span> <span class="text6">数据来源：金牛理财网（按周统计）</span></div>
+    </div> -->
+    <div class="jiemi"><a href="#"><img src="../public/img/ind/jiemi.jpg"></a></div>
+    <div class="xinwen-dongtai">
+      <div class="slideTxtBox">
+        <div class="hd"> 
+          <!-- 下面是前/后按钮代码，如果不需要删除即可 --> 
+          <span class="arrow"><a class="next"></a><a class="prev"></a></span>
+          <ul style="border-bottom:0;">
+            
+            <li class="text5">最新动态</li>
+            <li  class="text5">媒体报道</li>
+          </ul>
+        </div>
+        <div class="bd" style="min-height: 200px;">
+            <ul>
+            
+              <li><span class="date">2015-03-09</span><a style="width:200px!important;    float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=8&articleCid=62" target="_blank">理财人必须知道的几个理财小知识</a></li>
+             
+              
+              <li><span class="date">2015-03-09</span><a style="width:200px!important;    float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=8&articleCid=64" target="_blank">P2P债权分包究竟是什么样的模式</a></li>
+             
+              
+              <li><span class="date">2014-12-16</span><a style="width:200px!important;    float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=8&articleCid=60" target="_blank">什么样的p2p平台值得投资？</a></li>
+             
+              
+              <li><span class="date">2014-12-16</span><a style="width:200px!important;    float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=8&articleCid=48" target="_blank">当前中国p2p存在的几种经营模式</a></li>
+             
+              
+              <li><span class="date">2014-12-16</span><a style="width:200px!important;    float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=8&articleCid=49" target="_blank">六个“投资别相信”</a></li>
+             
+              
+            </ul>
+            <ul>
+             
+              <li><span class="date">2015-03-13</span><a style="width:200px!important;     float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=6&articleCid=80" target="_blank">深圳前海先行先试内容</a></li>
+              
+              <li><span class="date">2015-03-11</span><a style="width:200px!important;     float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=6&articleCid=76" target="_blank">前海先行先试40条金融政策</a></li>
+              
+              <li><span class="date">2015-03-11</span><a style="width:200px!important;     float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=6&articleCid=77" target="_blank">国务院通过深圳前海金融改革创新先行先试政策</a></li>
+              
+              <li><span class="date">2015-01-04</span><a style="width:200px!important;     float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=6&articleCid=63" target="_blank">p2p平台风险信息共享系统明年有望上线</a></li>
+              
+              <li><span class="date">2014-12-16</span><a style="width:200px!important;     float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"  href="/sjzx/frontcms/articleCenter.brp?flag=sf&nodeCid=6&articleCid=46" target="_blank">LendingClub调高发行价 利好中国P2P</a></li>
+              
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="clear"></div>
+
+
+
+   <div class="parner">
+    <div class="invest-list-title">
+      <h2>合作伙伴</h2>
+    <!--   <div class="more"><a href="#">更多>></a></div> -->
+        <div class="clear"></div>
+    </div>
+   <div class="team-list">
+      <div class="teamScroll ">
+        <div class="hd"> <span class="next"></span> <span class="prev"></span> </div>
+        <div class="bd">
+          <ul class="picList" >
+
+           
+            <li>
+              <div class="pic"> <a href="http://www.p2pchina.com/portal.php" target="_blank"> <img src="../public/img/ind/1416043878875.jpg" /> </a> </div>
+            </li>
+          
+            <li>
+              <div class="pic"> <a href="http://www.wdlm.cn" target="_blank"> <img src="../public/img/ind/1416043878943.jpg" /> </a> </div>
+            </li>
+          
+            <li>
+              <div class="pic"> <a href="http://www.wangdaizhijia.com" target="_blank"> <img src="../public/img/ind/1416043878995.jpg" /> </a> </div>
+            </li>
+          
+            <li>
+              <div class="pic"> <a href="http://www.gopay.com.cn" target="_blank"> <img src="../public/img/ind/1416043879060.jpg" /> </a> </div>
+            </li>
+          
+            <li>
+              <div class="pic"> <a href="http://www.chinapnr.com" target="_blank"> <img src="../public/img/ind/1416043879118.jpg" /> </a> </div>
+            </li>
+          
+            <li>
+              <div class="pic"> <a href="http://www.hft-sz.com" target="_blank"> <img src="../public/img/ind/1416043879181.jpg" /> </a> </div>
+            </li>
+
+           
+
+            <li>
+              <div class="pic"> <a href="http://www.icardpay.com/" target="_blank"> <img src="../public/img/ind/zft.jpg" /> </a> </div>
+            </li>
+
+            <li>
+              <div class="pic"> <a href="https://www.ebatong.com/" target="_blank"> <img src="../public/img/ind/bf.jpg" /> </a> </div>
+            </li>
+
+            <li>
+              <div class="pic"> <a href="http://www.daishu360.com" target="_blank"> <img src="../public/img/ind/dsw.jpg" /> </a> </div>
+            </li>
+          
+          </ul>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+		
+</div>
+
+
+
+
+
+
+
+
+<div class="foot">
+  <div class="footer">
+    <div class="footer-left">
+      <p class="footer-left-title">友情链接&nbsp;:</p>
+      <ul class="footer-left-ul-1">
+         
+            <li><a href="http://www.feidee.com" target="_blank">随手记</a></li>
+               
+            <li><a href="http://www.rong360.com" target="_blank">融360理财</a></li>
+               
+            <li><a href="http://bbs.wacai.com" target="_blank">挖财社区</a></li>
+               
+            <li><a href="http://www.wangdaizhijia.com" target="_blank">网贷之家</a></li>
+               
+            <li><a href="http://bj.58.com/danbaobaoxiantouzi" target="_blank">58投资担保</a></li>
+               
+            <li><a href="http://www.shopex.cn" target="_blank">ShopEX</a></li>
+               
+            <li><a href="http://credit.hc360.com" target="_blank">慧聪金融</a></li>
+               
+            <li><a href="http://www.siilu.com" target="_blank">电商服务</a></li>
+               
+            <li><a href="http://www.cjdao.com" target="_blank">财经道</a></li>
+               
+            <li><a href="http://www.gome.com.cn" target="_blank">国美在线</a></li>
+               
+            <li><a href="http://bank.hexun.com" target="_blank">和讯银行</a></li>
+               
+            <li><a href="http://shenzhen.haodai.com" target="_blank">好贷网</a></li>
+               
+            <li><a href="http://www.enfodesk.com" target="_blank">易观智库</a></li>
+      </ul>
+      <ul class="footer-about">
+         
+             <li><a href="/sjzx/customer/register.brp" target="_blank">平台注册</a></li>
+               
+             <li><a href="/sjzx/测试" target="_blank">测试</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=4" target="_blank">安全保障</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp" target="_blank">公司简介</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp" target="_blank">平台原理</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp" target="_blank">常见问题</a></li>
+               
+             <li><a href="/sjzx/loan/borrow.brp" target="_blank">我要融资</a></li>
+               
+             <li><a href="/sjzx/loan/clist.brp" target="_blank">我要投资</a></li>
+              
+      
+     
+      </ul>
+    
+    </div>
+    <div class="footer-right">
+      <ul class="footer-right-1">
+        <li class="footer-right-1-1"><img src="../public/img/ind/weixin.jpg"></li>
+        <li class="footer-right-1-2"><img src="../public/img/ind/erweima.jpg"><span>扫一扫关注</span></li>
+        <li class="footer-right-1-3">
+          <ul>
+            <li><img src="../public/img/ind/tel_bg.png">&nbsp;客服热线：（工作时间 9:00-18:00）</li>
+            <li class="footer-right-1-3-2"><span class="text7">0546-7616188</span></li>
+            <li> <img src="../public/img/ind/email_bg.png">&nbsp;公司邮箱 aaa@aaa.com</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="foot-bot">
+  <div class="foot-bot-img">
+  	fdkfsakfjsdkfj
+  </div>
+</div>
+
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/lib/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript">
+	jQuery("#nav").slide({ 
+      type:"menu",
+      titCell:".nLi",
+      targetCell:".sub",
+      effect:"slideDown",
+      delayTime:400 ,
+      triggerTime:0,
+      returnDefault:true
+    });
+
+
+
+    /*鼠标移过，左右按钮显示*/
+	jQuery(".focusBox").hover(function(){ 
+      	jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },
+    function(){ 
+        jQuery(this).find(".prev,.next").fadeOut() 
+    });
+		/*SuperSlide图片切换*/
+	jQuery(".focusBox").slide({
+     	mainCell:".pic",
+     	effect:"fold",
+      	autoPlay:true, 
+      	delayTime:600, 
+      	trigger:"click"
+    });//banner切换
+		
+		
+		
+	jQuery(".txtMarquee-top").slide({
+		mainCell:".bd ul",
+		autoPlay:true,
+		effect:"topMarquee",
+		vis:1,
+		pnLoop:false,
+		interTime:60,
+		trigger:"click"
+	});//网站公告滚动
+		
+	jQuery(".slideTxtBox").slide();//新闻动态切换
+		
+	jQuery("#nav").slide({ 
+		type:"menu",
+		titCell:".nLi",
+		targetCell:".sub",
+		effect:"slideDown",
+		delayTime:400 ,
+		triggerTime:0,
+		returnDefault:true
+	});//下接列表
+			
+	jQuery(".teamScroll").slide({
+		  titCell:".hd ul",
+		  mainCell:".bd ul",
+		  autoPage:true,
+		  effect:"left",
+		  autoPlay:true,
+		  vis:7,
+		  trigger:"click"
+    });//合作伙伴
+
+</script>
+</body>
+</html>

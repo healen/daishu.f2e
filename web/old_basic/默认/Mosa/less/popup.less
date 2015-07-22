@@ -1,0 +1,161 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+.popup{
+	.dialog{
+		background: #fff;
+		width: 720px;
+		border-radius: 3px;
+		position: relative;
+		a{
+			&.close{
+				display: block;
+				width: 17px;
+				height: 17px;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				background: #fff000;
+				cursor: pointer;
+				background: url('@{img}/ico.png') no-repeat -19px -140px;
+			}
+		}
+		.dialog-content{
+			padding: 0px 40px 30px 40px;
+			.dialog-title{
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+			}
+			._basicFrome();
+			.basicfrome{
+				.label{
+					&.mb0{
+						margin-bottom: 0px;
+					}
+					margin-bottom: 20px;
+					._clearfix();
+					.title{
+						color: @markBgColorAux;
+					}
+					.left{
+						float: left;
+					}
+					.right{
+						float: right;
+					}
+					textarea{
+						width: 300px;
+					}
+					input{
+		                width: 160px;
+		                padding: 0px 10px;
+		                border-radius: 3px;
+		                border:1px solid @borderColor;
+		                height: 30px;
+		                display: block;
+		                float: left;
+						&.sub{
+		                    background: @markBgColor;
+		                    width: 153px;
+		                    border-radius: 4px;
+		                    color: #fff;
+		                    border:none;
+		                    margin-right: 10px;
+		                    height: 42px;
+		                    &:hover{
+		                         background-color:darken(@markBgColor, 10%);
+		                    }
+		                }
+		                &.bad{
+		                    background: @markBorderColor;
+		                    width: 153px;
+		                    border-radius: 4px;
+		                    color: #fff;
+		                    border:none;
+		                    margin-right: 10px;
+		                    height: 42px;
+		                    &:hover{
+		                         background-color:darken(@markBorderColor, 10%);
+		                    }
+		                }
+		            }
+				}
+				
+			}  
+			
+			.popupbtnbox{
+				text-align: center;
+				.popupbtn{
+					display: inline-block;
+					background: @markBgColor;
+					color: #fff;
+					width: 154px;
+					line-height: 42px;
+					margin-right: 10px;
+					height: 42px;
+					border-radius: 3px;
+					cursor: pointer;
+					&:hover{
+						background-color:darken(@markBgColor, 10%);
+					}
+					&.comfbox{
+						background: @markBgColorAux;
+						&:hover{
+							background-color:darken(@markBgColorAux, 10%);
+						}
+					}
+
+				}
+			}
+			.warp{
+				max-height: 500px;
+				overflow: auto;
+			}
+		}
+		._myTable();
+
+		.my_list_bottom{
+	        table{
+	            line-height: 30px;
+	            tr{
+					&:nth-child(2n){
+						background: @boxBgColor;
+					}
+					&:hover{
+						cursor: pointer;
+						background: @huiBackground;
+					}
+	            }
+	        }
+	    }
+		._pageList(list);
+	}
+}
+
+.popcon{
+	padding: 0px 22px;
+	line-height: 30px;
+	.top{
+		.mail{
+			color: @markBgColorAux;
+		}
+		margin-bottom: 10px;
+	}
+	.bottom{
+		text-align: center;
+		 a.jhwc{
+            display: inline-block;
+            background: @markBgColor;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            &:hover{
+                background:darken(@markBgColor, 10%);
+            }
+        }
+	}
+	
+}

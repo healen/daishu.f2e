@@ -1,0 +1,204 @@
+
+/*公共样式*/
+.box{
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+  .article-new {
+      position: absolute;
+      padding-left: 4px;
+      top: 6px;
+      animation: Beat 1s infinite;
+      -webkit-animation: Beat 1s infinite;
+      -moz-animation: Beat 1s infinite;
+      -o-animation: Beat 1s infinite;
+    }
+}
+
+/*header*/
+.pg-header {
+  position: relative;
+  z-index: 99;
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  -webkit-border-shadow: 0 1px 4px rgba(0,0,0,.2);
+  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  .pg-header-top {
+      background: #302f2f;//提取
+      color: #8a8a8a;//提取
+      height: 50px;
+      .pg-header-top {
+          background: #302f2f;//提取
+          color: #8a8a8a;//提取
+          height: 50px;
+        }
+        a {
+          color: #8a8a8a;//提取
+          &:hover{
+            color:#5e9a36;//提取
+          }
+        }
+    }
+    .pg-header-main {
+      padding-top: 10px;
+      background: #fff;
+      height: 95px;
+    }
+
+}
+
+
+/*私有样式*/
+
+.box{
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+
+
+
+/*过渡样式*/
+a{
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -ms-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+
+.underline{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+
+.xinghao{
+    color: @markBgColor;
+}
+
+input{
+    &.text{
+      width: 160px;  
+      border: 1px solid @borderColor;
+      height: 34px;
+      padding: 0px 10px
+    }
+    &.time{
+      width: 120px;  
+      border: 1px solid @borderColor;
+      height: 34px;
+      padding: 0px 10px;
+      background: url('@{img}/ico.png') no-repeat right -113px;
+    }
+    &.subBut{
+        display: inline-block;
+        background: @markBgColor;
+        line-height: 35px;
+        padding: 0px 20px;
+        border-radius: 3px;
+        color: #ffffff;
+        cursor: pointer;
+        border:none;
+        &:hover{
+            background:darken(@markBgColor, 10%);
+        }
+
+
+    }
+
+     &.retBut{
+           display: inline-block;
+            background: @markBgColorAux;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            border:none;
+            &:hover{
+                background:darken(@markBgColorAux, 10%);
+            }
+        }
+
+    
+}
+
+
+.bottonbox{
+    margin-top: 10px;
+    padding:20px 0px;
+    text-align: center;
+    &.subBut{
+        display: inline-block;
+        background: @markBgColor;
+        line-height: 35px;
+        padding: 0px 20px;
+        border-radius: 3px;
+        color: #ffffff;
+        cursor: pointer;
+        border:none;
+       
+        &:hover{
+            background:darken(@markBgColor, 10%);
+        }
+
+
+    }
+
+     &.retBut{
+           display: inline-block;
+            margin-right: 10px;
+            background: @markBgColorAux;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            border:none;
+            &:hover{
+                background:darken(@markBgColorAux, 10%);
+            }
+        }
+}
+
+/*信用等级*/
+ span{
+    &.samllmark{
+        font-size: 12px;
+    }
+    &.dj{
+        width: 45px;
+        height: 24px;
+        background: @markBgColorMain;
+        display: inline-block;
+        text-align: center;
+        line-height: 24px;
+        font-size: @baseFontSize;
+        color: #fff;
+        border-radius: 12px;
+
+    }
+    &.e{
+        background: @markBgColor;
+        
+    }
+}
+
+
+
+//当前位置
+.mbx{
+    padding: 5px 25px;
+    a{
+        color: @baseTextColor;
+        padding: 0px 0px;
+        &:hover{
+            color: @linkColorHover;
+        }
+    }
+}
+

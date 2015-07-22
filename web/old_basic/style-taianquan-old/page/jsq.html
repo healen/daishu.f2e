@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="../public/styles/jsq.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+
+        <div class="header">
+            <div class="topbar">
+                <div class="warp">
+                    <div class="l">
+                        <span>欢迎：</span>
+                        <a href="#" class="reg underline">15600074926</a>
+                        <a href="/login.html" class="reg underline">注销</a>
+                    </div>
+                    <div class="r">
+                        <a href="/investmentHistory.html">投资记录</a>
+                        <a href="/my.html">个人中心</a>
+                        <a href="/help.html">帮助</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="warp">
+                    <div class="logobox">
+                        <a href="/index.html"><img src="../public/img/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="on"><a href="/index.html">首页</a></li>
+                        <li><a href="/myInvestment.html">我要投资</a></li>
+                        <li><a href="/myLoan.html">我要借款</a></li>
+                        <li><a href="/myUser.html">我的账户</a></li>
+                        <li><a href="join.html">合作加盟</a></li>
+                        <li><a href="aboutUs.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <div class="calc f-mb20 f-mt20">
+                    <div class="tool">
+                        <div class="toolborder">
+                          <h2> 利息计算器</h2>
+                          <div class="toolbox"> 1、等额本息：每月以相等的金额偿还本息。<br>
+                            2、一次性本息：到期一次性偿还本息。<br>
+                            3、等额本金：每月付息，按月等额偿还本金。<br>
+                            4、先息后本按月付息：每月付息，到期全额偿还本金。<br>
+                            5、到期还款：到期一次性偿还本息。利息总额=借款本金*借款年利率/360*借款天数。<br>
+                            （注意：本工具计算结果与实际可能会有以分为单位的误差。） </div>
+                        </div>
+                        <div class="clear"> </div>
+                        <div class="toolborder">
+                          <div class="toolmiddle">
+                            <h2> 借款设置</h2>
+                            <div class="toolbox"> 
+                              <div class="trade"> <span>借款金额：
+                                <input name="jkjn" id="returnCorpus" maxlength="9" type="text" class="inputMain" style="width:50px;" onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,4})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" >
+                                &nbsp;元</span> <span>年利率：
+                                <input name="lx" type="text" maxlength="4" class="inputMain" style="width:50px;" id="interest" onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,4})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" >
+                                &nbsp;%</span>  <span>借款期限：
+                                <input name="qx" type="text" maxlength="3" class="inputMain" align="absmiddle" style="width:50px;" id="loanDays" onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,4})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;">
+                                &nbsp;<b id="isday">个月</b></span> <span> 还款方式：
+                                <select name="fs" id="repaymentSle">
+                                  <option selected="selected" value="1">等额本息</option>
+                                  <option value="2">一次性本息</option>
+                                  <option value="3">等额本金</option>
+                                  <option value="4">先息后本按月付息</option>
+                                  <option value="5">到期还款</option>
+                                </select>
+                                </span>
+                                 <span class="nextButton" style="margin-right:0px">
+                                <input type="submit" value="开始计算" class="but_70x30" style="margin:0px;" onclick="calcInfo()">
+                                </span> <br>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="toolborder">
+                            <h2> 贷款概述</h2>
+                            <div class="toolbox">
+
+                              <div class="txt">
+                                
+                                 <label style="float: left; width: 250px;"> <span>每个月将偿还本息</span>：<strong style="color:#b20000;font-size:16px"><span class="price" id="monthCorpus">0元</span></strong></label>
+                                <label style="float: left;width: 250px;"> <span>月利率：</span><strong><span id="monthRate" class="price" style="padding-right: 20px;color:#b20000;font-size:16px">0%</span></strong></label>
+                                <label style="float: left;"> 还款本息总额：<span class="price" style="padding-right: 20px;"><em><strong style="color:#b20000;font-size:16px"><span id="interestSum">0</span></strong>元 &nbsp;&nbsp;(小于0.01元无法计算，可能会有误差)</em></span></label>
+
+                              </div>
+
+                             
+                               <div class="clearfix">&nbsp;</div>
+                          </div>
+                        </div>
+                        <div class="toolborder">
+                          <h2> 还款计划时间表</h2>
+                          <div class="" style=" margin:20px auto; ">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tbody id="returnTable">
+                                <tr height="30">
+                                  <td class=" " width="15%" align="center"> 期数 </td>
+                                  <td class=" " width="20%" align="center"> 每期还款本金 </td>
+                                  <td class=" " width="20%" align="center"> 每期还款利息 </td>
+                                  <td class=" " width="20%" align="center"> 每期还款本息 </td>
+                                  <td class=" " width="25%" align="center"> 待还本息 </td>
+                                </tr>
+                              </tbody>
+                            </table>        
+                             <div class="clearfix">&nbsp;</div>
+
+                          </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--页脚-->
+        <div class="footer">
+            <div class="warp">
+                <div class="top">
+                    <div class="l"><h2>友情连接</h2></div>
+                    <div class="r">
+                        <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                         <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                         <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                         <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                    </div>
+                </div>
+
+                <div class="top mid">
+                    <div class="tops">
+                        <div class="r">
+                            <a href="">公司简介</a>
+                            <a href="">安全保障</a>
+                            <a href="">媒体报道</a>
+                            <a href="">社会责任</a>
+                            <a href="">招贤纳士</a>
+                            <a href="">网站地图</a>
+                            <a href="">帮助中心</a>
+                            <a href="">联系我们</a>
+                        </div>
+                    </div>
+                    <div class="l"><h2>客户服务</h2></div>
+                    <div class="r">
+                        <a href=""><img src="../public/img/sina.png" alt=""></a>
+                        <a href=""><img src="../public/img/qq.png" alt=""></a>
+                        <a href=""><img src="../public/img/weixin.png" alt=""></a>
+                        <a href=""><img src="../public/img/kf.png" alt=""></a>
+                        
+                    </div>
+                </div>
+
+                <div class="banq">版权所有 贷鼠网</div>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript">
+
+  $(function(){
+    $("#repaymentSle").change(function(){
+        if(this.value == 5){
+            $("#isday").text("天");
+            return;
+        }
+        $("#isday").text("个月");
+    });
+  });  
+ function calcInfo(){
+
+    //借款金额
+    var corpus = $("#returnCorpus").val();
+    //利率
+    var interest = $("#interest").val();
+    //借款期限
+    var loanDays = $("#loanDays").val();
+
+    if(!/^\d+(\.\d+)?$/.test(corpus) || corpus <= 0){
+       alert("您好，您所输入的借款金额数值不正确！");
+       return ;
+    }
+
+    if(!/^\d+(\.\d+)?$/.test(interest) || interest <= 0){
+      alert("您好，您所输入的年利率数值不正确！");
+      return ;
+    }
+    if(!/^\d+$/.test(loanDays) || loanDays <= 0 ){
+       alert("您好，您所输入的借款期限数值不正确！");
+       return ;
+    }        
+    corpus = parseFloat(corpus);
+    interest = parseFloat(interest);
+    loanDays = parseInt(loanDays);
+    //月利率=（利率/100）/12
+    var interestMonth = (interest/100) / 12; 
+    var id = $("#repaymentSle option:selected").val();
+    $("#returnTable tr").not(":first").remove();
+     //等额本息 =（借款金额 * [(1+月利率)^借款期限/(1+月利率)^借款期限-1]）
+    if(id==1){
+      var everyMoner = parseFloat(corpus * (interestMonth * Math.pow((1+interestMonth),loanDays)/(Math.pow((1+interestMonth),loanDays)-1)));
+        hkbx(corpus,everyMoner,interestMonth,loanDays);
+      
+    }
+    //一次性本息=借款金额*借款期限*月利率+借款金额
+    if(id==2){    
+    var returnInterest = parseFloat(corpus * loanDays * interestMonth);
+    var totalMoney = parseFloat(returnInterest + corpus);
+    ycxbx(totalMoney,corpus,returnInterest);
+    }
+    //等额本金
+    if(id==3){
+       var returnCorpus = parseFloat(corpus/loanDays);
+       hkbj(corpus,returnCorpus,interestMonth,loanDays);
+       
+    }
+    //先息后本按月付息
+    if(id==4){
+      xxhbayfx(corpus,0,interestMonth,loanDays);
+    }
+    //一次性本息 投资收益=投资额*年利率/360*天数+投资额
+    if(id==5){    
+      var returnInterest = parseFloat(corpus * ((interest/100) / 360) * loanDays);
+      var totalMoney = parseFloat(returnInterest + corpus);
+      ycxbx(totalMoney,corpus,returnInterest);
+    }    
+ }
+ function hkbj(totalMoney,everyMoner,interest,loanDays){
+  var alreturnTotal=0,iobj = {"interest":0,"interestSum":0,"monery":{"sum":0,"ig":[]}};
+  for(var i=0;i<loanDays;i++){
+      var returnInterest =parseFloat((totalMoney - alreturnTotal)*interest); //还款利息
+      var returnCorpus = parseFloat(everyMoner + returnInterest); //还款本金
+      alreturnTotal+=everyMoner;
+      iobj.monery.sum  += (returnInterest + everyMoner);
+      iobj.monery.ig[i]  = returnInterest + everyMoner;
+      //本金 利息 本息
+      insertHtml(i+1,everyMoner,returnInterest,loanDays);
+   } 
+   $("#monthCorpus").text('-');
+   $("#monthRate").text(fmoney((interest*100),4)+'%');
+   if(loanDays == 1){
+     $("#interestSum").text(fmoney(returnCorpus));
+     return ;
+   }
+   var s = parseFloat(iobj.monery.sum).toFixed(3);;
+   $(".n_interest").each(function(i,e){
+     s -= parseFloat(iobj.monery.ig[i]);
+     $(this).text(fmoney(s));
+   });    
+   $("#interestSum").text(fmoney(iobj.monery.sum));
+}
+ function xxhbayfx(corpus,returnCorpus,interest,loanDays){
+  var alreturnTotal=0,returnInterest=0,returnCount=0,iobj = {"interest":0,"interestSum":0,"monery":{"sum":0,"ig":[]}};
+  for(var i=0;i<loanDays;i++){
+        returnInterest =parseFloat((corpus - alreturnTotal)*interest);//还款利息
+        if (i==loanDays-1){
+          returnCorpus = corpus;    //还款本金
+        }
+        returnCount = returnCorpus + returnInterest;   
+        alreturnTotal+=returnCorpus;
+        iobj.monery.sum  += (returnInterest + returnCorpus);
+        iobj.monery.ig[i]  = returnInterest + returnCorpus;
+        iobj.interest += returnInterest;
+        insertHtml(i+1,returnCorpus,returnInterest,loanDays);
+   } 
+   $("#monthCorpus").text('-');
+   $("#monthRate").text(fmoney((interest*100),4)+'%');
+    if(loanDays == 1){
+     $("#interestSum").text(fmoney(returnCorpus+returnInterest));
+     return ;
+   }
+   var s = parseFloat(iobj.monery.sum);
+   $(".n_interest").each(function(i,e){
+     s -= parseFloat(iobj.monery.ig[i]);
+   $(this).text(fmoney(s));
+   });    
+    $("#interestSum").text(fmoney(returnCorpus+iobj.interest));
+}
+
+  function ycxbx(totalMoney,returnCorpus,interest){
+   $("#monthCorpus").text('-');
+   $("#monthRate").text('-');
+   $("#interestSum").text(fmoney(totalMoney));    
+ }
+
+
+function hkbx(totalMoney,everyMoner,interest,loanDays){
+  var alreturnTotal=0,iobj = {"interest":0,"interestSum":0,"monery":{"sum":0,"ig":[]}};
+  for(var i=0;i<loanDays;i++){
+      var returnInterest =parseFloat((totalMoney - alreturnTotal)*interest); //还款利息
+      var returnCorpus = parseFloat(everyMoner - returnInterest); //还款本金
+      alreturnTotal+=returnCorpus;
+      iobj.monery.sum  += parseFloat(returnInterest + returnCorpus);
+      iobj.monery.ig[i]  = parseFloat(returnInterest + returnCorpus);
+      insertHtml(i+1,returnCorpus,returnInterest,loanDays);
+   } 
+   $("#monthRate").text(fmoney((interest*100),4)+'%');
+   if(loanDays == 1){
+     $("#interestSum").text(fmoney(everyMoner));
+     $("#monthCorpus").text('-');
+     return ;
+   }
+   $("#monthCorpus").text(fmoney(everyMoner)+'元');
+   var s = parseFloat(iobj.monery.sum).toFixed(3);
+
+   $(".n_interest").each(function(i,e){
+     s -= parseFloat(iobj.monery.ig[i]);
+     $(this).text(fmoney(s));
+   });    
+
+  $("#interestSum").text(fmoney(iobj.monery.sum));
+}
+
+/**
+*填充‘还款计划时间表’
+*returnSed ：期数
+*corpus ：还款本金
+*interest : 还款利息
+*loanDays ：借款期限
+*/
+function insertHtml(returnSed,corpus,interest,loanDays){
+      $("#returnTable").append('<tr height="30" class="even">'
+      +'<td class="tdMenu" width="15%" align="center"> '+returnSed+'/'+loanDays+' </td>'
+      +'<td class="tdMenu" width="22%" align="center"> '+fmoney(corpus)+' </td>'
+      +'<td class="tdMenu" width="22%" align="center"> '+fmoney(interest)+' </td>'
+      +'<td class="tdMenu" width="22%" align="center"> '+fmoney((interest + corpus))+' </td>'
+      +'<td class="tdMenu n_interest" width="19%" align="center"></td></tr>');
+} 
+
+
+function fmoney(s, n)   
+{   
+   if(s<0){return 0;}
+   n = n > 0 && n <= 20 ? n : 2;   
+   s = parseFloat((s + "").replace(/[^\d\.-]/g, "")).toFixed(n) + "";   
+   var l = s.split(".")[0].split("").reverse(),   
+   r = s.split(".")[1];   
+   t = "";   
+   for(i = 0; i < l.length; i ++ )   
+   {   
+      t += l[i] + ((i + 1) % 3 == 0 && (i + 1) != l.length ? "," : "");   
+   }   
+   return t.split("").reverse().join("") + "." + r;   
+} 
+
+</script>
+ 
+    
+</body>
+</html>

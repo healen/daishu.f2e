@@ -1,0 +1,873 @@
+body{
+	font-size: 12px;
+}
+.content-wrap {
+    background: #f9e07a;
+    padding-bottom: 50px
+}
+.box{
+	background: #f9e07a;
+}
+.fl {
+    float: left;
+    display: inline
+}
+
+.fr {
+    float: right;
+    display: inline
+}
+
+.cf:before,.cf:after {
+    content: "";
+    display: table
+}
+
+.cf:after {
+    clear: both
+}
+
+.cf {
+    *zoom:1}
+
+.clear {
+    clear: both;
+    font-size: 0
+}
+
+.dashed {
+    border-top: 1px dashed #000;
+    height: 1px;
+    overflow: hidden
+}
+
+.gray {
+    background: url(../img/xinshou/login-bg.png)
+}
+
+.auto {
+    width: 1010px;
+    margin: 0 auto
+}
+
+#showGray {
+    background: #000;
+    opacity: .6;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    filter: alpha(opacity=60);
+    width: 100%;
+    height: 100%
+}
+
+.login-wrap {
+    width: 100%
+}
+
+.login {
+    width: 1010px;
+    margin: 0 auto;
+    height: 380px;
+    position: relative
+}
+
+.login .login-r {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background: url(../img/xinshou/login-bg.png)
+}
+
+.login .login-r h1 {
+    height: 54px;
+    background: #b92a20;
+    font-size: 20px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+.login .login-r h2 {
+    height: 2px;
+    font-size: 20px;
+    line-height: 7px;
+    text-align: center
+}
+
+.login .login-r div {
+    margin: 0 0 9px 10px;
+    position: relative
+}
+
+.login .login-r .warm-c {
+    height: 20px
+}
+
+.login .login-r .warm {
+    color: red
+}
+
+.login .login-r input {
+    height: 18px;
+    width: 170px;
+    padding: 11px 0 11px 35px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+.login .login-r .phone-icon {
+    background: url(../img/xinshou/input-bg.png) no-repeat 7px -2px;
+    position: absolute;
+    top: 0;
+    left: 61px;
+    width: 31px;
+    height: 40px
+}
+
+.login .login-r .password-icon {
+    background: url(../img/xinshou/input-bg.png) no-repeat 7px -64px;
+    position: absolute;
+    top: 0;
+    left: 61px;
+    width: 31px;
+    height: 40px
+}
+
+.login .login-r .code-icon {
+    background: url(../img/xinshou/input-bg.png) no-repeat 7px -129px;
+    position: absolute;
+    top: 0;
+    left: 61px;
+    width: 31px;
+    height: 40px
+}
+
+.login .login-r .code {
+    width: 71px
+}
+
+.login .login-r img {
+    padding-left: 13px;
+    cursor: pointer
+}
+
+.login .login-r .l-label {
+    width: 60px;
+    float: left;
+    text-align: right;
+    height: 40px;
+    line-height: 40px
+}
+
+.login .login-r .register {
+    font-weight: 700;
+    display: block;
+    width: 164px;
+    height: 40px;
+    background: #F8632F;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 0 50px;
+    cursor: pointer
+}
+
+.login .login-r .register:hover {
+    background: #ff571c
+}
+
+.login .login-r a {
+    position: absolute;
+    bottom: 44px;
+    right: 25px;
+    color: #fff
+}
+
+.mod-register-wrap {
+    background: #fff
+}
+
+.mod-register-wrap .mod-register {
+    width: 1010px;
+    margin: 0 auto;
+    height: 132px;
+    text-align: center
+}
+
+.mod-register-wrap .mod-register div {
+    background: url(../img/xinshou/bg.png?20140610V3) no-repeat -237px -27px;
+    width: 252px;
+    height: 132px;
+    margin: 0 auto;
+    cursor: pointer
+}
+
+.mod-dialog-wrap {
+    width: 1010px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    z-index: 2
+}
+
+.mod-dialog-wrap .login {
+    background: url(../img/xinshou/dialog-bg.png) no-repeat center 0;
+    position: fixed;
+    top: 15%;
+    z-index: 2
+}
+
+.mod-dialog-wrap .login .login-r {
+    right: 350px
+}
+
+.mod-dialog-wrap .login .close-dialog {
+    position: absolute;
+    top: 42px;
+    right: 28px;
+    width: 25px;
+    height: 25px
+}
+
+.back {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    background: url(../img/xinshou/login-bg.png?20140610V3);
+    display: none
+}
+
+.back a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/xinshou/bg.png?20140610V3) no-repeat -86px -115px
+}
+
+.header-wrap {
+    width: 100%;
+    background: url(../img/xinshou/header-line.png) repeat-x
+}
+
+.header-wrap .header {
+    width: 1004px;
+    margin: 0 auto;
+    height: 50px
+}
+
+.header-wrap .header .h-l {
+    float: left
+}
+
+.header-wrap .header .h-l a {
+    display: block;
+    margin-top: 8px
+}
+
+.header-wrap .header .h-r {
+    float: right
+}
+
+.header-wrap .header .h-r ul {
+}
+
+.header-wrap .header .h-r ul li {
+    float: left;
+    font-size: 12px;
+    line-height: 50px
+}
+
+.header-wrap .header .h-r ul li a {
+    color: #626262;
+    margin: 0 15px
+}
+
+.header-wrap .header .h-r ul li a:hover {
+    color: #FB7101
+}
+
+.btn-reg {
+    padding: 50px 0;
+    width: 100%;
+    text-align: center
+}
+
+.btn-reg img {
+    cursor: pointer
+}
+
+.warm-tips {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    color: #734a15
+}
+
+.header-wrap .header .header-l ul .l-tel {
+    display: none
+}
+
+.header-wrap .header .header-l ul .l-tel {
+    background-position: -260px 1px;
+    color: #fb7101;
+    width: 140px;
+    text-indent: 2em;
+    font-weight: 700;
+    margin-left: 50px;
+    padding-left: 30px
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background: #fff2c6;
+    padding-top: 30px
+}
+
+.content .title {
+    width: 1055px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    background: url(../img/xinshou/sg-bg.png) no-repeat;
+    height: 65px
+}
+
+.content .title-01 {
+    background-position: 0 0
+}
+
+.content .title-02 {
+    background-position: 0 -65px
+}
+
+.content .title-03 {
+    background-position: 0 -65px;
+    top: -60px
+}
+
+.content .title-04 {
+    background-position: 0 -129px;
+    top: -80px
+}
+
+.mod-hd {
+    position: relative;
+    height: 320px
+}
+
+.mod-hd .hd-c {
+    padding-top: 120px;
+    text-align: center;
+    position: relative
+}
+
+.mod-bd {
+    position: relative;
+    height: 365px
+}
+
+.mod-bd .bd-c {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.mod-bd .bd-c .pic-02 {
+    position: absolute;
+    top: 87px;
+    left: 37px
+}
+
+.mod-bd .bd-c .section-c {
+    position: absolute;
+    top: 107px;
+    left: 515px;
+    width: 430px;
+    height: 260px
+}
+
+.section {
+    font-size: 14px;
+    line-height: 30px;
+    color: #bb2618
+}
+
+.strong {
+    font-weight: 700
+}
+
+.mod-ft {
+    position: relative
+}
+
+.mod-ft .ft-c {
+    margin: 80px 20px 0;
+    padding-bottom: 20px
+}
+
+.btn-register {
+    position: absolute;
+    top: 313px;
+    left: 513px;
+    width: 253px;
+    height: 43px;
+    background: url(../img/xinshou/sg-bg.png) no-repeat 0 -194px;
+    cursor: pointer
+}
+
+.hd-xinshou .btn-register-01 {
+    position: absolute;
+    top: 204px;
+    left: 142px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-xinshou .btn-register-02 {
+    position: absolute;
+    top: 208px;
+    left: 452px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-xinshou .btn-register-03 {
+    position: absolute;
+    top: 208px;
+    left: 776px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-l {
+    width: 380px;
+    float: left;
+    padding-left: 150px;
+    padding-top: -30px;
+}
+
+.hd-r {
+    width: 380px;
+    float: left;
+    padding-left: 30px;
+}
+
+.hd-l-c {
+    width: 200px;
+    padding: 10px 40px 10px 10px;
+    display: block;
+    float: left;
+    line-height: 2em;
+    color: #2f2f2e;
+    text-align: left;
+}
+
+.hd-r-c {
+    width: 200px;
+    padding: 10px 40px 10px 10px;
+    display: block;
+    float: left;
+    line-height: 1.7em;
+    color: #2f2f2e;
+    text-align: left;
+}
+
+.hd-l-c h3,.hd-r-c h3 {
+    color: #BB2719;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.hd-l-c h3 .em-s,.hd-r-c h3 .em-s {
+    font-size: 16px;
+}
+
+.hd-l-c ps,.hd-r-c ps {
+    font-size: 10px;
+}
+
+.hd-xinshou-one .btn-register-01 {
+    position: absolute;
+    top: 218px;
+    left: 272px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-xinshou-one .btn-register-02 {
+    position: absolute;
+    top: 221px;
+    left: 668px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-xinshou-one .btn-register-03 {
+    position: absolute;
+    top: 245px;
+    left: 775px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-xinshou-two .btn-register-01 {
+    position: absolute;
+    top: 220px;
+    left: 264px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.hd-xinshou-two .btn-register-02 {
+    position: absolute;
+    top: 223px;
+    left: 662px;
+    cursor: pointer;
+    width: 122px;
+    height: 39px
+}
+
+.u-num {
+    text-decoration: none;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/xinshou/sg-bg.png) no-repeat -291px -203px;
+    *display: inline;
+    *zoom:1;text-align: center;
+    color: #fff;
+    font-size: 12px
+}
+
+.u-love {
+    text-decoration: none;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/xinshou/sg-bg.png) no-repeat -263px -201px;
+    *display: inline;
+    *zoom:1}
+
+.mod-data-wrap {
+    width: 100%;
+    background: #fff2c6
+}
+
+.mod-data-wrap .mod-data {
+    width: 1000px;
+    margin: 70px auto 0;
+    position: relative
+}
+
+.mod-data-wrap .mod-data .data-zhi {
+    height: 220px
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table {
+    color: #9f3635
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table thead tr {
+    background: #f8a94a
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table tr {
+    height: 40px;
+    background: #fbe692;
+    border-bottom: 10px solid #FFF2C6
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table td {
+    width: 113px;
+    text-align: center
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table th {
+    text-align: center
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table .i-project {
+    width: 165px
+}
+
+.mod-data-wrap .mod-data .data-zhi .i-table .i-project .i-project-icon {
+    background: #c9151e;
+    padding: 2px 4px;
+    color: #fff;
+    margin-right: 5px
+}
+
+.mod-data-wrap .mod-data .data-safe {
+    height: 260px;
+    border-top: 1px solid #f0997c;
+    margin-top: 2px
+}
+
+.mod-data-wrap .mod-data .data-l {
+    float: left;
+    width: 280px;
+    margin: 27px 0 0 20px;
+    padding-left: 13px
+}
+
+.mod-data-wrap .mod-data .data-l span {
+    font-size: 30px;
+    color: #734a15
+}
+
+.mod-data-wrap .mod-data .data-l .zhi-icon {
+    font-size: 20px;
+    color: #fff;
+    padding: 2px 4px;
+    background: #c9151e;
+    margin-right: 15px
+}
+
+.mod-data-wrap .mod-data .data-l .safe-icon {
+    font-size: 20px;
+    color: #fff;
+    padding: 2px 4px;
+    background: #0075c1;
+    margin-right: 15px
+}
+
+.mod-data-wrap .mod-data .data-l .tips {
+    color: #734a15;
+    font-size: 14px;
+    width: 218px;
+    margin: 20px 0
+}
+
+.mod-data-wrap .mod-data .data-l a {
+    background: #b14244;
+    display: block;
+    width: 116px;
+    height: 32px;
+    text-align: center;
+    color: #fff;
+    line-height: 32px;
+    font-size: 16px
+}
+
+.mod-data-wrap .mod-data .data-r {
+    float: left;
+    margin-top: 27px;
+    width: 630px
+}
+
+.mod-data .data-r .r-list {
+    background: #fcd697;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    text-align: center
+}
+
+.data-r .r-list .a {
+    font-size: 24px;
+    color: #734a15;
+    line-height: 45px;
+    border-bottom: 1px solid;
+    margin: 0 10px
+}
+
+.mod-data .data-r .list-c {
+    font-size: 14px;
+    color: #b14244
+}
+
+.mod-data .list-c .list-c-l {
+    float: left;
+    width: 99px;
+    height: 77px;
+    border-right: 1px solid;
+    margin: 10px 0
+}
+
+.mod-data .list-c .list-c-r {
+    float: right;
+    width: 99px;
+    height: 77px;
+    margin: 10px 0
+}
+
+.mod-data .list-bd {
+    color: #b14244;
+    border-top: 1px solid;
+    height: 25px;
+    line-height: 25px
+}
+
+.mod-data .list-ft {
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px
+}
+
+.mod-data .list-ft-a {
+    background: #339d71
+}
+
+.mod-data .list-ft-b {
+    background: #9d8d33
+}
+
+.mod-data .list-ft-c {
+    background: #bb5a6a
+}
+
+.f-s18 {
+    font-size: 18px
+}
+
+.m-t18 {
+    margin-top: 18px
+}
+
+.f-s36 {
+    font-size: 26px;
+    font-weight: bolder
+}
+
+.mod-data .data-r .r-list pre {
+    font-size: 14px
+}
+
+.btn-zhi-g {
+    background: #b14244;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 8px
+}
+
+p.note {
+    color: #4c3f3e
+}
+
+.data-lan {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0997c
+}
+
+.data-lan-tb {
+    margin-top: 20px;
+    float: left
+}
+
+.data-lan-tb th {
+    color: #642818;
+    background-color: #f27c5b;
+    width: 121px;
+    height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 4px solid #fff2c6;
+    border-bottom: 6px solid #fff2c6
+}
+
+.data-lan-tb td {
+    color: #5e2005;
+    background-color: #fec969;
+    width: 121px;
+    height: 64px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 4px solid #fff2c6
+}
+
+.data-lan-tb .rate {
+    font-size: 28px;
+    font-weight: 700;
+    color: red
+}
+
+.data-lan .invest {
+    display: inline-block;
+    margin-top: 77px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #f9c5c5;
+    background-color: #b3525b;
+    padding: 4px 10px
+}
+
+.data-lan .baoshu {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 25px;
+    background: url(../img/xinshou/baoshu01.png) no-repeat;
+    width: 85px;
+    height: 77px
+}
+
+.data-lan .invest-wrap {
+    position: relative;
+    float: left;
+    padding-left: 5px
+}
+
+.mod-bd .section {
+    line-height: 36px
+}
+
+.mod-data-wrap .mod-data .data-l .lan-icon {
+    font-size: 20px;
+    color: #fff;
+    padding: 2px 4px;
+    background: #f47403;
+    margin-right: 15px
+}
+
+.spirit {
+    float: left;
+    display: inline-block;
+    background: url(../img/xinshou/spirit.png) no-repeat;
+}
+
+.s01 {
+    width: 107px;
+    height: 145px;
+    background-position: -13px -300px;
+}
+
+.s02 {
+    width: 119px;
+    height: 37px;
+    background-position: -9px -64px;
+    margin-top: 6px;
+}
+
+.s03 {
+    width: 107px;
+    height: 145px;
+    background-position: -13px -155px;
+}
+
+.s04 {
+    width: 119px;
+    height: 37px;
+    background-position: -9px -16px;
+    margin-top: 3px;
+}

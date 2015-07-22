@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="../public/styles/my_basic_info.css" type="text/css">
+     <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+     <style>
+        
+     </style>
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+
+        <div class="header">
+            <div class="topbar">
+                <div class="warp">
+                    <div class="l">
+                        <span>欢迎：</span>
+                        <a href="#" class="reg underline">15600074926</a>
+                        <a href="/login.html" class="reg underline">注销</a>
+                    </div>
+                    <div class="r">
+                        <a href="/investmentHistory.html">投资记录</a>
+                        <a href="/my.html">个人中心</a>
+                        <a href="/help.html">帮助</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="warp">
+                    <div class="logobox">
+                        <a href="/index.html"><img src="../public/img/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="on"><a href="/index.html">首页</a></li>
+                        <li><a href="/myInvestment.html">我要投资</a></li>
+                        <li><a href="/myLoan.html">我要借款</a></li>
+                        <li><a href="/myUser.html">我的账户</a></li>
+                        <li><a href="join.html">合作加盟</a></li>
+                        <li><a href="aboutUs.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--主体内容-->
+        <div class="container">
+
+
+            <div class="la-my">
+                    
+    <div class="myright" style="width: 1132px;">
+    
+        <div class="topcontent">
+            <div class="warp">
+                <div class="tabview" style="background:#ffffff">
+                    <style type="text/css">
+                        .la-my .myright .tabview .tab  a{
+                            border-right: none;
+                            border-bottom: none;
+                            width: 120px;
+                            font-size: 18px;
+                        }
+                        .la-my .myright .tabview .tab a.on{
+                            border-bottom: 2px solid #f95723;
+                        }
+                    </style>
+                    <div class="tab" style="border-top:none;width:400px; margin:0px auto; background:#fff">
+                        <a href="javascript:void(0)" class="on">邮箱登录</a>
+                        <a href="javascript:void(0)" class="">手机登录</a>
+                    </div>
+                    <div class="contant" style="min-height: 350px;">
+                        <div class="tabcontent" style="display: block;">
+                            <div class="warpper">
+                                <div class="basicfrome" style="width:600px; margin:0px auto">
+                                    <div class="label maincontent">
+                                        <span class="subject">注册邮箱：</span>
+                                        <input name="ctl00$ContentPlaceHolder1$Email" type="text" id="ctl00_ContentPlaceHolder1_Email" class="length4" placeholder="请输入注册邮箱">
+                                        <span id="ctl00_ContentPlaceHolder1_spanEmail" class="xinghao">*</span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <span class="subject">用户名：</span>
+                                        <input name="ctl00$ContentPlaceHolder1$UserName" type="text" id="ctl00_ContentPlaceHolder1_UserName" class="length4" placeholder="请输入用户名">
+                                        <span id="ctl00_ContentPlaceHolder1_spanUserName" class="xinghao">*</span>
+                                        <span>由数字、字母和下划线组成</span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <span class="subject">密码：</span>
+                                        <input name="ctl00$ContentPlaceHolder1$Password" type="password" id="ctl00_ContentPlaceHolder1_Password" class="length4" placeholder="请输入密码">
+                                        <span id="ctl00_ContentPlaceHolder1_spanPassword" class="xinghao">*</span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <span class="subject">确认密码：</span>
+                                        <input name="ctl00$ContentPlaceHolder1$relPass" type="password" id="ctl00_ContentPlaceHolder1_relPass" class="length4" placeholder="请输入确认密码">
+                                        <span id="ctl00_ContentPlaceHolder1_spanRelPass" class="xinghao">*</span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <span class="subject">用户类型：</span>
+                                        <select name="ctl00$ContentPlaceHolder1$Select1" id="ctl00_ContentPlaceHolder1_Select1">
+                                            <option selected="selected" value="个人">个人</option>
+                                            <option value="个体">个体工商户</option>
+                                            <option value="企业">企业</option>
+                                            <option value="内部人员">内部人员</option>
+                                        </select>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <span class="subject">客服代码：</span>
+                                        <input name="ctl00$ContentPlaceHolder1$txtService" type="text" id="ctl00_ContentPlaceHolder1_txtService" class="length4" placeholder="请输入客服代码">
+                                        <span>如无可不填</span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <span class="subject">验证码：</span>
+                                        <input name="ctl00$ContentPlaceHolder1$code" type="text" id="ctl00_ContentPlaceHolder1_code" onkeyup="value=value.replace(/[^\d]/g,'')" class="yzm" maxlength="4">
+                                        <img id="imgCode" src="Inc/CheckCode.aspx" onclick="ClickCode()" height="31" alt="点击切换">
+                                        <span id="ctl00_ContentPlaceHolder1_spanCode" class="xinghao">*</span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <div class="subject">&nbsp;</div>
+                                        <input id="Checkbox1" type="checkbox" class="checkbox">
+                                        <span><a href="javacript:void(0);" style="color: #666;" onclick="PropDiv('safety/register_saft.aspx',995,0)">我已阅读并同意使用条款及隐私条款</a></span>
+                                    </div>
+                                    <div class="label maincontent">
+                                        <div class="subject">&nbsp;</div>
+                                        <input name="ctl00$ContentPlaceHolder1$buttSinUp" type="button" id="ctl00_ContentPlaceHolder1_buttSinUp" value="提 交" class="sub">
+                                    </div>
+                                    <div class="label maincontent">
+                                        <div class="subject">&nbsp;</div>
+                                        <input name="ctl00$ContentPlaceHolder1$hidTjrId" type="hidden" id="ctl00_ContentPlaceHolder1_hidTjrId">
+                                        <input name="ctl00$ContentPlaceHolder1$hidTjrUserName" type="hidden" id="ctl00_ContentPlaceHolder1_hidTjrUserName">
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabcontent" style="display:none;">
+                            <div class="warpper">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+        </div>
+
+
+
+        <!--页脚-->
+        <div class="footer">
+            <div class="warp">
+                <div class="top">
+                    <div class="l"><h2>友情连接</h2></div>
+                    <div class="r">
+                        <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                         <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                         <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                         <a href="">慧聪金融</a>
+                        <a href="">易关至库</a>
+                        <a href="">百度金融</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">金融网</a>
+                    </div>
+                </div>
+
+                <div class="top mid">
+                    <div class="tops">
+                        <div class="r">
+                            <a href="">公司简介</a>
+                            <a href="">安全保障</a>
+                            <a href="">媒体报道</a>
+                            <a href="">社会责任</a>
+                            <a href="">招贤纳士</a>
+                            <a href="">网站地图</a>
+                            <a href="">帮助中心</a>
+                            <a href="">联系我们</a>
+                        </div>
+                    </div>
+                    <div class="l"><h2>客户服务</h2></div>
+                    <div class="r">
+                        <a href=""><img src="../public/img/sina.png" alt=""></a>
+                        <a href=""><img src="../public/img/qq.png" alt=""></a>
+                        <a href=""><img src="../public/img/weixin.png" alt=""></a>
+                        <a href=""><img src="../public/img/kf.png" alt=""></a>
+                        
+                    </div>
+                </div>
+
+                <div class="banq">版权所有 贷鼠网</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <div id="popup"></div>
+
+    <div id="popupcontent" style="display:none">
+        <div class="popcon">
+
+            <div class="warpper">
+
+                  
+
+                  
+                    <div class="basicfrome" id="basiccontent">
+                       
+                       
+                      
+                      
+                     
+                        <div class="label">
+                            <div class="subject">联系人姓名：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecond" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecond" class="length4" placeholder="请输入联系人姓名" value="测试2">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">联系人关系：</div>
+                            <select name="ctl00$ctl00$ContentPlaceHolder1$Content3$SecondRelation" id="ctl00_ctl00_ContentPlaceHolder1_Content3_SecondRelation">
+    <option value="同事">同事</option>
+    <option selected="selected" value="好友">好友</option>
+    <option value="同学">同学</option>
+</select>
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">联系人电话：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondPhone" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondPhone" class="length4" placeholder="请输入联系人电话" onkeyup="value=value.replace(/[^\d]/g,'')" value="15689076543">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">所在单位：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondCompany" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondCompany" class="length2" placeholder="请输入联系人所在单位" value="北京大清邮局">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">工作地址：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondAddress" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondAddress" class="length2" placeholder="请输入联系人工作地址" value="北京朝阳区">
+                            <span class="xinghao">*</span>
+                        </div>
+                        <div class="label">
+                            <div class="subject">职位：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondPosition" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondPosition" class="length4" placeholder="请输入联系人职位" value="测试工程">
+                        </div>
+                        <div class="label">
+                            <div class="subject">月薪：</div>
+                            <input name="ctl00$ctl00$ContentPlaceHolder1$Content3$txtSecondMonthly" type="text" id="ctl00_ctl00_ContentPlaceHolder1_Content3_txtSecondMonthly" class="length4" placeholder="请输入联系人月薪" onkeyup="clearNoNum(this)" value="100000">元
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="bottom">
+                <a class="jhwc">确定</a>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/popup.js"></script>
+   <script type="text/javascript">
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        });
+
+
+         $(function(){
+            $(".tab a").click(function(){
+                var num=$(this).index();
+                var parent=$(this).parents(".tabview");
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on");
+                parent.find(".tabcontent").eq(num).show();
+                parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide();
+            
+            });
+
+
+
+
+            /*支付方式*/
+
+            $(".zft").change(function(){
+                if($(this)[0].checked==true){
+                    $(".showbank").slideDown();
+                }
+                
+            })
+
+             $(".beifu").change(function(){
+                if($(this)[0].checked==true){
+                     $(".showbank").slideUp();
+                }
+                
+            })
+
+            $(".showbank a").click(function(){
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on")
+            })
+            
+        });
+
+
+        $(".addmsg").bind("click",function(){
+          $.popup({
+                title:"添加/编辑联系人信息",
+                content: function(){
+                  return $("#popupcontent").html();
+                }, //内容
+                close: true, //是否关闭
+                closeCallback:null,
+                popupStyle: "jihuo",
+                popupPosition:"fixed"
+               
+           })
+
+       });
+
+       $(".jhwc").live("click",function(){
+            $.close(".popup",function(){
+                alert(1)
+            })
+       })
+
+
+        
+    })
+   </script>
+
+
+
+
+
+   
+    
+</body>
+</html>
+
+
+
+

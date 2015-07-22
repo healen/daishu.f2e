@@ -1,0 +1,210 @@
+@import "../document";
+
+/*
+*2015
+*招标列表
+*zxd
+*/
+
+body{
+    background: @huiBackground;
+}
+.header{
+    box-shadow: 0px 1px 10px #c8c8c8;
+}
+.la-my {
+  @padding:10px;
+  width: @documentWidth;
+  margin: 12px auto;
+  a.banner{
+    display: block;
+    width: @documentWidth;
+    margin: 0px auto 12px 0px;
+    img{
+        display: block;
+
+       .-box ._size(@documentWidth,auto);
+    }
+  }
+  .wherebox{
+    margin-bottom: 12px;
+    .titlebox{
+        height: 48px;
+        line-height: 48px;
+        padding: 0px @padding;
+        border-top: 2px solid @markBgColorMy;
+        border-left: 1px solid @borderColor1;
+        border-right: 1px solid @borderColor1;
+        background: #fff;
+        clear: both;
+        ._clearfix();
+        h2{
+            color: @baseTextColor;
+            padding-left: 22px;
+            font-size: @titleFoutSize;
+            float: left;
+            ._clearfix();
+            i{
+                display: block;
+                width: 40px;
+                height: 48px;
+                background: #ff0000;
+                float: right;
+                background: url('@{img}/ico.png') no-repeat -145px -157px;
+            }
+
+        }
+        .markbox{
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            padding-top: 11px;
+            ._clearfix();
+            font-size: @samllFoutSize;
+            color: @myTextColor;
+            .mark{
+               ._clearfix();
+               background: @markBgColor;
+               overflow: hidden;
+               color: #fff;
+               border-radius: 5px;
+               display: block;
+               margin-right: 25px;
+               float: left;
+               .content{
+                    float: left;
+                    display: block;
+                    padding: 0px 10px;
+               }
+               .close{
+                    width: 24px;
+                    height: 24px;
+                    float: left;
+                    background:url('@{img}/ico.png') no-repeat -186px -170px;
+                    cursor: pointer;
+               }
+
+            }
+        }
+        .abox{
+            ._clearfix();
+            float: right;
+            line-height: 30px;
+            padding-top: 8px;
+            a{
+                display: inline-block;
+                padding: 0px 25px;
+                border-right:1px solid @borderColor1;
+                &.end{
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    .contentlist{
+        border:1px solid @borderColor1;
+        border-top: none;
+        background: #fff;
+        padding: @padding;
+        .listbox{
+            padding: 0px 20px 20px 20px;
+            font-size: @samllFoutSize;
+            .ltr{
+                 ._clearfix();
+                padding-top: 10px;
+                .ltright{
+                    float: left;
+                    width: 985px;
+                }
+                .ltd{
+                    float: left;
+                  
+                    margin-right: 28px;
+                    color: @listContColor;
+                    line-height: 28px;
+                    a{
+                         color: @listContColor;
+                         padding: 2px 5px;
+                         border-radius: 10px;
+                         &:hover{
+                        
+                            background: @borderColor1;
+                         }
+                    }
+                    &.on{
+                        color: @markBgColor;
+                        a{
+                            color: #fff;
+                            background: @markBgColorAux;
+                        }
+                    }
+                    &.fast{
+                        width: 75px;
+                        margin-right: 0px;
+                        text-align: right;
+                        color: @listTitColor;
+                        padding-right: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+  }
+
+  .listbox{
+    padding: 10px;
+    background: #fff;
+    .tr{
+        ._clearfix();
+       
+        overflow: hidden;
+        padding:0px 25px;
+        text-align: center;
+        color:  @myTextColor;
+        .td{
+            float: left;
+            width: 16%;
+            line-height: 60px;
+            height: 60px;
+            &.fast{
+                width: 20%;
+            }
+            border-bottom:1px solid @borderColor1;
+            .-speed ._base(myspeed);
+
+            a.mytz{
+                display: inline-block;
+                background: @markBgColor;
+                line-height: 35px;
+                padding: 0px 20px;
+                border-radius: 3px;
+                color: #ffffff;
+                cursor: pointer;
+                &:hover{
+                    background:darken(@markBgColor, 10%);
+                }
+            }
+
+        }
+        &:last-child{
+            .td{
+                border-bottom:none;
+            }
+        }
+
+        &.th{
+            background:@boxBgColor; 
+            .td{
+                font-size: @titleFoutSize;
+                color: @myTextColor;
+                border-bottom: none;
+                line-height: 50px;
+                height: 50px;
+                overflow: hidden;
+            }
+        }
+    }
+  }
+}
