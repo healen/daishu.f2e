@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>贷鼠网-个人中心</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/take_money_record.css">
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+
+
+            <div class="slidebox">
+                 <div class="banklist">
+                    <div class="lis">
+                        <div class="content">
+                            <p>2013.12.23</p>
+                            <div>提现120.00元</div>
+                            <span class="jxz">申请中</span>
+                            <i class="icoFt jt icon-jiantou"></i>
+                        </div>
+                    </div>
+                </div>
+                <section class="info">
+                    <div class="wapper">
+                        <div>
+                           
+                            <p>完成时间：2015.12.13</p>
+                            <p>提现金额：15,000,000元</p>
+                            <p>实际金额：30,000,000元</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="slidebox">
+                <div class="banklist">
+                    <div class="lis">
+                        <div class="content">
+                            <p>2013.12.23</p>
+                            <div>提现120.00元</div>
+                            <span class="cg">成功</span>
+                            <i class="icoFt jt icon-jiantou"></i>
+                        </div>
+                    </div>
+                </div>
+                 <section class="info">
+                    <div class="wapper">
+                         <div>
+                           
+                            <p>完成时间：2015.12.13</p>
+                            <p>提现金额：15,000,000元</p>
+                            <p>实际金额：30,000,000元</p>
+                        </div>
+                    </div>
+                </section>    
+            </div>
+            <div class="slidebox">
+                <div class="banklist">
+                    <div class="lis">
+                        <div class="content">
+                            <p>2013.12.23</p>
+                            <div>提现120.00元</div>
+                            <span class="sb">失败</span>
+                            <i class="icoFt jt icon-jiantou"></i>
+                        </div>
+                    </div>
+                </div>
+                 <section class="info">
+                    <div class="wapper">
+                        <div>
+                            
+                            <p>完成时间：2015.12.13</p>
+                            <p>提现金额：15,000,000元</p>
+                            <p>实际金额：30,000,000元</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+			
+			     
+
+
+                
+
+                
+				
+		</section>
+	</section>
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+
+    <script>
+        $(".slidebox").delegate(".banklist","tap",function(){
+            var animateEle=$(this).parent();
+            if(animateEle.hasClass("on")){
+                animateEle.removeClass("on");
+            }else{
+                animateEle.addClass("on");
+            }
+
+        })
+    </script>
+	<!--组件-->
+
+	
+	
+	
+	<!--页面JS-->
+
+	
+
+
+
+	
+
+</body>
+</html>

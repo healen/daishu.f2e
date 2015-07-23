@@ -1,0 +1,34 @@
+@import "variables";
+@import "lib/basic";
+._tab-view(@select,@mt:1rem){
+	.@{select}-tab{
+		background: @querBgColor;
+		border-radius: @querRadius;
+		margin-top: @mt;
+		.@{select}-title{
+			.-display ._box();
+		    .-display ._box-align(center,center);
+			height: 33px;
+			border-bottom: 1px solid @borderColor;
+			box-sizing: border-box;
+			a{
+				display: block;
+				height: 33px;
+				line-height: 32px;
+				padding:0rem 1rem;
+				box-sizing: border-box;
+				font-size: @titleFontSize;
+				color: @assistColor;
+				&.on{
+					border-bottom: 2px solid @markColor;
+					color: @majorColor;
+				}
+			}
+
+		}
+		.@{select}-content{
+
+		}
+	}
+	
+}

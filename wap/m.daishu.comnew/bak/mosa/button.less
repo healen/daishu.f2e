@@ -1,0 +1,52 @@
+@import "variables";
+@import "lib/basic";
+
+._btn_border(@height:3rem,@color:@markColor,@pdx:1.2rem){
+	display: block;
+	.-display ._box();
+	.-display ._box-align(center,start);
+	height: @height;
+	border-radius: @inputRadius;
+	border:1px solid @color;
+	color: @color;
+	padding: 0px @pdx;
+	i{
+		&.btn_ico{
+			display: block;
+			width: 12px;
+			height: 12px;
+			overflow: hidden;
+			margin-left: 3px;
+			.-bg ._img('@{icoURL}/ico.png');
+			.-bg ._size(320/2px);
+			.-bg ._repeat(on);
+			background-position: 2px 1px;
+		}
+	}
+	 &:active{
+       border:1px solid darken(@color, 10%);
+       color: darken(@color, 10%);
+       background: @docBgColor;
+    }
+    &:visited{
+        border:1px solid @color;
+		color: @color;
+		background: #ffffff;
+    }
+}
+
+._btn(@bg:@markColor,@h:4rem,@tColor:#ffffff,@rus:@inputRadius){
+	height: @h;
+	border-radius:@rus;
+	display: block;
+	background: @bg;
+	color: @tColor;
+	font-size: 1.6rem;
+	 &:active{
+      background: darken(@bg, 10%)
+    }
+    &:visited{
+        background: darken(@bg, 10%)
+    }
+
+}

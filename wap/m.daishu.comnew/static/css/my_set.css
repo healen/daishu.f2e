@@ -1,0 +1,193 @@
+/******************个人中心设置样式********************/
+.body-content {
+  padding: 0rem 0rem;
+}
+.myhead {
+  padding: 0rem 1rem;
+  background-color: #ffffff;
+}
+.myhead .top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  height: 12rem;
+  border-bottom: 1px solid #dfe3f0;
+  position: relative;
+}
+.myhead .top img {
+  display: block;
+  width: 71px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.myhead .top h2 {
+  font-size: 1.6rem;
+}
+.myhead .bottom {
+  height: 60px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.myhead .bottom .qure {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+}
+.myhead .bottom .qure:active {
+  background: #eeedfa;
+}
+.myhead .bottom .qure:visited {
+  background: #ffffff;
+}
+.myhead .bottom .qure .yuan {
+  font-family: Arial;
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #ffd93f;
+  text-align: center;
+  line-height: 2rem;
+  color: #cb5f1d;
+  margin-right: 5px;
+}
+.myhead .bottom .qure h2 {
+  font-size: 1.6rem;
+}
+.myhead .bottom .qure:nth-child(1) {
+  border-right: 1px solid #dfe3f0;
+}
+.mybottom {
+  padding: 0.8rem 1rem;
+}
+.mybottom .btnbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  padding-top: 2rem;
+}
+.mybottom .btnbox input {
+  height: 4rem;
+  border-radius: 2rem;
+  display: block;
+  background: #ffd93f;
+  color: #ffffff;
+  font-size: 1.6rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-shadow: 0px 4px 0px #ffeda5;
+}
+.mybottom .btnbox input:active {
+  background: #ffcf0c;
+}
+.mybottom .btnbox input:visited {
+  background: #ffcf0c;
+}
+.mybottom .btnbox input.disable {
+  background: #ccc;
+  color: #ffffff;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.mybottom .btnbox input:nth-child(1) {
+  background: #3dbdff;
+  box-shadow: 0px 4px 0px #a3e0ff;
+}
+.mybottom .listjt {
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+.mybottom .listjt .lis {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  padding: 1.3rem 1.3rem;
+  border-bottom: 1px solid #dfe3f0;
+  color: #535a66;
+}
+.mybottom .listjt .lis:last-child {
+  border-bottom: none;
+}
+.mybottom .listjt .lis span {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.mybottom .listjt .lis .jt {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.5rem;
+}
+.mybottom .listjt .lis .qipao {
+  height: 16px;
+  min-width: 16px;
+  padding: 0px 4px;
+  background: #fe3c39;
+  border-radius: 8px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0px 10px;
+  font-size: 1.2rem;
+}
+.mybottom .listjt > a:last-child {
+  border-bottom: none;
+}
+.mybottom .listjt > a:active {
+  background: #eeedfa;
+}
+.mybottom .listjt > a:visited {
+  background: #ffffff;
+}

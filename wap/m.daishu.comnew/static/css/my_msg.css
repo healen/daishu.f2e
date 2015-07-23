@@ -1,0 +1,81 @@
+/******************个人中心设置样式********************/
+.listjt {
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+.listjt .lis {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  padding: 1.3rem 1.3rem;
+  border-bottom: 1px solid #dfe3f0;
+  color: #535a66;
+}
+.listjt .lis:last-child {
+  border-bottom: none;
+}
+.listjt .lis span {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.listjt .lis .jt {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.5rem;
+}
+.listjt .lis .qipao {
+  height: 16px;
+  min-width: 16px;
+  padding: 0px 4px;
+  background: #fe3c39;
+  border-radius: 8px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0px 10px;
+  font-size: 1.2rem;
+}
+.listjt > a:last-child {
+  border-bottom: none;
+}
+.listjt > a:active {
+  background: #eeedfa;
+}
+.listjt > a:visited {
+  background: #ffffff;
+}
+.listjt .inlis {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.listjt .inlis h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.listjt .inlis p {
+  color: #535a66;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  line-height: 2rem;
+}
+.listjt .inlis span {
+  color: #b2b2b2;
+}
+.listjt .lis {
+  margin-bottom: 1rem;
+}

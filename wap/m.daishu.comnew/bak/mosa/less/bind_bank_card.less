@@ -1,0 +1,38 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************绑定银行卡样式********************/
+body{
+	background-color: @querBgColor;
+}
+._input(warp);
+.btnbox{
+	.-display ._box();
+	input{
+		._btn();
+		.-display ._flex(1);
+		box-shadow: 0px 4px 0px @inputshadow;
+	}
+	padding-top: 1rem;
+}
+.clause{
+	.-display ._box();
+	.-display ._box-align(center,start);
+	padding-bottom: 1rem;
+	i{
+		display: block;
+		width: 24px;
+		height: 24px;
+		border-radius: 12px;
+		margin-right: 5px;
+		background: url('@{icoURL}ico.png') no-repeat 0px -25px  @docBgColor;
+		background-size: 160px;
+	}
+	&.on{
+		i{
+			background-color: @markColor;
+		}
+	}
+}

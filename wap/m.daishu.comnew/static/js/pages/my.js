@@ -1,0 +1,1 @@
+$(".tabbtn").tab(".content-tab");

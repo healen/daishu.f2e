@@ -1,0 +1,19 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************表单样式********************/
+body{
+	background-color: @querBgColor;
+}
+._input(warp);
+.btnbox{
+	.-display ._box();
+	input{
+		._btn();
+		.-display ._flex(1);
+		box-shadow: 0px 4px 0px lighten(@markColor, 20%);
+	}
+	padding-top: 1rem;
+}

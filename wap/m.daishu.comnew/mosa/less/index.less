@@ -1,0 +1,430 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+
+/******************首页样式********************/
+.banner {
+	.-box ._size(auto,7rem);
+	.-display ._box();
+	.-display ._box-align(center,start);
+	.-bg ._color(@markColor);
+	margin-bottom: @marginBottom;
+	border-radius: @querRadius;
+	overflow: hidden;
+	position: relative;
+	.bgbox{
+		.-box ._size(17.5rem,5.6rem);
+		.-bg ._img('@{bgURL}sloginbg.png');
+		.-bg ._repeat(no);
+		.-bg ._size(contain);
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
+	.slogin{
+		position: relative;
+		z-index: 2;
+		width: 16rem;
+		height: 4rem;
+		background-image: url('@{bgURL}slogin.png');
+		background-size: contain;
+		margin-left: 25px;
+	}
+}
+.sliderbox {
+	height: 40rem;
+	.-display ._box();
+	.-display ._box-align(center,start);
+	.numm {
+	  position: relative;
+	  width: 100%;
+	  margin: 0px auto;
+	  height: 100%;
+	  display: block;
+	  .swiper-pagination {
+		  width: 100%;
+		  position: absolute;
+		  top: 15%;
+		  span {
+			  margin: 0px 2px;
+		  }
+		}
+	}
+	.swiper-container {
+	  width: 100%;
+	  height: 100%;
+	  top: 0px;
+	  left: 0px;
+	  position: absolute;
+	}
+	.swiper-container-cube{
+		.swiper-cube-shadow {
+		  opacity: 0.1;
+		}
+	} 
+}
+.intopic {
+	.-display ._box();
+	.-display ._orient(vertical);
+	.-display ._box-align(center,center);
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	border-radius: 0.5rem;
+	&.noradius {
+		border-radius: 0px;
+	}
+	h2 {
+	  text-align: center;
+	  padding-top: 0rem;
+	  margin-bottom: 2rem;
+	  .sp1{
+	  	display: block;
+	  	margin: -5px;
+	  	font-size: @baseFontSize;
+	  	color: @minorColor;
+	  }
+	}
+	.profit {
+		overflow: hidden;
+		.cloudbox{
+			.-box ._size(16rem,16rem);
+			position: absolute;
+			z-index: 1;
+			left: 0px;
+			top: 0px;
+			.cloud{
+				.-box ._size(16rem,9.3rem);
+				.-bg ._img("@{bgURL}cloud.png");
+				.-bg ._size(contain);
+				position: absolute;
+				bottom: -3rem;
+
+				&.cloud2{
+					display: block;
+					-webkit-transform: translate3d(-1rem,-1rem,0);
+					-ms-transform: translate3d(-1rem,-1rem,0);
+					-o-transform: translate3d(-1rem,-1rem,0);
+					transform: translate3d(-1rem,-1rem,0);
+					opacity: 0.4;
+
+					animation: cloud2 1s linear infinite alternate;
+					-moz-animation: cloud2 1s linear infinite alternate;	/* Firefox */
+					-webkit-animation: cloud2 1s linear infinite alternate;	/* Safari 和 Chrome */
+					-o-animation: cloud2 1s linear infinite alternate;	/* Opera */
+				}
+				&.cloud3{
+					display: block;
+					-webkit-transform: translate3d(1rem,-1.5rem,0);
+					-ms-transform: translate3d(1rem,-1.5rem,0);
+					-o-transform: translate3d(1rem,-1.5rem,0);
+					transform: translate3d(1rem,-1.5rem,0);
+					opacity: 0.4;
+					animation: cloud3 1s linear infinite alternate;
+					-moz-animation: cloud3 1s linear infinite alternate;	/* Firefox */
+					-webkit-animation: cloud3 1s linear infinite alternate;	/* Safari 和 Chrome */
+					-o-animation: cloud3 1s linear infinite alternate;	/* Opera */
+				}
+			}
+		}
+		position: relative;
+		.-box ._size(16rem,auto);
+		margin: 0px auto;
+		.-bg ._img('@{bgURL}profit.png');
+		.-bg ._repeat(no);
+		.-bg ._size(contain);
+		.-display ._box();
+		.-display ._orient(vertical);
+		.-display ._box-align(center,start);
+		margin-bottom: 0.5rem;
+		color: @barBgColor;
+		.title {
+		  margin-top: 2.5rem;
+		  font-size: @titleFontSize;
+		  position: relative;
+		  z-index: 2;
+		}
+		.cote {
+		  font-size: 3.5rem;
+		  line-height: 5rem;
+		  position: relative;
+		  z-index: 2;
+		}
+		.day {
+		  font-size: 1.5rem;
+		  color: @linkColor;
+		  margin-top: 2.6rem;
+		  position: relative;
+		  z-index: 2;
+		}
+		// .cloud1{
+		// 	width: 155px;
+		// 	display: block;
+		// 	position: absolute;
+		// 	bottom: 0px;
+		// 	left: 0px
+			
+			
+		// }
+
+		// .cloud2{
+		// 	width: 155px;
+		// 	display: block;
+		// 	position: absolute;
+		// 	bottom: 10px;
+		// 	left: -50px;
+			
+		// 	opacity: 0.5;
+		// }
+	}
+	.btn_border{
+		position: relative;
+		._btn_border(3rem,@minorColor);
+		margin-top: 1rem;
+		margin-bottom: 1px;
+		z-index: 2;
+		i{
+			&.btn_ico{
+				display: block;
+				width: 12px;
+				height: 12px;
+				overflow: hidden;
+				margin-left: 3px;
+				
+			}
+		}
+		&:active {
+		  border: 1px solid darken(@minorColor, 10%);
+		  color: darken(@minorColor, 10%);
+		  background: @docBgColor;
+		}
+		&:visited {
+		  border: 1px solid @markColor;
+		  color: @markColor;
+		  background: @querBgColor;
+		}
+	}
+	.dataList {
+	  height: 3.6rem;
+	  width: 95%;
+	  .-display ._box();
+	  margin: 1.5rem auto;
+	  div {
+			.-display ._flex(1);
+			border-right: 1px solid @borderColor;
+			font-size: @smallFontSize;
+			h2 {
+				padding-top: 0px;
+				margin-bottom: 0px;
+				line-height: 14px;
+				font-size: @titleFontSize+0.1;
+			}
+			p {
+				  line-height: 2.2rem;
+				  font-size: 1.2rem;
+				  text-align: center;
+				  color: @minorColor;
+			}
+			&:nth-child(1) {
+			  width: 25%;
+			}
+			&:nth-child(2) {
+			  width: 25%;
+			}
+			&:nth-child(3) {
+			  border-right: none;
+			}
+		}
+	}
+	.bottonbox {
+		width: 95%;
+		height: 4rem;
+		.-display ._box();
+		margin: 0rem auto;
+		
+		input{
+			._btn();
+			&.cz{
+				width: 8rem;
+				margin-right: 1rem;
+				background: @inputMcr;
+				&:active{
+					background: darken(@inputMcr, 10%)
+				}
+				&:visited{
+					background:@inputMcr;
+				}
+			}
+			&.tx{
+				.-display ._flex(1); 
+			}
+
+		}
+	}
+}
+
+@media screen and (min-height: 520px) {
+  .sliderbox {
+		height: 46rem;
+	}
+	.swiper-pagination {
+	  width: 100%;
+	  position: absolute;
+	  top: 14%!important;
+	  span {
+		  margin: 0px 2px;
+	  }
+	}
+	.intopic {
+		.profit {
+			margin-bottom: 2rem;
+
+			
+			.title{
+				margin-top: 3.2rem
+			}
+			.day{
+				margin-top: 4.5rem
+			}
+			.cote{
+				font-size: 3.5rem;
+				
+			}
+		}
+	}
+}
+
+@media screen and (min-width:490px) {
+	.intopic {
+		.profit {
+			width: 20rem;
+				.cloudbox{
+					.-box ._size(20rem,20rem);
+					position: absolute;
+					z-index: 1;
+					left: 0px;
+					top: 0px;
+					.cloud{
+					.-box ._size(200rem,11.6rem);
+					.-bg ._img("@{bgURL}cloud.png");
+					.-bg ._size(contain);
+					position: absolute;
+					bottom: -3rem;
+					&.cloud2{
+						display: block;
+						-webkit-transform: translate3d(-.51rem,-1rem,0);
+						-ms-transform: translate3d(-1.5rem,-1rem,0);
+						-o-transform: translate3d(-1.5rem,-1rem,0);
+						transform: translate3d(-1.5rem,-1rem,0);
+						opacity: 0.2;
+						animation: cloud2 1s linear infinite alternate;
+						-moz-animation: cloud2 1s linear infinite alternate;	/* Firefox */
+						-webkit-animation: cloud2 1s linear infinite alternate;	/* Safari 和 Chrome */
+						-o-animation: cloud2 1s linear infinite alternate;	/* Opera */
+					}
+					&.cloud3{
+						left: 20px;
+						display: block;
+						-webkit-transform: translate3d(1rem,-1.5rem,0);
+						-ms-transform: translate3d(1rem,-1.5rem,0);
+						-o-transform: translate3d(1rem,-1.5rem,0);
+						transform: translate3d(1rem,-1.5rem,0);
+						opacity: 0.4;
+						animation: cloud3 1s linear infinite alternate;
+						-moz-animation: cloud3 1s linear infinite alternate;	/* Firefox */
+						-webkit-animation: cloud3 1s linear infinite alternate;	/* Safari 和 Chrome */
+						-o-animation: cloud3 1s linear infinite alternate;	/* Opera */
+					}
+				}
+			}
+
+
+
+			
+		}
+	}
+}
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+}
+
+@-webkit-keyframes cloud2{
+	form{
+		-webkit-transform: translate3d(-1rem,-1rem,0);
+		opacity: 0.8;
+	}
+	to{
+		-webkit-transform: translate3d(1rem,-1rem,0);
+		opacity: 0.7;
+	}
+	
+
+}
+@-o-keyframes cloud2{
+	form{
+		-o-transform: translate3d(-1rem,-1rem,0);
+		opacity: 0.8;
+	}
+	to{
+		-o-transform: translate3d(1rem,-1rem,0);
+		opacity: 0.7;
+	}
+
+}
+
+@keyframes cloud2{
+	form{
+		transform: translate3d(-1rem,-1rem,0);
+		opacity: 0.8;
+	}
+	to{
+		transform: translate3d(1rem,-1rem,0);
+		opacity: 0.7;
+	}
+
+}
+
+@-webkit-keyframes cloud3{
+	form{
+		-webkit-transform: translate3d(1rem,-1rem,0);
+		opacity: 0.8;
+	}
+	to{
+		-webkit-transform: translate3d(-1rem,-1rem,0);
+		opacity: 0.7;
+	}
+
+}
+@-o-keyframes cloud3{
+	form{
+		-o-transform: translate3d(1rem,-1rem,0);
+		opacity: 0.8;
+	}
+	to{
+		-o-transform: translate3d(-1rem,-1rem,0);
+		opacity: 0.7;
+	}
+
+}
+
+@keyframes cloud3{
+	form{
+		transform: translate3d(1rem,-1rem,0);
+		opacity: 0.8;
+	}
+	to{
+		transform: translate3d(-1rem,-1rem,0);
+		opacity: 0.7;
+	}
+
+}
+
+
+
+
+
+
+
+

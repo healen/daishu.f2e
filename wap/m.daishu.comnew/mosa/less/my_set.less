@@ -1,0 +1,98 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+
+/******************个人中心设置样式********************/
+.body-content{
+	padding:0rem 0rem;
+}
+.myhead{
+	padding: 0rem 1rem;
+	.-bg ._color(@barBgColor);
+	.top{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		.-display ._orient(vertical);
+		height: 12rem;
+		border-bottom: 1px solid @borderColor;
+		position: relative;
+		img{
+			display: block;
+			width: 71px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-size: @bigFontSize;;
+		}
+	}
+	.bottom{
+		height: 60px;
+		.-display ._box();
+		.-display ._box-align(center,start);
+		.qure{
+			.-display ._box();
+			.-display ._box-align(center,center);
+			.-display ._flex(1);
+			height: 60px;
+			line-height: 60px;
+			&:active{
+				background: @docBgColor;
+			}
+			&:visited{
+				background: #ffffff;
+			}
+			.yuan{
+				font-family: Arial;
+				display: block;
+				width: 1.8rem;
+				height: 1.8rem;
+				border-radius: 50%;
+				background-color:@inputMcr; 
+				text-align: center;
+				line-height: 2rem;
+				color: @yuanColor;
+				margin-right: 5px;
+			}
+			h2{
+				font-size: @bigFontSize;
+			}
+			&:nth-child(1){
+				border-right: 1px solid @borderColor;
+			}
+		}
+	}
+}
+.mybottom{
+	padding: 0.8rem 1rem;
+	.btnbox{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		padding-top: 2rem;
+		input{
+			._btn(@inputMcr);
+			.-display ._flex(1);
+			box-shadow: 0px 4px 0px lighten(@inputMcr, 20%);
+			&:nth-child(1){
+				
+				background: @markColor;
+				box-shadow: 0px 4px 0px lighten(@markColor, 20%);
+			}
+		}
+
+	}
+	.listjt{
+		._liststyle()
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+/******************个人中心设置样式********************/
+body {
+  background-color: #ffffff;
+}
+.alertbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  margin-top: 2.5rem;
+}
+.alertbox .duihao {
+  width: 60px;
+  height: 60px;
+  background-color: #3dbdff;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.alertbox .duihao i {
+  display: block;
+  color: #ffffff;
+  line-height: 60px;
+  font-size: 35px;
+  text-align: center;
+}
+.alertbox p {
+  text-align: center;
+  line-height: 2.3rem;
+  font-size: 1.5rem;
+  color: #a2a9b2;
+  margin-bottom: 1rem;
+}
+.alertbox p span {
+  color: #3dbdff;
+}
+.alertbox .btn_border {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  padding: 0px 1.2rem;
+  margin-top: 1rem;
+}
+.alertbox .btn_border i {
+  font-size: 12px;
+}
+.alertbox .btn_border:active {
+  border: 1px solid #0aacff;
+  color: #0aacff;
+  background: #eeedfa;
+}
+.alertbox .btn_border:visited {
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background: #ffffff;
+}
+.alertbox .btn_border i.btn_ico {
+  display: block;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  margin-left: 3px;
+}
+.alertbox .btn_border:active {
+  border: 1px solid #0aacff;
+  color: #0aacff;
+  background: #eeedfa;
+}
+.alertbox .btn_border:visited {
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background: #ffffff;
+}

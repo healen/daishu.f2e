@@ -1,0 +1,82 @@
+/******************表单样式********************/
+body {
+  background-color: #ffffff;
+}
+article h1 {
+  font-size: 1.6rem;
+  color: #3dbdff;
+  line-height: 45px;
+  height: 45px;
+  padding: 0px 20px;
+  border-bottom: 1px solid #dfe3f0;
+}
+article .content {
+  padding: 10px;
+  font-size: 1.4rem;
+}
+article .content p {
+  color: #535a66;
+}
+article .content h2 {
+  padding-top: 18px;
+  font-size: 1.5rem;
+  color: #2a2e33;
+}
+article .content h2 span {
+  color: #3dbdff;
+}
+.btnlist {
+  text-align: center;
+}
+.btn_border {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  padding: 0px 1.2rem;
+  margin: 0px auto;
+  margin-top: 1rem;
+  display: inline-block;
+  line-height: 3rem;
+}
+.btn_border i {
+  font-size: 12px;
+}
+.btn_border:active {
+  border: 1px solid #0aacff;
+  color: #0aacff;
+  background: #eeedfa;
+}
+.btn_border:visited {
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background: #ffffff;
+}
+.btn_border i.btn_ico {
+  display: block;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  margin-left: 3px;
+}
+.btn_border:active {
+  border: 1px solid #0aacff;
+  color: #0aacff;
+  background: #eeedfa;
+}
+.btn_border:visited {
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background: #ffffff;
+}

@@ -1,0 +1,332 @@
+/******************首页样式********************/
+.banner {
+  width: auto;
+  height: 7rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  background-color: #3dbdff;
+  margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.banner .bgbox {
+  width: 17.5rem;
+  height: 5.6rem;
+  background-image: url('../img/bg/sloginbg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.banner .slogin {
+  position: relative;
+  z-index: 2;
+  width: 16rem;
+  height: 4rem;
+  background-image: url('../img/bg/slogin.png');
+  background-size: contain;
+  margin-left: 25px;
+}
+.sliderbox {
+  height: 40rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.sliderbox .numm {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  height: 100%;
+  display: block;
+}
+.sliderbox .numm .swiper-pagination {
+  width: 100%;
+  position: absolute;
+  top: 4.5rem;
+}
+.sliderbox .numm .swiper-pagination span {
+  margin: 0px 2px;
+}
+.sliderbox .swiper-container {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.sliderbox .swiper-container-cube .swiper-cube-shadow {
+  opacity: 0.1;
+}
+.intopic {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+.intopic.noradius {
+  border-radius: 0px;
+}
+.intopic h2 {
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+.intopic .profit {
+  width: 16rem;
+  height: auto;
+  margin: 0px auto;
+  background-image: url('../img/bg/profit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  color: #ffffff;
+}
+.intopic .profit .title {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+.intopic .profit .cote {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.intopic .profit .day {
+  font-size: 1.5rem;
+  color: #3dbdff;
+  margin-top: 2.6rem;
+}
+.intopic .btn_border {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  padding: 0px 1.2rem;
+  margin-top: 1rem;
+}
+.intopic .btn_border i.btn_ico {
+  display: block;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  margin-left: 3px;
+  background-image: url('../img/ico//ico.png');
+  background-size: 160px;
+  background-position: 2px 1px;
+}
+.intopic .btn_border:active {
+  border: 1px solid #0aacff;
+  color: #0aacff;
+  background: #eeedfa;
+}
+.intopic .btn_border:visited {
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background: #ffffff;
+}
+.intopic .btn_border i.btn_ico {
+  display: block;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  margin-left: 3px;
+  background-image: url('../img/ico/ico.png');
+  background-size: 160px;
+  background-position: 2px 1px;
+}
+.intopic .btn_border:active {
+  border: 1px solid #0aacff;
+  color: #0aacff;
+  background: #eeedfa;
+}
+.intopic .btn_border:visited {
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background: #ffffff;
+}
+.intopic .dataList {
+  height: 3.6rem;
+  width: 95%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  margin: 1.5rem auto;
+}
+.intopic .dataList div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-right: 1px solid #dfe3f0;
+  font-size: 1.2rem;
+}
+.intopic .dataList div h2 {
+  padding-top: 0px;
+  margin-bottom: 0px;
+  line-height: 14px;
+  font-size: 1.5rem;
+}
+.intopic .dataList div p {
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #a2a9b2;
+}
+.intopic .dataList div:nth-child(1) {
+  width: 25%;
+}
+.intopic .dataList div:nth-child(2) {
+  width: 25%;
+}
+.intopic .dataList div:nth-child(3) {
+  border-right: none;
+}
+.intopic .bottonbox {
+  width: 95%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  margin: 0rem auto;
+}
+.intopic .bottonbox input {
+  height: 4rem;
+  border-radius: 2rem;
+  display: block;
+  background: #3dbdff;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.intopic .bottonbox input:active {
+  background: #0aacff;
+}
+.intopic .bottonbox input:visited {
+  background: #0aacff;
+}
+.intopic .bottonbox input.cz {
+  width: 8rem;
+  margin-right: 1rem;
+  background: #ffd93f;
+}
+.intopic .bottonbox input.cz:active {
+  background: #ffcf0c;
+}
+.intopic .bottonbox input.cz:visited {
+  background: #ffd93f;
+}
+.intopic .bottonbox input.tx {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.navbtn {
+  height: 44px;
+  background: #ffffff;
+  border-top: 1px solid #dfe3f0;
+  line-height: 41px;
+  color: #535a66;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.navbtn a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 33.33%;
+  color: #535a66;
+  border-right: 1px solid #dfe3f0;
+}
+.navbtn a i {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: url('../img/ico/ico.png') no-repeat;
+  background-size: 160px;
+  margin-right: 2px;
+}
+.navbtn a i.tzlc {
+  background-position: -15px 1px;
+}
+.navbtn a i.grzx {
+  background-position: -34px 1px;
+}
+.navbtn a i.hd {
+  background-position: -52px 1px;
+}
+.navbtn a:active {
+  background: #c8c5ef;
+}
+.navbtn a:visited {
+  background: #535a66;
+}
+@media screen and (min-height: 550px) and (max-height: 1000px) {
+  .navbtn {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+}

@@ -1,0 +1,96 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+
+/******************个人中心样式********************/
+
+.body-content{
+	padding:0rem 0rem;
+}
+.myhead{
+	padding: 0rem 1rem;
+	.-bg ._color(@barBgColor);
+	.top{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		.-display ._orient(vertical);
+		height: 12rem;
+		border-bottom: 1px solid @borderColor;
+		position: relative;
+		.set{
+			position: absolute;
+			.-box ._size(1.9rem,1.9rem);
+			.-bg ._img('@{icoURL}ico.png');
+			.-bg ._repeat(no);
+			.-bg ._size(160px);
+			background-position: -140px -3px;
+			top: 2rem;
+			right: 0rem;
+		}
+		img{
+			display: block;
+			width: 71px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-size: @bigFontSize;;
+		}
+	}
+	.bottom{
+		height: 60px;
+		.-display ._box();
+		.-display ._box-align(center,start);
+		.qure{
+			.-display ._flex(1);
+			text-align: center;
+			h2{
+				font-size: @bigFontSize;
+				color: @markColor;
+
+			}
+			p{
+				color: @minorColor;
+			}
+
+			&:nth-child(1){
+				border-right: 1px solid @borderColor;
+			}
+		}
+	}
+}
+.mybottom{
+	padding: 0.8rem 1rem;
+	.yue{
+		height: 4.4rem;
+		background: @querBgColor;
+		.-display ._box();
+		.-display ._box-align(center,start);
+
+		padding: 0px 1.5rem;
+		p{
+			width: 50%;
+			&:nth-child(2){
+				text-align: right;
+			}
+
+		}
+		margin-bottom: 1.5rem;
+	}
+	.title{
+		
+		font-size: @titleFontSize;
+		color: @majorColor;
+	}
+}
+
+
+._tab-view(content);
+
+
+
+
+
+
+

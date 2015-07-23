@@ -1,0 +1,71 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************表单样式********************/
+body{
+	background-color: @querBgColor;
+}
+
+article{
+	h1{
+		font-size: @bigFontSize;
+		color: @markColor;
+		line-height: 45px;
+		height: 45px;
+		padding:0px 20px; 
+		border-bottom: 1px solid @borderColor;
+	}
+	.content{
+		padding:10px; 
+		font-size: @baseFontSize;
+
+		p{
+			color: @majorColor;
+		}
+		h2{
+			padding-top: 18px;
+			font-size: @titleFontSize;
+			color: @baseTextColor;
+			span{
+				color: @markColor;
+			}
+		}
+
+	}
+
+
+}
+.btnlist{
+	text-align: center;
+}
+
+.btn_border{
+		._btn_border();
+	
+		margin: 0px auto;
+		margin-top: 1rem;
+		display: inline-block;
+		line-height: 3rem;
+		i{
+			&.btn_ico{
+				display: block;
+				width: 12px;
+				height: 12px;
+				overflow: hidden;
+				margin-left: 3px;
+				
+			}
+		}
+		&:active {
+		  border: 1px solid darken(@markColor, 10%);
+		  color: darken(@markColor, 10%);
+		  background: @docBgColor;
+		}
+		&:visited {
+		  border: 1px solid @markColor;
+		  color: @markColor;
+		  background: @querBgColor;
+		}
+	}

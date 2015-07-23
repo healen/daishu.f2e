@@ -1,0 +1,145 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+@import "../input"; 
+
+/******************个人中心设置样式********************/
+.banklist{
+	.lis{
+		padding: 1.8rem 1.3rem;
+		i{
+			color:@majorColor;
+			line-height: 1.8rem; 
+			width: 1.8rem;
+			height: 1.8rem;
+			display: block;
+		}
+		.content{
+			.-display ._box();
+			div{
+				.-display ._flex(1);
+				padding-left: 1.5rem;
+			}
+			span{
+				.-display ._flex(0);
+				&.jxz{
+					color: @keyColor;
+				}
+				&.cg{
+					color: @markColor;
+				}
+				&.sb{
+					color: #cccccc;
+				}
+			}
+		}
+	}
+	&:active{
+		background: #FEFEFE;
+	}
+	&:visited{
+		background:#ffffff;
+	}
+}
+
+
+
+
+
+section{
+	&.info{
+		background: #ffffff;
+		margin-top: -5px;
+		border-radius: 0rem 0rem 0.5rem 0.5rem;
+		height: 0px;
+		overflow: hidden;
+		// -webkit-transition: all 300ms ease-in;
+		// -o-transition: all 300ms ease-in;
+		// transition: all 300ms ease-in;
+		.wapper{
+			position: relative;
+			a.rechartbtn{
+				._btn();
+				width: 60px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				position: absolute;
+				right: 1.5rem;
+				top: 2rem;
+
+
+			}
+			&>div{
+				// padding-top: 10px;
+				//border-top: 1px solid @borderColor;
+			}
+
+			padding:0rem 1.3rem 0.8rem 1.3rem;
+			p{
+				line-height: 2.0rem;
+				color: @minorColor;
+			}
+		}
+
+	}
+}
+
+
+.on{
+	section{
+		&.info{
+			height: 90px;
+			.wapper{
+				&>div{
+					// padding-top: 10px;
+					//border-top: 1px solid @borderColor;
+				}
+
+				padding:0rem 1.3rem 0.8rem 1.3rem;
+				p{
+					line-height: 2.0rem;
+					color: @minorColor;
+				}
+			}
+
+		}
+	}
+
+	.banklist{
+		.lis{
+			.jt{
+				-webkit-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				transform: rotate(90deg);
+				display: block;
+				width: 1.6rem;
+				height: 1.6rem;
+				text-align: center;
+				margin-left: 0.5rem;
+
+			}
+		}
+	 
+	}
+
+}
+
+.banklist{
+	.lis{
+		.jt{
+			// -webkit-transition: all 300ms ease-in;
+			// -o-transition: all 300ms ease-in;
+			// transition: all 300ms ease-in;
+			display: block;
+			width: 1.6rem;
+			height: 1.6rem;
+			text-align: center;
+			margin-left: 0.5rem;
+
+		}
+	}
+ 
+}

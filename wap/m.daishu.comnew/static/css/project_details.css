@@ -1,0 +1,325 @@
+/******************项目详情样式********************/
+.body-content {
+  padding: 0rem 0rem;
+}
+.myhead {
+  padding: 0rem 0rem;
+  background-color: #ffffff;
+}
+.myhead .slogin2 {
+  height: 45px;
+  border-bottom: 1px solid #dfe3f0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.myhead .slogin2 .inslogin {
+  width: 140px;
+  height: 20px;
+  background-image: url("../img/bg/slogin2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.myhead .top {
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: start;
+  -webkit-box-align: start;
+  box-align: start;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  position: relative;
+}
+.myhead .top h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.myhead .top p {
+  color: #a2a9b2;
+  margin-bottom: 0.3rem;
+}
+.myhead .top p span {
+  color: #2a2e33;
+}
+.myhead .top > div {
+  border-bottom: 1px solid #dfe3f0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  padding: 1rem 0rem 0rem 1rem;
+}
+.myhead .bottom {
+  padding: 1rem;
+}
+.myhead .bottom .jdbar {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 10px;
+  background: #e6e6e6;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.myhead .bottom .jdbar .inbox {
+  width: 0%;
+  background: #3dbdff;
+  border-radius: 0.8rem;
+  height: 10px;
+  -webkit-transition: width 500ms ease-in;
+  -o-transition: width 500ms ease-in;
+  transition: width 500ms ease-in;
+}
+.myhead .bottom .msgbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  color: #a2a9b2;
+}
+.myhead .bottom .msgbox span {
+  color: #535a66;
+}
+.myhead .bottom .msgbox .l {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.mybottom {
+  padding: 0.8rem 1rem;
+}
+.mybottom .yue {
+  height: 4.4rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  padding: 0px 1.5rem;
+  margin-bottom: 1rem;
+}
+.mybottom .yue p {
+  width: 50%;
+}
+.mybottom .yue p:nth-child(2) {
+  text-align: right;
+}
+.mybottom .title {
+  font-size: 1.5rem;
+  color: #535a66;
+}
+.lclist {
+  display: block;
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dfe3f0;
+  position: relative;
+}
+.lclist:last-child {
+  border-bottom: none;
+}
+.lclist .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.lclist p {
+  color: #a2a9b2;
+  padding-bottom: 0.3rem;
+}
+.lclis {
+  display: block;
+  margin: 1.5rem 0rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dfe3f0;
+  position: relative;
+}
+.lclis:last-child {
+  border-bottom: none;
+}
+.lclis .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.lclis p {
+  color: #a2a9b2;
+  padding-bottom: 0.3rem;
+}
+.lclis section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.lclis section p {
+  width: 50%;
+}
+@media screen and (max-width: 360px) {
+  .lclis section {
+    display: block;
+  }
+  .lclis section p {
+    width: 100%;
+  }
+}
+.qipao {
+  padding: 0px 5px;
+  color: #ffffff;
+  background: #bdcfd9;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.list {
+  padding: 0rem 1.5rem;
+}
+.listview {
+  padding: 0;
+}
+.listview li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid #dfe3f0;
+}
+.listview li .left {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.listview li .left span {
+  display: block;
+  color: #a2a9b2;
+  font-size: 1.4rem;
+}
+.listview li .right {
+  display: block;
+  font-size: 1.4rem;
+}
+.listview li.skjl .left span {
+  display: block;
+  color: #2a2e33;
+  font-size: 1.4rem;
+}
+.listview li.skjl.ok .left span {
+  display: block;
+  color: #a2a9b2;
+  font-size: 1.4rem;
+}
+.listview li.skjl.ok .right {
+  display: block;
+  color: #a2a9b2;
+  font-size: 1.4rem;
+}
+.listview li:last-child {
+  border-bottom: none;
+}
+.jilus {
+  padding: 1.5rem 0rem;
+  color: #a2a9b2;
+  border-bottom: 1px solid #dfe3f0;
+  margin: 0rem 1.5rem;
+}
+.jilus span {
+  color: #3dbdff;
+}
+.buttonfixed {
+  width: 100%;
+}
+.buttonfixed .warp {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+.buttonfixed input {
+  height: 4rem;
+  border-radius: 2rem;
+  display: block;
+  background: #3dbdff;
+  color: #ffffff;
+  font-size: 1.6rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-shadow: 0px 4px 0px #a3e0ff;
+}
+.buttonfixed input:active {
+  background: #0aacff;
+}
+.buttonfixed input:visited {
+  background: #0aacff;
+}
+.buttonfixed input.disable {
+  background: #ccc;
+  color: #ffffff;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.content-tab {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.content-tab .content-title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  height: 40px;
+  border-bottom: 1px solid #dfe3f0;
+  box-sizing: border-box;
+}
+.content-tab .content-title a {
+  display: block;
+  height: 40px;
+  line-height: 39px;
+  padding: 0rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  color: #b2b2b2;
+}
+.content-tab .content-title a.on {
+  border-bottom: 2px solid #3dbdff;
+  color: #535a66;
+}
+.content-tab .content-view .conto {
+  display: none;
+}

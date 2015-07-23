@@ -1,0 +1,64 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+@import "../input"; 
+
+/******************个人中心设置样式********************/
+
+.body-content{
+	padding:0rem 0rem;
+}
+.myhead{
+	padding: 0rem 1rem;
+	.-bg ._color(@inputMcr);
+	.top{
+		padding:1.5rem 0rem;
+		color: @mcrColor;
+		border-bottom: 1px solid @borderColor;
+		position: relative;
+		h2{
+			margin: 0.5rem 1rem;
+		}
+		img{
+			display: block;
+			width: 71px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-size: @bigFontSize;;
+		}
+	}
+	._input(warp,4rem,#ffffff);
+}
+.mybottom{
+	padding: 0.8rem 1rem;
+	.title{
+		.-display ._box();
+		div{
+			.-display ._flex(1);
+		}
+	}
+	.btnbox{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		padding-top: 2rem;
+		input{
+			._btn(@markColor);
+			.-display ._flex(1);
+			box-shadow: 0px 4px 0px lighten(@markColor, 20%);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

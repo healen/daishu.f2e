@@ -1,0 +1,406 @@
+@import "../lib/reset";
+@import "../document"; 
+
+
+/*********************************************************************基础样式********************************************************************/
+.bg_grey{
+	background: @docBgColor;
+}
+
+.body-content{
+	height: 100%;
+	padding: 0.8rem 1rem;
+}
+
+.banner {
+	.-box ._size(auto,7rem);
+	.-display ._box();
+	.-display ._box-align(center,start);
+	.-bg ._color(@markColor);
+	margin-bottom: @marginBottom;
+	border-radius: @querRadius;
+	overflow: hidden;
+	position: relative;
+	.bgbox{
+		.-box ._size(17.5rem,5.6rem);
+		.-bg ._img('@{bgURL}sloginbg.png');
+		.-bg ._repeat(no);
+		.-bg ._size(contain);
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
+	.slogin{
+		position: relative;
+		z-index: 2;
+		width: 16rem;
+		height: 4rem;
+		background-image: url('@{bgURL}slogin.png');
+		background-size: contain;
+		margin-left: 25px;
+	}
+}
+
+header{
+	&.topmeun {
+	  height: 4.4rem;
+	  background: @linkColor;
+	  border-bottom: 1px solid darken(@linkColor, 10%);
+	  box-sizing: initial;
+	  .-display ._box();
+	  h1 {
+		  color: #ffffff;
+		  text-align: center;
+		  display: block;
+		  -webkit-box-flex: 1;
+		  -moz-box-flex: 1;
+		  -webkit-flex: 1;
+		  -ms-flex: 1;
+		  flex: 1;
+		  font-size: 1.6rem;
+		  line-height: 4.4rem;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		  white-space: nowrap;
+		}
+		a {
+		  display: -webkit-box;
+		  display: -moz-box;
+		  display: -o-box;
+		  display: box;
+		  -moz-box-align: center;
+		  -webkit-box-align: center;
+		  box-align: center;
+		  -moz-box-pack: center;
+		  -webkit-box-pack: center;
+		  box-pack: center;
+		  width: 4.4rem;
+		  height: 4.4rem;
+		  color: #ffffff;
+		  text-align: center;
+		  	i {
+			  color: #ffffff;
+			  font-size: 2.2rem;
+			  line-height: 2.2rem;
+			  display: block;
+			}
+			&.back {
+			  -webkit-transform: rotate(180deg);
+			  -ms-transform: rotate(180deg);
+			  -o-transform: rotate(180deg);
+			  transform: rotate(180deg);
+			}
+			&:active {
+			  background: darken(@linkColor, 20%) ;
+			}
+			&:visited {
+			  background: @linkColor;
+			}
+		}
+	  
+	}
+}
+
+
+
+
+
+
+
+
+.discribe{
+	font-size: @smallFontSize;
+	color: @assistColor;
+	margin-top: 1rem;
+}
+.pdt0{
+	padding-top: 0px;
+}
+
+.banklist{
+	._liststyle();
+	margin-top: 1rem;
+	img{
+		display: block;
+		width: 40px;
+		margin-right: 20px;
+	}
+	.content{
+		.-display ._flex(1);
+		h2{
+			font-size: @titleFontSize;
+		}
+		p{
+			color: @minorColor;
+		}
+	}
+	i{
+		
+		
+		color: #ffffff;
+		&.select{
+			display: block;
+			width: 24px;
+			height: 24px;
+			border-radius: 12px;
+			margin-right: 5px;
+			background:@docBgColor;
+			text-align: center;
+			line-height: 24px;
+			font-size: 12px;
+		}
+	}
+	.radio{
+		opacity: 0.0;
+		&:checked{
+			&+i{
+				&.select{
+					background-color: @markColor;
+				}
+			}
+		}
+	}
+}
+
+body{
+	&>.warp{
+		padding-bottom: 5.2rem;
+	}
+}
+
+
+.abortmsg {
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  height: 120px;
+  color: #a2a9b2;
+  i {
+	  margin-right: 8px;
+	  display: block;
+	  font-size: 25px;
+	  color: #a2a9b2;
+	}
+}
+
+
+.mino-color{
+	color: @minorColor;
+}
+
+
+.mt20{
+	margin-top: 20px;
+}
+
+
+
+
+
+.navbtn {
+  height: 4.4rem;
+  background: @barBgColor;
+  border-top: 1px solid @borderColor;
+  line-height: 4.1rem;
+  color: @barColor;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1004;
+  .-display ._box();
+  a {
+		.-display ._box();
+		.-display ._box-align(center,center);
+		.-display ._flex(1);
+		min-width: 33.33%;
+		color: @barColor;
+		border-right: 1px solid @borderColor;
+
+		i{
+			padding-right: 3px;
+			font-size: @titleFontSize;
+			font-weight: 600;
+			vertical-align: text-bottom;
+
+
+		}
+		&:active {
+		  background: @docBgColor;
+		}
+		&:visited {
+		  background:#ffffff;
+		}
+	}
+}
+
+
+.loading{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	color: #ffffff;
+	z-index: 1010;
+	.-display ._box();
+	.-display ._box-align(center,center);
+	i{
+		background: rgba(0,0,0,0.5);
+		.-display ._box();
+		.-display ._box-align(center,center);
+		width: 50px;
+		height: 50px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-size: 32px;
+
+
+		&:before{
+			display: block;
+			-webkit-animation:rotate 700ms linear 0ms infinite;
+			-o-animation:rotate 700ms linear 0ms infinite;
+			animation:rotate 700ms linear 0ms infinite;
+		}
+		
+	}
+}
+
+
+
+
+@-webkit-keyframes rotate{
+	from{
+		-webkit-transform:rotate(0deg) ;
+	}
+	to{
+		-webkit-transform:rotate(360deg) ;
+	}
+
+}
+@-o-keyframes rotate{
+	from{
+		-o-transform:rotate(0deg) ;
+	}
+	to{
+		-o-transform:rotate(360deg) ;
+	}
+
+}
+
+@-moz-keyframes rotate{
+	from{
+		-moz-transform:rotate(0deg) ;
+	}
+	to{
+		-moz-transform:rotate(360deg) ;
+	}
+
+}
+@keyframes rotate{
+	from{
+		transform:rotate(0deg) ;
+	}
+	to{
+		transform:rotate(360deg) ;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family: 'dsFont';
+	src:url('@{fontURL}dsFont.eot?-ttl47x');
+	src:url('@{fontURL}dsFont.eot?#iefix-ttl47x') format('embedded-opentype'),
+		url('@{fontURL}dsFont.ttf?-ttl47x') format('truetype'),
+		url('@{fontURL}dsFont.woff?-ttl47x') format('woff'),
+		url('@{fontURL}dsFont.svg?-ttl47x#dsFont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i.icoFt{
+	font-family: 'dsFont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-coin-yen:before {
+	content: "\e60c";
+}
+
+.icon-heart:before {
+	content: "\e60b";
+}
+.icon-loading1:before {
+	content: "\e606";
+}
+.icon-loading2:before {
+	content: "\e607";
+}
+.icon-loading3:before {
+	content: "\e608";
+}
+.icon-loading4:before {
+	content: "\e609";
+}
+.icon-loading5:before {
+	content: "\e60a";
+}
+
+.icon-huiyuan:before {
+  content: "\e600";
+}
+.icon-huodong:before {
+  content: "\e601";
+}
+.icon-jiantou:before {
+  content: "\e602";
+}
+.icon-mima:before {
+  content: "\e603";
+}
+.icon-qian:before {
+  content: "\e604";
+}
+.icon-s:before {
+  content: "\e958";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-cool:before {
+  content: "\e605";
+}

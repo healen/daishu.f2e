@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+	<title>popup</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/popup.css">
+</head>
+<body>
+	<div id="popupContent" style="display:none">
+				恭喜你，购买成功，<br />赶紧去看看吧！
+	</div>
+	<div id="popup"></div>
+
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+
+	<!--页面JS-->
+	<script type="text/javascript" src="../static/js/popup.js"></script>
+
+	<script type="text/javascript">
+		 $.popup({
+                transfrom: "", //效果
+                //title: "温馨提示", //标题
+                content: function(){
+                	return $("#popupContent").html();
+                }, //内容
+                close: true, //是否关闭
+                closeCallback:null,
+                Dwidth: "70%",
+                popupPosition:"fixed",
+                btnList: [
+                    {
+                        class: "",
+                        text: "等等再看",
+                        callback: function(){
+                        	$.close(".popup");
+                        	
+                        }
+                    },
+                    {
+                        class: "comfbox",
+                        text: "现在就去",
+                        callback: function(){
+                        	$.close(".popup");
+                        }
+                    }
+                ]
+        })
+	</script>
+</body>
+</html>
